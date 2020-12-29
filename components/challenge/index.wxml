@@ -11,7 +11,7 @@
         <!-- //再坚持{{days.day}}天领{{days.integral}}积分 -->
         {{days.day}}{{days.integral}}
         <view class="popper_arrow">
-        <image src="https://wellness.hangseng.com/images/miniprogram/images/iconArrow5X5@2x.png" mode="aspectFit" />
+        <image src="https://zhj.wellness.hangseng.com/images/miniprogram/images/iconArrow5X5@2x.png" mode="aspectFit" />
         </view>
       </view>
     </view>

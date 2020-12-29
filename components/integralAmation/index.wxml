@@ -3,11 +3,11 @@
   <view class="{{!animateCompelte?'MtranslateY action':'MtranslateY lostAimation'}}">
     <view class="showAmation">
       <view class="reward">
-        <image  wx:if="{{integral === 10}}"   src="https://wellness.hangseng.com/images/miniprogram/images/img_0.png"   mode="aspectFit" />
-        <image  wx:if="{{integral === 50}}"   src="https://wellness.hangseng.com/images/miniprogram/images/img_50.png"  mode="aspectFit" />
-        <image  wx:if="{{integral === 100}}"  src="https://wellness.hangseng.com/images/miniprogram/images/img_100.png" mode="aspectFit" />
+        <image  wx:if="{{integral === 10}}"   src="https://zhj.wellness.hangseng.com/images/miniprogram/images/img_0.png"   mode="aspectFit" />
+        <image  wx:if="{{integral === 50}}"   src="https://zhj.wellness.hangseng.com/images/miniprogram/images/img_50.png"  mode="aspectFit" />
+        <image  wx:if="{{integral === 100}}"  src="https://zhj.wellness.hangseng.com/images/miniprogram/images/img_100.png" mode="aspectFit" />
         <view wx:if="{{integral !== 100 && integral !== 50 && integral !== 10}}" style="position: relative;">
-          <image  src="https://wellness.hangseng.com/images/miniprogram/images/otherCarde/group7.png" mode="aspectFit" />
+          <image  src="https://zhj.wellness.hangseng.com/images/miniprogram/images/otherCarde/group7.png" mode="aspectFit" />
           <!-- <text class="display-num">{{integral}}</text> -->
         </view>
       </view> 

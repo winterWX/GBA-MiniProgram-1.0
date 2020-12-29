@@ -1,6 +1,6 @@
 <viwe class="content-main">
     <viwe class="blackTop">
-        <image src='https://wellness.hangseng.com/images/miniprogram/images/healthInfo/close@2x.png'  bindtap="closeBalck"></image>
+        <image src='https://zhj.wellness.hangseng.com/images/miniprogram/images/healthInfo/close@2x.png'  bindtap="closeBalck"></image>
         <viwe class="blackText">{{blockForData.titleTop}}</viwe>
     </viwe>
     <viwe class="blackInput">

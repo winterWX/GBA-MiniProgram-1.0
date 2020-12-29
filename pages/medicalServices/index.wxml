@@ -11,7 +11,7 @@
                 <view class="appointment" wx:if="{{item.id === 1}}">预约医疗服务，扫码签到。</view>
                 <view class="outpatient" wx:if="{{item.id === 2}}">使用在线咨询服务，得积分</view>
                 <view class="gold-silver-title" hover-class="none">
-                  <image class="icon" src="https://wellness.hangseng.com/images/miniprogram/images/otherCarde/star.png"></image>
+                  <image class="icon" src="https://zhj.wellness.hangseng.com/images/miniprogram/images/otherCarde/star.png"></image>
                   金银会员积分翻倍
                 </view>
               </view>

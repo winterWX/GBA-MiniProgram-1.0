@@ -1,16 +1,16 @@
 <view class='modal-mask' wx:if='{{show}}'>
     <view class='modal-content'>
         <view class="imageAllText" wx:if="{{levelNum === 1}}">
-          <image class="topImage" src="https://wellness.hangseng.com/images/miniprogram/images/index/silver-bg@3x.png"/>
+          <image class="topImage" src="https://zhj.wellness.hangseng.com/images/miniprogram/images/index/silver-bg@3x.png"/>
           <view class="topTexts">
-            <image src="https://wellness.hangseng.com/images/miniprogram/images/index/silver@3x.png"/>
+            <image src="https://zhj.wellness.hangseng.com/images/miniprogram/images/index/silver@3x.png"/>
             <view class="topTextsName">白银会员</view>
           </view>
         </view>
         <view class="imageAllText" wx:if="{{levelNum !== 1}}">
-          <image  class="topImage" src="https://wellness.hangseng.com/images/miniprogram/images/index/gold-bg@3x.png"/>
+          <image  class="topImage" src="https://zhj.wellness.hangseng.com/images/miniprogram/images/index/gold-bg@3x.png"/>
           <view class="topTexts">
-            <image src="https://wellness.hangseng.com/images/miniprogram/images/index/qingtong-2-copy-5@3x.png"/>
+            <image src="https://zhj.wellness.hangseng.com/images/miniprogram/images/index/qingtong-2-copy-5@3x.png"/>
             <view class="topTextsName">金会员</view>
           </view>
         </view>
@@ -29,5 +29,5 @@
     </view>
 </view>
 <view wx:if='{{show}}' class="bottomClose"  bindtap="closeModal">
-    <image src="https://wellness.hangseng.com/images/miniprogram/images/index/group-4@3x.png" />
+    <image src="https://zhj.wellness.hangseng.com/images/miniprogram/images/index/group-4@3x.png" />
 </view>

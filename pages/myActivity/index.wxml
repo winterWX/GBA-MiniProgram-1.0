@@ -17,7 +17,7 @@
 </view>
 <view class="empty-box" wx:if="{{activityList.length === 0 && loadingFinish}}">
 	<view class="content-box">
-		<image class="icon" src="https://wellness.hangseng.com/images/miniprogram/images/pagePng/search-result.png"></image>
+		<image class="icon" src="https://zhj.wellness.hangseng.com/images/miniprogram/images/pagePng/search-result.png"></image>
 		<view class="no-data">暂无活动</view>
 	</view>
 	<button class="my-activity-btn" catchtap="navigateList">去逛逛</button>

@@ -14,7 +14,7 @@
                 <image src='{{baseUrl + "/images/healthInfo/icon-filter@2x.png"}}'></image>
             </view>
         </view>
-        <view class="topTipBlock" wx:if="{{topTipShow}}">
+        <view class="topTipBlock" wx:if="{{topTipShow && isLoginStatus == 3}}">
             <view class="topSan"></view>
             <view class="topTip">
                 <view class="topTipTiele">设定你喜爱的话题。</view>

@@ -6,14 +6,14 @@
 	</view>
 	<view class="step-echart-box">
 		<view class="time-slot">
-			<image src="https://wellness.hangseng.com/images/miniprogram/images/back2.png" catchtap="preClick"></image>
+			<image src="https://zhj.wellness.hangseng.com/images/miniprogram/images/back2.png" catchtap="preClick"></image>
 			<view wx:if="{{ currentTabId !== 'day' }}" class="time-display">
 				{{ preDisplayDate }} - {{ nextDisplayDate }}
 			</view>
 			<view wx:if="{{ currentTabId === 'day' }}" class="time-display">
 				{{ currentDate === initDate ? '今日' : currentDate}}
 			</view>
-			<image wx:if="{{clickNum !==0}}" src="https://wellness.hangseng.com/images/miniprogram/images/back3.png" catchtap="nextClick"></image>
+			<image wx:if="{{clickNum !==0}}" src="https://zhj.wellness.hangseng.com/images/miniprogram/images/back3.png" catchtap="nextClick"></image>
 		</view>
 		<view wx:if="{{!showSelectedDate}}" class="step-num-box">
 			<view>

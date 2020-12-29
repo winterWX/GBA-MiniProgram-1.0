@@ -16,7 +16,7 @@
 </view>
 <view class="empty-box" wx:if="{{activityList.length === 0 && loadingFinish}}">
 	<view>
-		<image class="icon" src="https://wellness.hangseng.com/images/miniprogram/images/pagePng/search-result.png"></image>
+		<image class="icon" src="https://zhj.wellness.hangseng.com/images/miniprogram/images/pagePng/search-result.png"></image>
 		<view class="no-data">暂无数据</view>
 	</view>
 </view>

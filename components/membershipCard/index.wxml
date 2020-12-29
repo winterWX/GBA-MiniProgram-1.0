@@ -3,10 +3,10 @@
          <swiper class="swiperItem" duration="{{duration}}"  bindchange="cardChange" current="{{currentNum}}">
             <swiper-item class="{{fristCaredShow ? 'afterBalck' :''}} {{secondeCardShow ? 'secondeCardShow1' : ''}}">
                   <view class="itemImage">
-                        <image src="https://wellness.hangseng.com/images/miniprogram/images/silver/bg-bronze@3x.png" />
+                        <image src="https://zhj.wellness.hangseng.com/images/miniprogram/images/silver/bg-bronze@3x.png" />
                         <view  class="imageTopText">
                            <view class="imageTopTextLeft">
-                              <image  src="https://wellness.hangseng.com/images/miniprogram/images/silver/bronze@3x.png"/>
+                              <image  src="https://zhj.wellness.hangseng.com/images/miniprogram/images/silver/bronze@3x.png"/>
                               <view   class="imageRihtText">铜会员</view>
                            </view>
                            <view class="imageTopTextRight" bindtap="upgradeCard" data-card="stopeClick">立即升级</view>
@@ -19,17 +19,17 @@
             </swiper-item>
             <swiper-item class="{{fristCaredShow ? 'aboubtBalck' :''}} {{secondeCardShow ? 'secondeCardShow2' : ''}} {{threeCardShow ? 'lastCareds1' : ''}}">
                <view class="itemImage" data-id="image2">
-                     <image src="https://wellness.hangseng.com/images/miniprogram/images/silver/silver-bg@3x.png" />
+                     <image src="https://zhj.wellness.hangseng.com/images/miniprogram/images/silver/silver-bg@3x.png" />
                      <view  class="imageTopText">
                         <view class="imageTopTextLeft">
-                           <image  src="https://wellness.hangseng.com/images/miniprogram/images/silver/silver@3x.png"/>
+                           <image  src="https://zhj.wellness.hangseng.com/images/miniprogram/images/silver/silver@3x.png"/>
                            <view   class="imageRihtText">银会员</view>
                         </view>
                         <view class="imageTopTextRight"  bindtap="upgradeCard" data-card="image2">立即升级</view>
                      </view>
                      <view class="silver-bgText"  wx:if="{{activeData.level === 2}}">会员级别于{{levelExpiryTime}}到期</view>
                      <view class="silver-bgText"  wx:if="{{activeData.level === 4}}">会籍永久有效</view>
-                     <view class="silverBgImge" wx:if="{{activeData.level === 1}}"><image class="silver-bgImge" src="https://wellness.hangseng.com/images/miniprogram/images/silver/newImage/silver-lock@3x.png"/></view>
+                     <view class="silverBgImge" wx:if="{{activeData.level === 1}}"><image class="silver-bgImge" src="https://zhj.wellness.hangseng.com/images/miniprogram/images/silver/newImage/silver-lock@3x.png"/></view>
                      <view class="imageBottom">
                         <view class="imageBottom1" wx:if="{{activeData.level === 2 || activeData.level === 4}}">积分{{activeData.integral}}/{{activeData.tierInfo.nextLevelIntegral}}升级</view>
                         <view class="imageBottom1" wx:if="{{activeData.level === 1}}">达{{infoLevelObj.nextLevelIntegral}}积分或使用恒生尊享码即升级银会员</view>
@@ -38,15 +38,15 @@
             </swiper-item>
             <swiper-item class="{{secondeCardShow ? 'secondeCardShow3' : ''}} {{threeCardShow ? 'lastCareds2' : ''}}">
                <view class="itemImage" data-id="image3">
-                     <image src="https://wellness.hangseng.com/images/miniprogram/images/silver/gold-bg@3x.png" />
+                     <image src="https://zhj.wellness.hangseng.com/images/miniprogram/images/silver/gold-bg@3x.png" />
                      <view  class="imageTopText3">
                         <view class="imageTopTextLeft3">
-                           <image  src="https://wellness.hangseng.com/images/miniprogram/images/silver/qingtong-2-copy-5@3x.png"/>
+                           <image  src="https://zhj.wellness.hangseng.com/images/miniprogram/images/silver/qingtong-2-copy-5@3x.png"/>
                            <view class="imageRihtText3">金会员</view>
                         </view>
                         <view class="imageTopTextRight3" bindtap="upgradeCard" data-card="image3">立即升级</view>
                      </view>
-                     <view class="silverBgImgen silverBgImgen13" wx:if="{{activeData.level === 1 || activeData.level === 2}}"><image  class="silver-bgImgen"  src="https://wellness.hangseng.com/images/miniprogram/images/silver/newImage/silver-lock@3x.png"/></view>
+                     <view class="silverBgImgen silverBgImgen13" wx:if="{{activeData.level === 1 || activeData.level === 2}}"><image  class="silver-bgImgen"  src="https://zhj.wellness.hangseng.com/images/miniprogram/images/silver/newImage/silver-lock@3x.png"/></view>
                      <view class="imageBottom3">
                         <view class="imageBottom13 imageBottoFu" wx:if="{{activeData.level === 1 || activeData.level === 2}}">达{{infoLevelObj.nextLevelIntegral}}积分或使用恒生尊享码即升级金会员</view>
                      </view>
@@ -58,10 +58,10 @@
          <swiper class="swiperItem {{levelSecondeFour ? 'swiperItemSevlier' :''}}"  duration="{{duration}}"  bindchange="cardChangeSeconde">
                <swiper-item class="{{levelFive ? 'levelFristFive' :''}}">
                   <view class="itemImage">
-                        <image src="https://wellness.hangseng.com/images/miniprogram/images/silver/silver-bg@3x.png" />
+                        <image src="https://zhj.wellness.hangseng.com/images/miniprogram/images/silver/silver-bg@3x.png" />
                         <view  class="imageTopText">
                            <view class="imageTopTextLeft">
-                              <image  src="https://wellness.hangseng.com/images/miniprogram/images/silver/silver@3x.png"/>
+                              <image  src="https://zhj.wellness.hangseng.com/images/miniprogram/images/silver/silver@3x.png"/>
                               <view   class="imageRihtText">银会员</view>
                            </view>
                            <view class="imageTopTextRight" bindtap="upgradeCard" data-card="image2">立即升级</view>
@@ -76,15 +76,15 @@
                </swiper-item>
                <swiper-item  class="{{levelSecondeFour ? 'swiperItemSeconde' :''}} {{levelFive ? 'levelSecomdeFive' :''}}">
                   <view class="itemImage" data-id="image3">
-                  <image src="https://wellness.hangseng.com/images/miniprogram/images/silver/gold-bg@3x.png" />
+                  <image src="https://zhj.wellness.hangseng.com/images/miniprogram/images/silver/gold-bg@3x.png" />
                   <view  class="imageTopText3">
                      <view class="imageTopTextLeft3">
-                        <image  src="https://wellness.hangseng.com/images/miniprogram/images/silver/qingtong-2-copy-5@3x.png"/>
+                        <image  src="https://zhj.wellness.hangseng.com/images/miniprogram/images/silver/qingtong-2-copy-5@3x.png"/>
                         <view class="imageRihtText3">金会员</view>
                      </view>
                      <view class="imageTopTextRight3" bindtap="upgradeCard" data-card="image3">立即升级</view>
                   </view>
-                  <view class="silverBgImgen silverBgImgen13" wx:if="{{activeData.level === 1 || activeData.level === 2 || activeData.level === 4}}"><image  class="silver-bgImgen" src="https://wellness.hangseng.com/images/miniprogram/images/silver/newImage/silver-lock@3x.png"/></view>
+                  <view class="silverBgImgen silverBgImgen13" wx:if="{{activeData.level === 1 || activeData.level === 2 || activeData.level === 4}}"><image  class="silver-bgImgen" src="https://zhj.wellness.hangseng.com/images/miniprogram/images/silver/newImage/silver-lock@3x.png"/></view>
                   <view class="imageBottom3">
                      <view class="imageBottom13 imageBottoFu" wx:if="{{activeData.level === 1 || activeData.level === 2 || activeData.level === 4}}">达{{infoLevelObj.nextLevelIntegral}}积分或使用恒生尊享码即升级金会员</view>
                   </view>
@@ -94,10 +94,10 @@
       </view>
       <view class="topLeftBlock topPaddingLeft"  style="width:{{windowWidth}};" wx:if="{{activeData.level === 3 || activeData.level === 5}}">
          <view class="itemImage swiperItem" data-id="image3">
-               <image src="https://wellness.hangseng.com/images/miniprogram/images/silver/gold-bg@3x.png" />
+               <image src="https://zhj.wellness.hangseng.com/images/miniprogram/images/silver/gold-bg@3x.png" />
                <view  class="imageTopText3">
                   <view class="imageTopTextLeft3">
-                     <image  src="https://wellness.hangseng.com/images/miniprogram/images/silver/qingtong-2-copy-5@3x.png"/>
+                     <image  src="https://zhj.wellness.hangseng.com/images/miniprogram/images/silver/qingtong-2-copy-5@3x.png"/>
                      <view class="imageRihtText3">金会员</view>
                   </view>
                   <view class="imageTopTextRight3" bindtap="upgradeCard" data-card="image3">会员续期</view>
@@ -118,7 +118,7 @@
             <view class="seliverTextLeftBottom">折扣券、现金券</view>
          </view>
          <view class="seliverTextImge">
-            <image src="https://wellness.hangseng.com/images/miniprogram/images/silver/group-19@3x.png" />
+            <image src="https://zhj.wellness.hangseng.com/images/miniprogram/images/silver/group-19@3x.png" />
          </view>
       </view>
       <view class="seliverBlockRight">
@@ -127,7 +127,7 @@
             <view class="seliverTextRightBottom" >积分{{activeData.integralRemainDays}}天后过期</view>
          </view>
          <view class="seliverTextImge">
-            <image src="https://wellness.hangseng.com/images/miniprogram/images/silver/group-3@3x.png"/>
+            <image src="https://zhj.wellness.hangseng.com/images/miniprogram/images/silver/group-3@3x.png"/>
          </view>
       </view>
 </view>

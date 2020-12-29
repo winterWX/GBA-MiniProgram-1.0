@@ -1,4 +1,4 @@
-let imagesUrl = 'https://wellness.hangseng.com/images/miniprogram';
+let imagesUrl = 'https://zhj.wellness.hangseng.com/images/miniprogram';
 App({
   onLaunch: function () {
     // 展示本地存储能力
@@ -15,8 +15,8 @@ App({
       phoneNumber: ''
     },
     runData: null,
-    baseUrl:'https://wellness.hangseng.com',
-    imagesUrl: 'https://wellness.hangseng.com/images/miniprogram',
+    baseUrl:'https://zhj.wellness.hangseng.com',
+    imagesUrl: 'https://zhj.wellness.hangseng.com/images/miniprogram',
     token: '',
     phoneNumber: '',
     isLogin : 0,  //未登录

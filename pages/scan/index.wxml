@@ -5,11 +5,11 @@
       <cover-view class="title">
         请职员为你出示签到二维码
       </cover-view>
-      <cover-image class='cover-corner cover-left-top' src='https://wellness.hangseng.com/images/miniprogram/images/meides/lt.png'></cover-image>
-      <cover-image class='cover-corner cover-right-top' src='https://wellness.hangseng.com/images/miniprogram/images/meides/rt.png'></cover-image>
-      <cover-image class='cover-corner cover-left-bottom' src='https://wellness.hangseng.com/images/miniprogram/images/meides/lb.png'></cover-image>
-      <cover-image class='cover-corner cover-right-bottom' src='https://wellness.hangseng.com/images/miniprogram/images/meides/rb.png'></cover-image>
-      <cover-image class='scan-animation' animation="{{animation}}" src="https://wellness.hangseng.com/images/miniprogram/images/meides/rectangle-4.png"></cover-image>
+      <cover-image class='cover-corner cover-left-top' src='https://zhj.wellness.hangseng.com/images/miniprogram/images/meides/lt.png'></cover-image>
+      <cover-image class='cover-corner cover-right-top' src='https://zhj.wellness.hangseng.com/images/miniprogram/images/meides/rt.png'></cover-image>
+      <cover-image class='cover-corner cover-left-bottom' src='https://zhj.wellness.hangseng.com/images/miniprogram/images/meides/lb.png'></cover-image>
+      <cover-image class='cover-corner cover-right-bottom' src='https://zhj.wellness.hangseng.com/images/miniprogram/images/meides/rb.png'></cover-image>
+      <cover-image class='scan-animation' animation="{{animation}}" src="https://zhj.wellness.hangseng.com/images/miniprogram/images/meides/rectangle-4.png"></cover-image>
       <cover-view class="tip" scroll-top="0">放入框内，自动扫描。</cover-view>
     </camera>
     <!-- 这里可以处理其他内容 -->
