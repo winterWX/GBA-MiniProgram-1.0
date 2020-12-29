@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "integralAmation": "../../components/integralAmation/index"
+  },
+  "navigationBarTitleText": "活动详情"
+}

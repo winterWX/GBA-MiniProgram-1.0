@@ -1,0 +1,24 @@
+<view scroll-y wx:if="{{activityList.length > 0}}" class="container">
+	<view wx:for="{{activityList}}" wx:for-item="activity" wx:key="id" class="activity-box">
+		<image class="img" src="{{activity.coverImageLocation}}" bindtap="navigatorDetail" data-id="{{activity.id}}" data-title="{{activity.title}}" data-type="{{activity.type}}"></image>
+		<view class="activity-content" bindtap="navigatorDetail" data-id="{{activity.id}}" data-title="{{activity.title}}" data-type="{{activity.type}}">
+			<text class="title">{{activity.title}}</text>
+		</view>
+		<view class="activity-desc" bindtap="navigatorDetail" data-id="{{activity.id}}" data-title="{{activity.title}}" data-type="{{activity.type}}">
+			<text>{{activity.description}}</text>
+		</view>
+		<view class="remain-days" wx:if="{{activity.status === 2}}">
+				<image class="time-icon" src="{{ baseUrl  + '/images/challenge/active-left-time.png'}}"></image>
+				<text>剩余{{activity.remainDays}}天</text>
+			</view>
+	</view>
+	<view class="past-activity">
+		<navigator hover-class="none" url="../pastActivity/index"><text>往期挑战</text></navigator>
+	</view>
+</view>
+<view class="empty-box" wx:if="{{activityList.length === 0 && loadingFinish}}">
+	<view>
+		<image class="icon" src="{{baseUrl + '/images/pagePng/search-result.png'}}"></image>
+		<view class="no-data">暂无活动</view>
+	</view>
+</view>

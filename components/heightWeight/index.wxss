@@ -1,0 +1,55 @@
+page{
+  background-color: #ffffff;
+}
+.content-main{
+   /* padding: 30rpx; */
+   height: 900rpx;
+}
+.blackTop{
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  margin-bottom: 126rpx;
+}
+.blackTop image{
+  width: 36rpx;
+  height: 36rpx;
+} 
+.blackTop .blackText{
+  color: rgb(51,51,51);
+  font-size: 36rpx;
+  margin-left: 22rpx; 
+} 
+.bottomBtn{
+  margin-top: 50rpx;
+}
+.blackInput{
+  margin-bottom: 18rpx;
+}
+.blackInputText{
+  margin-bottom: 18rpx;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  font-size: 32rpx;
+}
+.textCode{
+  color: rgb(146,146,146);
+}
+.blackView-input{
+  height: 48rpx;
+  margin-bottom: 26rpx;
+  color: rgb(51,51,51);
+}
+.lineBottomSty{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2rpx;
+  background-color: rgba(0,0,0, 0.5);
+  margin-bottom: 60rpx;
+}
+.van-button--large{
+  background-color: #00a865 !important;
+  border: 1px solid #00a865 !important;
+}

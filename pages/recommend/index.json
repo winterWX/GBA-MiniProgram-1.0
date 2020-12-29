@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+      "van-button": "vant-weapp/button/index",
+      "share-box": "/components/shareBox/index"
+  },
+  "enablePullDownRefresh": true,
+  "navigationBarTitleText": "推荐有礼",
+  "navigationBarTextStyle": "black"
+}

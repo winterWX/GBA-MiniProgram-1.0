@@ -1,0 +1,51 @@
+<view class="container">
+	<view class="time-dimension">
+		<view class="time-item" wx:for="{{tabs}}" wx:key="id" data-props="{{item.id}}" catchtap="changTab">
+			<text class="{{currentTabId === item.id ? 'active' : ''}}">{{item.name}}</text>
+		</view>
+	</view>
+	<view class="step-echart-box">
+		<view class="time-slot">
+			<image src="https://wellness.hangseng.com/images/miniprogram/images/back2.png" catchtap="preClick"></image>
+			<view wx:if="{{ currentTabId !== 'day' }}" class="time-display">
+				{{ preDisplayDate }} - {{ nextDisplayDate }}
+			</view>
+			<view wx:if="{{ currentTabId === 'day' }}" class="time-display">
+				{{ currentDate === initDate ? '今日' : currentDate}}
+			</view>
+			<image class="{{clickNum===0 ? 'hidden' : ''}}" src="https://wellness.hangseng.com/images/miniprogram/images/back3.png" catchtap="nextClick"></image>
+		</view>
+		<view wx:if="{{!showSelectedDate}}" class="step-num-box">
+			<view>
+				<text class="step-num">{{ stepData }}</text>
+				<text class="step">步</text>
+			</view>
+			<view class="step-tip">平均步数</view>
+		</view>
+		<view wx:if="{{showSelectedDate}}" class="step-num-box">
+			<view>
+				<text class="step-num">{{ selectedDateNum }}</text>
+				<text class="step">步</text>
+			</view>
+			<view class="step-tip">{{selectedDate}}总步数</view>
+		</view>
+		<view class="echart-box" style="position: relative;">
+			<view scroll-x hidden="{{noData}}" class="container">
+				<ec-canvas id="mychart-dom-line" canvas-id="mychart-line" ec="{{ ec }}" force-use-old-canvas="true"></ec-canvas>
+			</view>
+			<view wx:if="{{noData}}" class="noData">
+				暂无数据
+			</view>
+		</view>
+	</view>
+	<view class="history-step" catchtap="toHistoryStep">
+		<text class="label">历史步数</text>
+		<image class="icon" src="https://wellness.hangseng.com/images/miniprogram/images/back3.png" ></image>
+	</view>
+	<view class="step-description">
+		<view class="desc-title">关于步行数据</view>
+		<view class="desc-content">
+			步数指你一天中走了多少步。所有产生步数的活动，如走路、跑步、上下楼梯等活动都会被计算在内。
+		</view>
+	</view>
+</view>

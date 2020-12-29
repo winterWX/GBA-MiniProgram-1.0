@@ -1,0 +1,15 @@
+<viwe class="content-main">
+    <viwe class="blackTop">
+        <image src='https://wellness.hangseng.com/images/miniprogram/images/healthInfo/close@2x.png'  bindtap="closeBalck"></image>
+        <viwe class="blackText">{{blockForData.titleTop}}</viwe>
+    </viwe>
+    <viwe class="blackInput">
+        <viwe class="blackInputText">{{blockForData.blockText}}<text class="textCode">{{blockForData.blockTextAfter}}</text></viwe>
+        <input  type="text" value="{{numData}}" focus='{true}' class="blackView-input" bindinput="inputNum" />
+    </viwe>
+    <viwe class="lineBottomSty"></viwe>
+    <viwe class="bottomBtn">
+       <van-button  type="primary" size="large" bindtap="saveNum" disabled="{{valData}}">保存</van-button>
+    </viwe>
+</viwe>
+ 

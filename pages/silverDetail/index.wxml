@@ -1,0 +1,663 @@
+<view>
+    <membership-card  activeData ="{{activeData}}" infoLevel ="{{infoLevel}}" bind:parentLevel="parentCallBack" />
+    <view wx:if="{{activeData.level === 1 && LockFlg}}">
+        <view class="integralAct-main">
+            <view class="integralActTitle">{{couponTypeText}}积分兑换</view>
+            <view class="progressSecore">
+                <view  class="itemBlock" wx:for="{{activeData.mileStones}}" wx:key="id" style="width:{{secoreNun}}%;">
+                    <view class="rab-item">{{item.targetIntegral}}</view>
+                    <view class="rab-item1"><view class="rabie"></view></view>
+                </view>
+            </view>
+            <view class="progressBlock">
+                <view class="progressBlockPosee">
+                    <view class="progressBlockBlue" style="width:{{bluPosse}}%;"></view>
+                </view>
+            </view>
+            <view class="progressCark">
+                <view wx:for="{{activeData.mileStones}}" wx:key="id" class="blockTextTop" style="width:{{secoreNun}}%;">
+                    <view><image src="{{baseUrl + '/images/silver/group-39@3x.png' }}" /></view> 
+                    <view class="blockText">
+                        <view class="minText"><view class="minTextAfter">{{item.couponName}}</view></view>
+                        <view class="bottomTextTop" wx:if="{{item.received === 1}}" >已领取</view>
+                        <view class="bottomTextTop textReck" wx:if="{{item.received === 2}}" bindtap="receivedFun" data-index="{{index}}">领取</view>
+                        <view class="bottomTextTop" wx:if="{{item.received === 3}}" >未达成</view>
+                    </view>
+                </view>
+            </view>
+            <view class="container">
+                    <view class="page-body">
+                        <view class="page-section page-section-spacing swiper">
+                        <swiper indicator-dots="{{indicatorDots}}"
+                            autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-color="{{indicatorColor}}" indicator-active-color="{{indicatorActive}}">
+                            <swiper-item>
+                                <view class="progressBlockImage">
+                                    <image src="{{baseUrl + '/images/silver/newImage/group-12@3x.png'}}"/>
+                                    <view class="progressBlockText">
+                                        <image src="{{baseUrl+'/images/silver/newImage/group-2@t3x.png'}}"/>
+                                        <view class="progressBlockText1">现金券积分兑换 唯尊享码升级会员专享</view>
+                                        <view class="progressBlockText2">立即查看</view>
+                                    </view>
+                                </view>
+                            </swiper-item>
+                            <swiper-item>
+                                <view class="progressBlockImage">
+                                    <image src="{{baseUrl+'/images/otherCarde/bg-x-2@t3x.png'}}"/>
+                                    <view class="progressBlockText glodBlock">
+                                        <view class="progressBlockText20">银会员X2积分升级攻略</view>
+                                        <view class="progressBlockText30">立即查看</view>
+                                    </view>
+                                </view>
+                            </swiper-item>
+                            <swiper-item>
+                                <view class="progressBlockImage">
+                                    <image src="{{baseUrl+'/images/silver/newImage/bg-x-5@3x.png'}}"/>
+                                    <view class="progressBlockText glodBlock">
+                                        <view class="progressBlockTextone">黃金会员X5积分升级攻略</view>
+                                        <view class="progressBlockText3">立即查看</view>
+                                    </view>
+                                </view>
+                            </swiper-item>
+                        </swiper>
+                        </view>
+                    </view>
+            </view>
+        </view>
+        <view class="bottomTextSeconde bottomTextSecondeLeva2">
+            <view class="bottomAfter">
+                <view class="bottomTextSecondeBlock">
+                    <view class="bottomTextSecondeBlock1">尊享码升级会员独家礼遇</view>
+                    <view class="bottomTextSecondeBlock2">健康礼品、现金券积分兑换、免费视像会诊体验</view>
+                </view>
+                <image src="{{baseUrl+'/images/silver/img@3x.png'}}"/>
+            </view>
+        </view>
+    </view>
+    <view wx:if="{{activeData.level === 2 && LockFlg}}">
+        <view class="vipBlock" wx:if="{{activeData.level === 5}}">
+            <view class="vipTopBlock">
+                <view>我的尊享专区</view>
+                <view class="creRight"></view>
+            </view>
+            <!-- <view class="vipBottomBlock" >vvip尊享升级，权益更多</view> -->
+        </view>
+        <view class="integralAct-main">
+            <view class="integralActTitle">{{couponTypeText}}积分兑换</view>
+            <view class="progressSecore">
+                <view  class="itemBlock" wx:for="{{activeData.mileStones}}" wx:key="id" style="width:{{secoreNun}}%;">
+                    <view class="rab-item">{{item.targetIntegral}}</view>
+                    <view class="rab-item1"><view class="rabie"></view></view>
+                </view>
+            </view>
+            <view class="progressBlock">
+                <view class="progressBlockPosee">
+                    <view class="progressBlockBlue" style="width:{{bluPosse}}%;"></view>
+                </view>
+            </view>
+            <view class="progressCark">
+                <view wx:for="{{activeData.mileStones}}" wx:key="id" class="blockTextTop" style="width:{{secoreNun}}%;">
+                    <image src="{{baseUrl+'/images/silver/group-39@3x.png'}}" /> 
+                    <view class="blockText">
+                        <view class="minText">
+                            <view class="minTextAfter">{{item.couponName}}</view>
+                        </view>
+                        <view class="bottomTextTop" wx:if="{{item.received === 1}}">已领取</view>
+                        <view class="bottomTextTop textReck" wx:if="{{item.received === 2}}" bindtap="receivedFun" data-index="{{index}}">领取</view>
+                        <view class="bottomTextTop" wx:if="{{item.received === 3}}">未达成</view>
+                    </view>
+                </view>
+            </view>
+            <view class="container">
+                    <view class="page-body">
+                        <view class="page-section page-section-spacing swiper">
+                        <swiper indicator-dots="{{indicatorDots}}"
+                            autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-color="{{indicatorColor}}" indicator-active-color="{{indicatorActive}}">
+                            <swiper-item>
+                                <view class="progressBlockImage">
+                                    <image src="{{baseUrl+'/images/silver/newImage/group-12@3x.png'}}"/>
+                                    <view class="progressBlockText">
+                                        <image src="{{baseUrl+'/images/silver/newImage/group-2@t3x.png'}}"/>
+                                        <view class="progressBlockText1">现金券积分兑换唯尊享码升级会员专享</view>
+                                        <view class="progressBlockText2">立即查看</view>
+                                    </view>
+                                </view>
+                            </swiper-item>
+                            <swiper-item>
+                                <view class="progressBlockImage">
+                                    <image src="{{baseUrl+'/images/silver/newImage/bg-x-5@3x.png'}}"/>
+                                    <view class="progressBlockText glodBlock">
+                                        <view class="progressBlockTextone">黃金会员X5积分升级攻略</view>
+                                        <view class="progressBlockText3">立即查看</view>
+                                    </view>
+                                </view>
+                            </swiper-item>
+                        </swiper>
+                        </view>
+                    </view>
+            </view>
+        </view>
+        <view class="bouttomImage">
+            <view class="bouttomTitlr">可享限时优惠</view>
+                <view class="insrusBlock">
+                <view class="insrusBlock1">
+                    <image src="{{baseUrl + '/images/silver/newImage/group-2@3gx.png'}}"/>
+                    <view class="insrusImage1">保险申请礼遇</view>
+                </view>
+                <view class="insrusBlock12">
+                    <image src="{{baseUrl + '/images/silver/newImage/group@3gx.png'}}"/>
+                    <view class="insrusImageText1">10个月免费癌症</view>
+                    <view class="insrusImageText2" style="left:32rpx;">保障</view>
+                </view>
+                </view>
+                <view class="bottomBlockGold">
+                    <view class="bottomText">
+                    <view class="bottomText1">医健服务优惠</view>
+                    <view class="bottomText2">由健康伙伴提供</view>
+                    </view>
+                    <image src="{{baseUrl + '/images/silver/img-hospital@3x.png'}}"/>
+                </view>
+        </view>
+        <view class="bottomTextSeconde bottomTextSecondeLeva2">
+            <view class="bottomAfter">
+                <view class="bottomTextSecondeBlock">
+                    <view class="bottomTextSecondeBlock1">尊享码升级会员独家礼遇</view>
+                    <view class="bottomTextSecondeBlock2">健康礼品、现金券积分兑换、免费视像会诊体验</view>
+                </view>
+                <image src="{{baseUrl + '/images/silver/img@3x.png'}}"/>
+            </view>
+        </view>
+    </view>
+    <view wx:if="{{activeData.level === 3 && LockFlg}}">
+        <view class="integralAct-main integralAct-main2">
+            <view class="integralActTitle">{{couponTypeText}}积分兑换</view>
+            <view class="progressSecore">
+                <view  class="itemBlock" wx:for="{{activeData.mileStones}}" wx:key="id" style="width:{{secoreNun}}%;">
+                    <view class="rab-item">{{item.targetIntegral}}</view>
+                    <view class="rab-item1"><view class="rabie"></view></view>
+                </view>
+            </view>
+            <view class="progressBlock">
+                <view class="progressBlockPosee">
+                    <view class="progressBlockBlue" style="width:{{bluPosse}}%;"></view>
+                </view>
+            </view>
+            <view class="progressCark">
+                <view wx:for="{{activeData.mileStones}}" wx:key="id" class="blockTextTop" style="width:{{secoreNun}}%;">
+                    <image src="{{baseUrl + '/images/silver/group-39@3x.png'}}" /> 
+                    <view class="blockText">
+                        <view class="minText"><view class="minTextAfter">{{item.couponName}}</view></view>
+                        <view class="bottomTextTop" wx:if="{{item.received === 1}}">已领取</view>
+                        <view class="bottomTextTop textReck" wx:if="{{item.received === 2}}" bindtap="receivedFun" data-index="{{index}}">领取</view>
+                        <view class="bottomTextTop" wx:if="{{item.received === 3}}">未达成</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="container container-main">
+            <view class="page-body page-body-main">
+                    <view class="page-section page-section-spacing swiper">
+                    <swiper indicator-dots="{{indicatorDots}}"
+                        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-color="{{indicatorColor}}" indicator-active-color="{{indicatorActive}}">
+                        <swiper-item>
+                            <view class="progressBlockImage">
+                                <image src="{{baseUrl+'/images/silver/newImage/group-12@3x.png'}}"/>
+                                <view class="progressBlockText">
+                                    <image src="{{baseUrl + '/images/silver/newImage/group-2@t3x.png'}}"/>
+                                    <view class="progressBlockText1">现金券积分兑换唯尊享码升级会员专享</view>
+                                    <view class="progressBlockText2">立即查看</view>
+                                </view>
+                            </view>
+                        </swiper-item>
+                        <!-- <swiper-item>
+                            <view class="progressBlockImage">
+                                <image src="{{baseUrl + '/images/otherCarde/bg-x-2@t3x.png'}}"/>
+                                <view class="progressBlockText glodBlock">
+                                    <view class="progressBlockText20">银会员X2积分升级攻略</view>
+                                    <view class="progressBlockText30">立即查看</view>
+                                </view>
+                            </view>
+                        </swiper-item>
+                        <swiper-item>
+                            <view class="progressBlockImage">
+                                <image src="{{baseUrl + '/images/silver/newImage/bg-x-5@3x.png'}}"/>
+                                <view class="progressBlockText glodBlock">
+                                    <view class="progressBlockText20">黃金会员X5积分升级攻略</view>
+                                    <view class="progressBlockText3" >立即查看</view>
+                                </view>
+                            </view>
+                        </swiper-item> -->
+                    </swiper>
+                    </view>
+                </view>
+        </view>
+        <view class="bouttomImage">
+            <view class="bouttomTitlr">可享限时优惠</view>
+            <view class="insrusBlock">
+              <view class="insrusBlock1">
+                <image src="{{baseUrl + '/images/silver/newImage/group-2@3gx.png'}}"/>
+                <view class="insrusImage1">保险申请礼遇</view>
+              </view>
+              <view class="insrusBlock12">
+                <image src="{{baseUrl + '/images/silver/newImage/group@3gx.png'}}"/>
+                <view class="insrusImageText1">10个月免费癌症</view>
+                <view class="insrusImageText2" style="left:32rpx;">保障</view>
+              </view>
+            </view>
+            <view class="bottomBlockGold">
+                <view class="bottomText">
+                  <view class="bottomText1">医健服务优惠</view>
+                  <view class="bottomText2">由健康伙伴提供</view>
+                </view>
+                <image src="{{baseUrl + '/images/silver/img-hospital@3x.png'}}"/>
+            </view>
+            <view class="bottomTextSeconde">
+                <view class="bottomTextSecondeBlock">
+                    <view class="bottomTextSecondeBlock1">免费网上健康讲座</view>
+                    <view class="bottomTextSecondeBlock2">由中大医院/卓健提供</view>
+                </view>
+                <image src="{{baseUrl + '/images/silver/online@3x.png'}}"/>
+            </view>
+        </view>
+        <!-- <view class="glodBottom" style="width:{{windowWidth}}rpx;">
+            <view class="glodBottomTitle">会员礼遇</view>
+            <view class="glodBottomBlock">
+                <view class="glodBottomItem glodBottomLeft">
+                     <view class="glodBottomText">
+                        <view class="glodBottomText1">积分翻倍</view>
+                        <view class="glodBottomText2">银会员2倍活动积分</view>
+                     </view>
+                     <view class="glodBottomImage"><image src='{{baseUrl + "/images/otherCarde/goldimg1.PNG"}}' /></view>
+                </view>
+                <view class="glodBottomItem">
+                     <view class="glodBottomText glodBottomPind">
+                        <view class="glodBottomText1">会员特权专享</view>
+                        <view class="glodBottomText2">银会员专享内容</view>
+                     </view>
+                     <view class="glodBottomImage"><image src='{{baseUrl + "/images/otherCarde/goldimg2.PNG"}}' /></view>
+                </view>
+            </view>
+        </view> -->
+    </view>
+    <view wx:if="{{activeData.level === 4 && LockFlg}}">
+        <view class="vipBlock">
+            <view class="vipTopBlock">
+                <view>我的尊享专区</view>
+                <view class="creRight"></view>
+            </view>
+            <!-- <view class="vipBottomBlock" >vvip尊享升级，权益更多</view> -->
+        </view>
+        <view class="integralAct-main">
+            <view class="integralActTitle">{{couponTypeText}}积分兑换</view>
+            <view class="progressSecore">
+                <view  class="itemBlock" wx:for="{{activeData.mileStones}}" wx:key="id" style="width:{{secoreNun}}%;">
+                    <view class="rab-item">{{item.targetIntegral}}</view>
+                    <view class="rab-item1"><view class="rabie"></view></view>
+                </view>
+            </view>
+            <view class="progressBlock">
+                <view class="progressBlockPosee">
+                    <view class="progressBlockBlue" style="width:{{bluPosse}}%;"></view>
+                </view>
+            </view>
+            <view class="progressCark">
+                <view wx:for="{{activeData.mileStones}}" wx:key="id" class="blockTextTop" style="width:{{secoreNun}}%;">
+                    <image src="{{baseUrl + '/images/silver/group-39@3x.png'}}" /> 
+                    <view class="blockText">
+                        <view class="minText"><view class="minTextAfter">{{item.couponName}}</view></view>
+                        <view class="bottomTextTop" wx:if="{{item.received === 1}}">已领取</view>
+                        <view class="bottomTextTop textReck" wx:if="{{item.received === 2}}" bindtap="receivedFun" data-index="{{index}}">领取</view>
+                        <view class="bottomTextTop" wx:if="{{item.received === 3}}">未达成</view>
+                    </view>
+                </view>
+            </view>
+            <view class="container">
+                    <view class="page-body">
+                        <view class="page-section page-section-spacing swiper">
+                        <swiper indicator-dots="{{indicatorDots}}"
+                            autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-color="{{indicatorColor}}" indicator-active-color="{{indicatorActive}}">
+                            <swiper-item>
+                                <view class="progressBlockImage">
+                                    <image src="{{baseUrl + '/images/silver/newImage/bg-x-5@3x.png'}}"/>
+                                    <view class="progressBlockText glodBlock">
+                                        <view class="progressBlockTextone">黃金会员X5积分升级攻略</view>
+                                        <view class="progressBlockText3" >立即查看</view>
+                                    </view>
+                                </view>
+                            </swiper-item>
+                        </swiper>
+                        </view>
+                    </view>
+            </view>
+
+        </view>
+        <view class="bouttomImage">
+            <view class="bouttomTitlr">可享限时优惠</view>
+                <view class="insrusBlock">
+                <view class="insrusBlock1">
+                    <image src="{{baseUrl + '/images/silver/newImage/group-2@3gx.png'}}"/>
+                    <view class="insrusImage1">保险申请礼遇</view>
+                </view>
+                <view class="insrusBlock12">
+                    <image src="{{baseUrl + '/images/silver/newImage/group@3gx.png'}}"/>
+                    <view class="insrusImageText1">10个月免费癌症</view>
+                    <view class="insrusImageText2" style="left:32rpx;">保障</view>
+                </view>
+                </view>
+                <view class="bottomBlockGold">
+                    <view class="bottomText">
+                    <view class="bottomText1">医健服务优惠</view>
+                    <view class="bottomText2">由健康伙伴提供</view>
+                    </view>
+                    <image src="{{baseUrl + '/images/silver/img-hospital@3x.png'}}"/>
+                </view>
+        </view>
+    </view>
+    <view wx:if="{{activeData.level === 5 && LockFlg}}">
+        <view class="vipBlock" >
+            <view class="vipTopBlock">
+                <view>我的尊享(VIP)专区</view>
+                <view class="creRight"></view>
+            </view>
+            <view class="vipBottomBlock" >恒生保险客户尊享升级，礼遇更多</view>
+        </view>
+        <view class="integralAct-main" style="height: 275rpx;">
+            <view class="integralActTitle">{{couponTypeText}}积分兑换</view>
+            <view class="progressSecore">
+                <view  class="itemBlock" wx:for="{{activeData.mileStones}}" wx:key="id" style="width:{{secoreNun}}%;">
+                    <view class="rab-item">{{item.targetIntegral}}</view>
+                    <view class="rab-item1"><view class="rabie"></view></view>
+                </view>
+            </view>
+            <view class="progressBlock">
+                <view class="progressBlockPosee">
+                    <view class="progressBlockBlue" style="width:{{bluPosse}}%;"></view>
+                </view>
+            </view>
+            <view class="progressCark">
+                <view wx:for="{{activeData.mileStones}}" wx:key="id" class="blockTextTop" style="width:{{secoreNun}}%;">
+                    <image  wx:if="{{item.received !==2}}" src="{{baseUrl + '/images/silver/group-39@3x.png'}}" /> 
+                    <image  wx:if="{{item.received === 2}}" src="{{baseUrl + '/images/silver/newImage/group@3x.png'}}" />
+                    <view class="blockText">
+                        <view class="minText"><view class="minTextAfter">{{item.couponName}}</view></view>
+                        <view class="bottomTextTop" wx:if="{{item.received === 1}}">已领取</view>
+                        <view class="bottomTextTop textReck" wx:if="{{item.received === 2}}" bindtap="receivedFun" data-index="{{index}}">领取</view>
+                        <view class="bottomTextTop" wx:if="{{item.received === 3}}">未达成</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="bouttomImage">
+            <view class="bouttomTitlr">可享限时优惠</view>
+            <view class="insrusBlock">
+              <view class="insrusBlock1">
+                <image src="{{baseUrl + '/images/silver/newImage/group-2@3gx.png'}}"/>
+                <view class="insrusImage1">保险申请礼遇</view>
+              </view>
+              <view class="insrusBlock12">
+                <image src="{{baseUrl + '/images/silver/newImage/group@3gx.png'}}"/>
+                <view class="insrusImageText1">10个月免费癌症</view>
+                <view class="insrusImageText2" style="left:32rpx;">保障</view>
+              </view>
+            </view>
+            <view class="bottomBlockGold">
+                <view class="bottomText">
+                  <view class="bottomText1">医健服务优惠</view>
+                  <view class="bottomText2">由健康伙伴提供</view>
+                </view>
+                <image src="{{baseUrl + '/images/silver/img-hospital@3x.png'}}"/>
+            </view>
+        </view>
+    </view>
+    <view  wx:if="{{silverLevel}}">
+        <view class="bouttomImage noCardShow">
+            <view class="bouttomTitlr">会员礼遇</view>
+                <view class="bottomBlockGold">
+                    <view class="bottomText">
+                    <view class="bottomText1">X2倍积分</view>
+                    <view class="bottomText2">银会员享2倍活动积分</view>
+                    </view>
+                    <image src="{{baseUrl + '/images/silver/newImage/x-2-point@3x.png'}}"/>
+                </view>
+                <!-- <view class="bottomBlockGold">
+                    <view class="bottomText">
+                    <view class="bottomText1">尊享银会员视频文章</view>
+                    <view class="bottomText2">实时获得专业权威资讯</view>
+                    </view>
+                    <image src="{{baseUrl+'/images/otherCarde/selier.PNG'}}"/>
+                </view> -->
+                <view>
+                    <view class="bouttomTitlr">银会员专享限时优惠</view>
+                    <view class="insrusBlock">
+                    <view class="insrusBlock1">
+                        <image src="{{baseUrl+'/images/silver/newImage/group-2@3gx.png'}}"/>
+                        <view class="insrusImage1">保险申请礼遇</view>
+                    </view>
+                    <view class="insrusBlock12">
+                        <image src="{{baseUrl+'/images/silver/newImage/group@3gx.png'}}"/>
+                        <view class="insrusImageText1">10个月免费癌症</view>
+                        <view class="insrusImageText2" style="left:32rpx;">保障</view>
+                    </view>
+                    </view>
+                </view>
+                    <view class="bottomBlockGold">
+                        <view class="bottomText">
+                        <view class="bottomText1">医健服务优惠</view>
+                        <view class="bottomText2">由健康伙伴提供</view>
+                        </view>
+                        <image src="{{baseUrl+'/images/silver/img-hospital@3x.png'}}"/>
+                    </view>
+        </view>
+        <!-- <view class="bouttomImage">
+            <view class="bouttomTitlr">银会员专享限时优惠</view>
+                <view class="insrusBlock">
+                <view class="insrusBlock1">
+                    <image src="{{baseUrl+'/images/silver/newImage/group-2@3gx.png'}}"/>
+                    <view class="insrusImage1">保险申请礼遇</view>
+                </view>
+                <view class="insrusBlock12">
+                    <image src="{{baseUrl+'/images/silver/newImage/group@3gx.png'}}"/>
+                    <view class="insrusImageText1">10个月免费癌症保障</view>
+                    <view class="insrusImageText2">保障</view>
+                </view>
+                </view>
+                <view class="bottomBlockGold">
+                    <view class="bottomText">
+                    <view class="bottomText1">医健服务优惠</view>
+                    <view class="bottomText2">由健康伙伴提供</view>
+                    </view>
+                    <image src="{{baseUrl+'/images/silver/img-hospital@3x.png'}}"/>
+                </view>
+        </view> -->
+        <view class="bouttomImage">
+                <view class="container">
+                    <view class="page-body">
+                        <view class="page-section page-section-spacing swiper">
+                        <swiper indicator-dots="{{indicatorDots}}"
+                            autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-color="{{indicatorColor}}" indicator-active-color="{{indicatorActive}}">
+                            <swiper-item>
+                                <view class="progressBlockImage">
+                                    <image src="{{baseUrl+'/images/silver/newImage/group-12@3x.png'}}"/>
+                                    <view class="progressBlockText">
+                                        <image src="{{baseUrl+'/images/silver/newImage/group-2@t3x.png'}}"/>
+                                        <view class="progressBlockText1">现金券积分兑换唯尊享码升级会员专享</view>
+                                        <view class="progressBlockText2">立即查看</view>
+                                    </view>
+                                </view>
+                            </swiper-item>
+                            <swiper-item>
+                                <view class="progressBlockImage">
+                                    <image src="{{baseUrl+'/images/otherCarde/bg-x-2@t3x.png'}}"/>
+                                    <view class="progressBlockText glodBlock">
+                                        <view class="progressBlockText20">银会员X2积分升级攻略</view>
+                                        <view class="progressBlockText30">立即查看</view>
+                                    </view>
+                                </view>
+                            </swiper-item>
+                            <swiper-item>
+                                <view class="progressBlockImage">
+                                    <image src="{{baseUrl+'/images/silver/newImage/bg-x-5@3x.png'}}"/>
+                                    <view class="progressBlockText glodBlock">
+                                        <view class="progressBlockTextone">黃金会员X5积分升级攻略</view>
+                                        <view class="progressBlockText3" >立即查看</view>
+                                    </view>
+                                </view>
+                            </swiper-item>
+                        </swiper>
+                        </view>
+                    </view>
+            </view>
+                <view class="bottomBlockGold">
+                    <view class="bottomText">
+                    <view class="bottomText1">尊享码升级会员独家礼遇</view>
+                    <view class="bottomText2">健康礼品、现金券积分兑换、免费视像会诊体验</view>
+                    </view>
+                    <image src="{{baseUrl+'/images/silver/img@3x.png'}}"/>
+                </view>
+        </view>
+    </view>
+    <view  wx:if="{{glodLevel}}">
+        <view class="bouttomImage noCardShow">
+            <view class="bouttomTitlr">会员礼遇</view>
+                <view class="bottomBlockGold">
+                    <view class="bottomText">
+                        <view class="bottomText1">X5倍积分</view>
+                        <view class="bottomText2">金会员享5倍会员活动积分</view>
+                    </view>
+                    <image src="{{baseUrl+'/images/silver/newImage/x-5-point@3x.png'}}"/>
+                </view>
+                <!-- <view class="bottomBlockGold">
+                    <view class="bottomText">
+                        <view class="bottomText1">畅享所有视频文章</view>
+                        <view class="bottomText2">海量专业视频文章任你挑选</view>
+                    </view>
+                    <image src="{{baseUrl+'/images/otherCarde/glogs.PNG'}}"/>
+                </view> -->
+                <view class="bouttomTitlr">金会员专享限时优惠</view>
+                <view class="insrusBlock">
+                    <view class="insrusBlock1">
+                        <image src="{{baseUrl+'/images/silver/newImage/group-2@3gx.png'}}"/>
+                        <view class="insrusImage1">保险申请礼遇</view>
+                    </view>
+                    <view class="insrusBlock12">
+                        <image src="{{baseUrl+'/images/silver/newImage/group@3gx.png'}}"/>
+                        <view class="insrusImageText1">10个月免费癌症</view>
+                        <view class="insrusImageText2" style="left:32rpx;">保障</view>
+                    </view>
+                </view>
+                <view class="bottomBlockGold">
+                    <view class="bottomText">
+                    <view class="bottomText1">医健服务优惠</view>
+                    <view class="bottomText2">由健康伙伴提供</view>
+                    </view>
+                    <image src="{{baseUrl + '/images/silver/img-hospital@3x.png'}}"/>
+                </view>
+                <view class="bottomBlockGold">
+                    <view class="bottomText">
+                    <view class="bottomText1">免费网上健康讲座</view>
+                    <view class="bottomText2">由中大医院/卓健提供</view>
+                    </view>
+                    <image src="{{baseUrl + '/images/silver/online@3x.png'}}"/>
+                </view>
+        </view>
+        <!-- <view class="bouttomImage">
+            <view class="bouttomTitlr">金会员专享限时优惠</view>
+                <view class="insrusBlock">
+                <view class="insrusBlock1">
+                    <image src="{{baseUrl+'/images/silver/newImage/group-2@3gx.png'}}"/>
+                    <view class="insrusImage1">保费折扣优惠</view>
+                </view>
+                <view class="insrusBlock12">
+                    <image src="{{baseUrl+'/images/silver/newImage/group@3gx.png'}}"/>
+                    <view class="insrusImageText1">「易安康」癌症保障</view>
+                    <view class="insrusImageText2">免保费一年保障</view>
+                </view>
+                </view>
+                <view class="bottomBlockGold">
+                    <view class="bottomText">
+                    <view class="bottomText1">医健服务优惠</view>
+                    <view class="bottomText2">中大/由中大医院/卓健提供</view>
+                    </view>
+                    <image src="{{baseUrl + '/images/silver/img-hospital@3x.png'}}"/>
+                </view>
+                <view class="bottomBlockGold">
+                    <view class="bottomText">
+                    <view class="bottomText1">在线健康论坛</view>
+                    <view class="bottomText2">卓健/中大健康论坛门票</view>
+                    </view>
+                    <image src="{{baseUrl + '/images/silver/online@3x.png'}}"/>
+                </view>
+        </view> -->
+        <view class="bouttomImage">
+                <view class="container">
+                    <view class="page-body">
+                        <view class="page-section page-section-spacing swiper">
+                        <swiper indicator-dots="{{indicatorDots}}"
+                            autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-color="{{indicatorColor}}" indicator-active-color="{{indicatorActive}}">
+                            <swiper-item>
+                                <view class="progressBlockImage">
+                                    <image src="{{baseUrl+'/images/silver/newImage/group-12@3x.png'}}"/>
+                                    <view class="progressBlockText">
+                                        <image src="{{baseUrl + '/images/silver/newImage/group-2@t3x.png'}}"/>
+                                        <view class="progressBlockText1">现金券积分兑换唯尊享码升级会员专享</view>
+                                        <view class="progressBlockText2">立即查看</view>
+                                    </view>
+                                </view>
+                            </swiper-item>
+                            <swiper-item>
+                                <view class="progressBlockImage">
+                                    <image src="{{baseUrl + '/images/otherCarde/bg-x-2@t3x.png'}}"/>
+                                    <view class="progressBlockText glodBlock">
+                                        <view class="progressBlockText20">银会员X2积分升级攻略</view>
+                                        <view class="progressBlockText30">立即查看</view>
+                                    </view>
+                                </view>
+                            </swiper-item>
+                            <swiper-item>
+                                <view class="progressBlockImage">
+                                    <image src="{{baseUrl + '/images/silver/newImage/bg-x-5@3x.png'}}"/>
+                                    <view class="progressBlockText glodBlock">
+                                        <view class="progressBlockTextone">黃金会员X5积分升级攻略</view>
+                                        <view class="progressBlockText3" >立即查看</view>
+                                    </view>
+                                </view>
+                            </swiper-item>
+                        </swiper>
+                        </view>
+                    </view>
+                </view>
+                <view class="bottomBlockGold">
+                    <view class="bottomText">
+                    <view class="bottomText1">尊享码升级会员独家礼遇</view>
+                    <view class="bottomText2">健康礼品、现金券积分兑换、免费视像会诊体验</view>
+                    </view>
+                    <image src="{{baseUrl+'/images/silver/img@3x.png'}}"/>
+                </view>
+        </view>
+    </view>
+    <view class="carkBlock" wx:if="{{showCarkBlock}}">
+       <view class="carkBlock-main">
+           <view class="carkBlock-allMain">
+                <image class="carkBlockMainImage" src="{{baseUrl+'/images/couponDetails/group@3x.png'}}" />
+                <view class="carkBlockClose"><image  bindtap="closeBolck"  src="{{baseUrl+'/images/couponDetails/coupon-pop-up@3x.png'}}" /></view>
+                <view class="carkBlockTitle">恭喜你获得以下奖励</view>
+                <view class="carkSeconde">
+                    <image class="carkBlockAfter" src="{{baseUrl+'/images/couponDetails/group-3@2x.png'}}"/>
+                    <view class="aboutBlock">
+                        <image class="tenImage"  src="{{baseUrl + '/images/couponDetails/coupon@3x.png'}}"/>
+                        <view class="leftContent">
+                            <view class="firstFlg">¥</view>
+                            <view class="firstNum">{{activeData.mileStones[indexNum].couponValue}}</view>
+                        </view>
+                        <view class="textContent">
+                            <view class="textContent1">{{activeData.mileStones[indexNum].couponName}}</view>
+                            <view class="textContent2">有效期至{{activeData.mileStones[indexNum].expiryTime}}</view>
+                        </view>
+                    </view>
+                    <view class="text4-main">
+                        <van-button type="primary" size="large" bindtap="bindEmail">查看我的优惠券</van-button>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,107 @@
+<view class="pageTopPick-main">  
+   <view  class="pageTopPick" wx:if="{{firstInitShow}}">
+         <view class='mask' wx:if="{{flag}}"></view>
+         <view class="mask-guidance1"  wx:if='{{guidance1}}'>
+            <image src="{{imagesUrl + '/images/pic-guidance.png'}}"></image>
+            <view class="picBottom">
+               <view class="picBottom-top">每日完成<view class="textShow">1万步</view>即可领取<view class="textShow">10积分</view>哦～</view>
+               <van-button class="vanBtn" bindtap="guidanceOne">知道了</van-button>
+            </view>
+         </view>
+         <view class="mask-guidance2"  wx:if='{{guidance2}}'>
+               <image src="{{imagesUrl + '/images/pic-guidance-2.png'}}"></image>
+               <view class="contutionText">
+                     <view class="picBottomText-main">
+                        <view class="picBottomText">
+                           <view class="picBottomText-top">1. 连续<view class="textShow">7天达标</view>可领取<view class="textShow">50积分</view></view>
+                        </view>
+                        <view class="picBottomText">
+                           <view class="picBottomText-top">2. 连续<view class="textShow">28天达标</view>可领取<view class="textShow">100积分</view></view>
+                        </view>
+                     </view>
+                  <van-button class="guidanceTwoBtn vanBtn" bindtap="guidanceTwo">开始记录</van-button>
+               </view>
+         </view>
+   </view>
+   <view  class="topSetting PageBackColor" style="padding-top:30rpx;">
+       <view class="imageLeft" bindtap="leftBlokShow"><image src='{{imagesUrl + "/images/icon-guideline.png"}}'></image></view>
+       <view class="imageRight" bindtap="stepRunSorce"><view>排行榜</view><image src='{{imagesUrl + "/images/icon-right-arrow-12-x-12.png"}}'></image></view>
+         <view class="{{firstInitShow ? 'firstInitShow': 'miniprogress'}}">
+            <miniprogress wx:if="{{!firstInitShow}}" stepNum="{{startStatus === true ? 0 : stepsNum.todaySteps}}" />
+            <image wx:else class="miniprogressImage"  src="../../images/group@3x.png" />
+        </view>
+        <!-- receiveStatus	领取状态(1:已领,2:未领,3:补领)  isDone	完成状态(1:完成,2:未完成) -->
+        <view class="topSetting-btn">
+            <van-button  wx:if='{{startStatus}}' class="{{startStatus ? 'topSetting-vanBtn' :''}}" bindtap="settingDataBtn">开启健康数据访问</van-button>
+            <van-button  wx:if='{{ (stepsNum.isDone === "2" || stepsNum.todaySteps === 0)  && !startStatus}}'>还差{{startStep}}步即可领10积分</van-button>
+            <van-button  wx:if='{{ stepsNum.receiveStatus === "2" && stepsNum.isDone === "1" }}' class="topSetting-vanBtn"  bindtap="integralBtn">马上领取{{stepsNum.integral}}积分奖励</van-button>
+            <van-button  wx:if='{{ stepsNum.receiveStatus === "1" && stepsNum.isDone === "1" }}'>已领取</van-button>
+        </view>   
+        <view class="topSetting-text">
+            <view class="topSett-disp"  wx:if='{{ stepsNum.isDone === "2" || stepsNum.todaySteps === 0 }}'>每日完成1万步即可领取10积分哦~</view>
+            <view class="topSett-disp"  wx:if='{{ stepsNum.receiveStatus === "2" && stepsNum.isDone === "1" }}'>恭喜你！今日的每日步数挑战已达标</view>
+            <view class="topSett-disp"  wx:if='{{ stepsNum.receiveStatus === "1" && stepsNum.isDone === "1" }}'>积分已入账，明天再接再厉！</view>
+        </view>    
+   </view>
+   <view  class="speedBlock PageBackColor" style="height:auto; box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.05);">
+      <challenge receiveStatus="{{stepsNum.receiveStatus}}" isDone="{{stepsNum.isDone}}"  bind:todayIntegral="todayIntegral" bind:yesterdayIntegral="yesterdayIntegral" id="challengeId"></challenge>
+   </view>
+   <view  class="headLeBlock PageBackColor">
+         <view class="headLeBlock-top">
+               <view  class="left-main">邀请好友一起走</view>
+               <view  class="bottom-main">成功邀请立享积分奖赏</view>
+         </view>
+         <view class="illustration3x">
+            <image src='{{imagesUrl + "/images/illustration.png"}}'></image>
+         </view>
+   </view>
+   <view  class="sendBlock PageBackColor" bindtap="healthShow">
+         <view class="sendBlockBefore">
+               <view class="sendBlock-main">
+                  <view class="sendBlock-title"> {{ everyDayData.source === 'Sensor' ? '每周平均步数' : '每日健康数据' }} </view>
+                  <view class="sendBlockBack" ></view>
+               </view>
+               <view class="sendBlock-bottom" wx:if="{{showAPPData === 2 && everyDayData.source !=='Sensor'}}">
+                  <view class="sendBlock-Balck" style="padding-left:20rpx" wx:if="{{ everyDayData.source !=='HuaWei' && everyDayData.source !== 'Huawei'}}">
+                     <view class="health-item health-itemOhter"><view class="health-num">{{everyDayData.totalTime}}</view><view class="health-text">分钟</view></view>
+                     <view class="health-bottom">总运动时间</view>
+                  </view>
+                  <view class="sendBlock-Balck" style="padding-left:20rpx">
+                     <view class="health-item"><view class="health-num">{{everyDayData.calories}}</view><view class="health-text">千卡</view></view>
+                     <view class="health-bottom">消耗</view>
+                  </view>
+                  <view class="sendBlock-Balck">
+                      <view class="health-item"><view class="health-num">{{everyDayData.distance}}</view><view class="health-text">公里</view></view>
+                      <view class="health-bottom">距离</view>
+                  </view>
+               </view>
+               <view  class="sendBlock-bottom" wx:if="{{showAPPData === 2 && everyDayData.source === 'Sensor'}}">
+                  <view class="sendBlock-Balck" style="padding-left:20rpx">
+                     <view class="health-item"><view class="health-num">{{everyDayData.todaySteps}}</view><view class="health-text">步</view></view>
+                     <view class="health-bottom">平均步数</view>
+                  </view>
+			      </view>
+               <view  class="sendBlock-bottom" wx:if="{{showAPPData === 1}}">
+                  <view class="sendBlock-Balck" style="padding-left:20rpx">
+                     <view class="health-item"><view class="health-num">{{everyDayData.todaySteps}}</view><view class="health-text">步</view></view>
+                     <view class="health-bottom">今日步数</view>
+                  </view>
+			      </view>
+		 </view>
+   </view>
+</view>
+<view class="modals modals-bottom-dialog" hidden="{{hideModal}}">
+		<view class="modals-cancel" bindtap="hideModal"></view>
+		<view class="bottom-dialog-body bottom-pos" animation="{{animationData}}">
+			<view class='msg-box-image' bindtap="closePage">
+				<image src="{{imagesUrl + '/images/mine/close@3x.png'}}"></image>
+			</view>
+			<view class='msg-box .msg-box2'>
+            <view class="textShowBot">1.每日步数达1万步，当日可获10积分。</view>
+            <view class="textShowBot">2.连续7 天每日步数达1万步，可于第7天获50积分</view>
+            <view class="textShowBot">3.连续28 天每日步数若达1万步，可于第28天获100积分。</view>
+			</view>
+		</view>
+  </view> 
+<integralAmation integral="{{allowRun ? 100 : stepsNum.integral}}"  wx:if="{{forceNum}}"/>
+

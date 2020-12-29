@@ -1,0 +1,24 @@
+<view wx:if="{{activityList.length > 0}}" class="container">
+	<view class="my-activity">
+		<view wx:for="{{activityList}}" wx:for-item="activity" wx:key="id" class="activity-box">
+			<image class="img" src="{{activity.coverImageLocation}}" bindtap="navigatorDetail" data-id="{{activity.id}}" data-title="{{activity.title}}"></image>
+			<view class="activity-content" bindtap="navigatorDetail" data-id="{{activity.id}}" data-title="{{activity.title}}">
+				<text class="title">{{activity.title}}</text>
+			</view>
+			<view class="activity-desc" bindtap="navigatorDetail" data-id="{{activity.id}}" data-title="{{activity.title}}">
+				<text>{{activity.description}}</text>
+			</view>
+			<view class="remain-days" wx:if="{{activity.status === 2}}">
+				<image class="time-icon" src="{{ baseUrl  + '/images/challenge/active-left-time.png'}}"></image>
+					<text>剩余{{activity.remainDays}}天</text>
+				</view>
+		</view>
+	</view>
+</view>
+<view class="empty-box" wx:if="{{activityList.length === 0 && loadingFinish}}">
+	<view class="content-box">
+		<image class="icon" src="https://wellness.hangseng.com/images/miniprogram/images/pagePng/search-result.png"></image>
+		<view class="no-data">暂无活动</view>
+	</view>
+	<button class="my-activity-btn" catchtap="navigateList">去逛逛</button>
+</view>

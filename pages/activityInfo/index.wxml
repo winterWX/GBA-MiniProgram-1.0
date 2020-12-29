@@ -1,0 +1,66 @@
+<view class="container">
+	<view wx:if="{{detail.status === 3}}" class="disable-tip">
+		<image class="disable-icon" src="{{baseUrl + '/images/pagePng/circle-info.png'}}">
+		</image>
+		<text>活动已结束</text>
+	</view>
+	<view class="main">
+		<view class="activity-desc">
+			<image class="poster" src="{{detail.thumb}}"></image>
+			<view class="content">
+				<view class="activity-content">
+					<text class="title">{{detail.title}}</text>
+				</view>
+				<view class="activity-desc">
+					<text>{{detail.description}}</text>
+				</view>
+				<view class="remain-days" wx:if="{{detail.status === 2}}">
+					<image class="time-icon" src="{{ baseUrl  + '/images/challenge/active-left-time.png'}}"></image>
+					<text>剩余{{detail.days}}天</text>
+				</view>
+				<view class="over" wx:if="{{detail.status === 3}}">
+					<text>已结束</text>
+				</view>
+			</view>
+		</view>
+		<!-- 里程碑 -->
+		<view class="milepost-box">
+			<view class="milepost">
+				<view class="header">
+					<view class="title">里程碑</view>
+				</view>
+				
+				<view class="progress-box">
+					<view class="progress">
+						<view class="cell" wx:for="{{detail.mileStoneVo}}" wx:key="id" wx:for-item="step">
+							<view class="active-item" wx:if="{{step.received === 1}}"
+								style="left: {{ (100 / (detail.mileStoneVo.length-1)) * index + '%'}};z-index: 5;"></view>
+							<view wx:if="{{step.reward !==0}}" class="reward"
+								style="left: {{ (100 / (detail.mileStoneVo.length-1)) * index + '%'}}">
+								{{step.reward}}积分
+								<view class="arrow"></view>
+							</view>
+							<view class="num" style="left: {{ (100 / (detail.mileStoneVo.length-1)) * index + '%'}}">
+								{{step.mileStoneTarget}}</view>
+						</view>
+					</view>
+				</view>
+				<view class="unit">
+					<view class="unit-box">
+						<view class="unit-box__unit">单位： 步</view>
+					</view>
+				</view>
+			</view>
+		</view>
+		<view>
+			<view class="activity-info">
+				<view class="info-title">活动详情</view>
+				<rich-text class="content" type="'node'" nodes="{{detail.content}}"></rich-text>
+			</view>
+			<view class="activity-info">
+				<view class="info-title">活动规则及声明</view>
+				<rich-text class="content" type="'node'" nodes="{{detail.ruledescription}}"></rich-text>
+			</view>
+		</view>
+	</view>
+</view>

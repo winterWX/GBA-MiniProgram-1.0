@@ -1,0 +1,78 @@
+<view class="medical-box">
+  <view class="container">
+    <view class="page-body">
+      <view class="page-section page-section-spacing swiper">
+        <swiper style="height: 290rpx;" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+          <block wx:for="{{imageList}}" wx:key="id">
+            <swiper-item>
+              <image class="slide-image" src="{{item.url}}"></image>
+              <view class="slide-word" catchtap="clickHandle" data-id="{{item.id}}">
+                <view class="outpatient" wx:if="{{item.id === 1}}">门诊赴约后，扫码签到得积分</view>
+                <view class="appointment" wx:if="{{item.id === 1}}">预约医疗服务，扫码签到。</view>
+                <view class="outpatient" wx:if="{{item.id === 2}}">使用在线咨询服务，得积分</view>
+                <view class="gold-silver-title" hover-class="none">
+                  <image class="icon" src="https://wellness.hangseng.com/images/miniprogram/images/otherCarde/star.png"></image>
+                  金银会员积分翻倍
+                </view>
+              </view>
+            </swiper-item>
+          </block>
+        </swiper>
+      </view>
+    </view>
+  </view>
+  <view class="hospital">
+    <view class="hospital-info">
+      <image class="bg-img" src="{{baseUrl + '/images/medical/banner-mask-copy@2x.png'}}"></image>
+      <image class="hospital-icon" src="{{baseUrl + '/images/medical/icon@2x.png'}}"></image>
+      <view class="basic-info">
+        香港中文大学医院（中大医院）是一所非牟利、私营教学医院，由香港中文大学全资拥有。
+        中大医院本着平衡香港私营及公营医疗体系差异的责任，一位病人提供优质，可负担及透明度的医疗服务位己任。
+        贯彻医院非牟利的宗旨，我们经所有盈余投放于医院及香港中文大学医院，以支持医院的长远发展以及香港中文大学
+        医学院，以支持医院的长远发展及医学院的的科研和教学工作。
+      </view>
+      <!-- <image class="forward" catchtap="showDetailInfo" src="{{baseUrl + '/images/medical/forward.png'}}"></image> -->
+    </view>
+    <view class="function-list">
+      <view class="function-item" catchtap="clickHandle">
+        <image class="icon" src="{{baseUrl + '/images/medical/icon_3@2x.png'}}"></image>
+        <view class="text" catchtap="clickHandle">预约线下门诊</view>
+      </view>
+      <view class="function-item" catchtap="openModal">
+        <image class="icon" src="{{baseUrl + '/images/medical/icon_2@2x.png'}}"></image>
+        <view class="text">了解机构</view>
+        <!-- <view wx:if="{{showLink}}"><web-view src="https://www.cuhkmc.hk/zh-hant/"></web-view></view> -->
+      </view>
+    </view>
+  </view>
+  <modalView show="{{showModal}}" single='{{single}}' bindcancel="modalCancel" bindconfirm='modalConfirm' title="你将跳转到中大医疗官网">
+    <view class='modal-content'>
+      <scroll-view scroll-y class='main-content'>
+        <view class="content">
+          你现在正在离开恒生健康并进入中大医疗官方网站。此跳转并不构成恒生健康向你作任何保险产品的介绍或销售。
+          请细阅连结其他网站之章则，因为该等网站之章则可能跟恒生健康之章则不相同。须受<text class="rule" catchtap="goTermCondition">条款及细则</text>约束。
+        </view>
+        <view wx:if="{{showLink}}"><web-view src="https://www.cuhkmc.hk/zh-hant/"></web-view></view>
+      </scroll-view>
+    </view>
+  </modalView>
+  <view class="hospital" wx:if="{{false}}">
+    <view class="hospital-info">
+      <image class="bg-img" src="{{baseUrl + '/images/medical/mask.png'}}"></image>
+      <image class="hospital-icon" src="{{baseUrl + '/images/medical/zhuojian@2x.png'}}"></image>
+      <view class="basic-info">积极主动，悉心关怀，专注留心，实时回应，令人信赖。守护病人的医疗安全，支持香港医疗发展，关爱社区及环境，助人活…</view>
+      <image class="forward" src="{{baseUrl + '/images/medical/forward.png'}}"></image>
+    </view>
+    <view class="function-list">
+      <view class="function-item">
+        <image class="icon" src="{{baseUrl + '/images/medical/icon_3.png'}}"></image>
+        <view class="text">预约线下门诊</view>
+      </view>
+      <view class="function-item">
+        <image class="icon" src="{{baseUrl + '/images/medical/icon_2.png'}}"></image>
+        <view class="text">了解机构</view>
+      </view>
+    </view>
+  </view>
+  <footer class="footerContent" active="{{active}}"></footer>
+</view>

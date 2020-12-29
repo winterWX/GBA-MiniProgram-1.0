@@ -1,0 +1,25 @@
+<view class="container">
+    <view class="header">
+        <image class="img-bg" src="https://wellness.hangseng.com/images/miniprogram/images/meides/image-authorization-3@3x.png"></image>
+        <view class="tip-title">签到申请已提交</view>
+        <view class="tip-content">你已成功完成赴约卓健医疗新丰路门诊，积分详情请在<text class="reward" catchtap="linkToIntegral">我的积分</text>中查看。</view>
+    </view>
+    <view class="recommend">
+        <view class="title">为你推荐</view>
+        <view class="content">
+            <image class="bg" src="https://wellness.hangseng.com/images/miniprogram/images/meides/banner-3@2x.png"></image>
+            <view class="insurance-title">前往分行量身定制保险/理财计划</view>
+            <view class="insurance-content">
+                恒生银行致力为客户提供专业可靠的理财及保险服务，业务范围涵盖人寿保险、一般保险及医疗保险，以配合你多元化的理财需求。我们承诺与你未雨绸缪，策划未来生活。
+            </view>
+            <view class="more" wx:if="{{hospitalInfo.length > 0}}">
+                <view class="more-tip">如欲了解更多，請到以下附近分行。</view>
+                <view class="address" wx:for="{{hospitalInfo}}" wx:key="id">
+                    <view>{{item.name}}</view>
+                    <view>地址：{{item.address}}</view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+<integralAmation integral="{{integral}}" style="z-index:4;" />

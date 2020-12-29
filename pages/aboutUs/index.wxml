@@ -1,0 +1,28 @@
+<view class="container">
+	<view class="guider-box">
+		<view class="item" catchtap="navigatePolicy"  data-id ="1">
+			<view class="left">
+				<view class="label">用户协议</view>
+			</view>
+			<view class="right">
+				<image class="icon" src="{{imagesUrl + '/images/mine/right-direction.png'}}"></image>
+			</view>
+		</view>
+		<view class="item" catchtap="navigatePolicy"  data-id ="2">
+			<view class="left">
+				<view class="label">隐私政策</view>
+			</view>
+			<view class="right">
+				<image class="icon" src="{{imagesUrl + '/images/mine/right-direction.png'}}"></image>
+			</view>
+		</view>
+		<view class="item" catchtap="navigatePolicy"  data-id ="3">
+			<view class="left">
+				<view class="label">cookies 政策</view>
+			</view>
+			<view class="right">
+				<image class="icon" src="{{imagesUrl + '/images/mine/right-direction.png'}}"></image>
+			</view>
+		</view>
+	</view>
+</view>

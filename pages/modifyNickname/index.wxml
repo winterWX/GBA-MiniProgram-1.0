@@ -1,0 +1,11 @@
+<view>
+	<view class="nick">
+		<view class="nickname">昵称</view>
+		<input class="input-name" placeholder="请输入昵称" value="{{ nickName }}" bindinput="nameChange"></input>
+		<view class="line"></view>
+	</view>
+	<view class='tip'>
+		<text>设置昵称后，朋友找你更方便。</text>
+	</view>
+	<button disabled="{{ btnNickName.length === 0 }}" class="btn-finish" catchtap="submitHnadle">完成</button>
+</view>

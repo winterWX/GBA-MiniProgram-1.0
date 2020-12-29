@@ -1,0 +1,74 @@
+<view class="main-content {{successFlg ? 'successsSty':''}}"  wx:if="{{!successFlg}}">
+    <view class="topBlock"  wx:if="{{isLogin !== 3}}">
+        <view class="topBlock-image"><image src="{{imagesUrl + '/images/index/landing-page-image@3x.png'}}"/></view>
+        <view class="topBlock-text">
+          <view class="topBlock-text1">从今天起成就健康生活</view>
+          <view class="topBlock-text2">登记发掘更多精彩活动及礼遇，一起动起来！</view>
+          <view class="topBlock-btn"> <button open-type="getUserInfo" bindgetuserinfo="getUserInfo">新用户注册/登录</button></view>
+        </view>
+    </view>
+    <view class="topSetting" wx:if="{{isLogin === 3}}"  bindtap="navigateToStep">
+       <view class="imageRight" ><image src="{{imagesUrl + '/images/back@2x.png'}}" /></view>
+        <view class="miniprogress">
+           <miniprogress  stepNum="{{ stepsNum.todaySteps }}" />
+        </view>
+        <view class="topSetting-text">
+            <view class="topSett-disp" wx:if="{{(runDataText !== 10000 || stepsNum.todaySteps === 0) && !rejectRun}}">只差{{ stepsNum.todaySteps == undefined ? 10000 : runDataText}}步达成今日目标</view>
+            <view class="topSett-disp" wx:if="{{ rejectRun }}">还剩10000步达成今日挑战</view>
+            <view class="topSett-disp" wx:if="{{ stepsNum.todaySteps >= 10000 && !forceNum}}">
+                <view>今日步数已达标,<text class="clickText">立即领取积分</text>！</view>
+            </view>
+            <view class="topSett-disp" wx:if="{{ forceNum && stepsNum.todaySteps >= 10000}}">恭喜你！今日的每日步数挑战已达标</view>
+        </view>    
+    </view>
+    <view class="secondeBlock" bindtap="membership" wx:if="{{levelNumShow}}">
+        <view class="secondeBlock-image"><image src="{{imagesUrl + '/images/index/banner-1@3x.png'}}"/></view>
+        <view class="secondeBlock-text">
+          <view class="secondeBlock-text1">升级金银会员获享尊享礼遇</view>
+          <view class="secondeBlock-text2">查看金银会员升级攻略</view>
+          <view class="secondeBlock-btn"><image src="{{imagesUrl + '/images/index/icon-circle@3x.png'}}" /></view>
+        </view>
+     </view>
+     <view class="threesBlock">
+         <view class="threesBlock-title" bindtap="myfindPage">
+             <view class="threesBlock-left">
+                <text class="threesBlock-leftBorber">健康头条</text>
+              </view>
+             <view class="threesBlock-right">更多</view>
+         </view>
+         <view class="threesBlock-item">
+           <view class="threesBlock-itemCher" wx:for="{{homeAllData.article}}" wx:key="index" bindtap="listClick" data-id="{{item.id}}">
+                <view class="threesBlock-itemText">
+                  <view class="threesBlockText1">{{item.title}}</view>
+                  <view class="threesBlock-itemTime">{{item.inputtime}}</view>
+                </view>
+                <view class="threesBlock-itemImage">
+                  <view  class="thumbNone" wx:if="{{item.thumb === ''}}"></view>
+                  <image wx:if="{{item.thumb !== ''}}"   src="{{item.thumb}}" />
+                </view>
+           </view>
+         </view>
+     </view>
+     <view class="fourBlock">
+         <view class="threesBlock-title" bindtap="challengePage">
+             <view class="threesBlock-left">
+                <text class="threesBlock-leftBorber">热门挑战</text>
+              </view>
+             <view class="threesBlock-right">更多</view>
+         </view>
+         <view class="iamgeAll">
+            <view class="iamgeAllTop" wx:for="{{homeAllData.activity}}"  wx:key="index"  bindtap="listChange" data-item="{{item}}">
+              <image wx:if="{{item.coverImage !== ''}}" src='{{item.coverImage}}'/>
+                <view class="iamgeAllTop-image">
+                  <view class="imageText1">{{item.title}}</view>
+                  <view class="imageText2">{{item.description}}</view>
+                </view>
+            </view>
+         </view>
+     </view>
+</view>
+<collectionOption  wx:if="{{successFlg}}" bind:parentReceive="parentCallBack" ></collectionOption>
+<footer class="footerContent" active="{{active}}"  wx:if="{{!successFlg}}"></footer>
+
+
+

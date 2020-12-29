@@ -1,0 +1,100 @@
+page{
+  background-color: #ededed;
+}
+.content-listInput{
+  background: #ffffff;
+  height: 88rpx;
+  padding: 0rpx 30rpx;
+  margin: 2rpx 0rpx 20rpx 0rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+}
+.van-search{
+  padding: 5rpx 0rpx !important;
+  width: 690rpx;
+  background-color: rgba(255,255,255,0.9) !important;
+  color:rgb(146,146,146) !important;
+  font-size: 28rpx !important;
+}
+.van-cell{
+  padding: 2rpx 15rpx !important;
+}
+.content-listItem{
+   display: flex;
+   align-items: center;
+   height: 140rpx;
+   background-color: #ffffff;
+   /* //margin-bottom: 2rpx; */
+   padding-left: 30rpx;
+}
+.item-text{
+  margin-left: 20rpx;
+  color: rgb(51,51,51);
+  font-size: 28rpx;
+  font-family: PingFang-SC-Regular;
+}
+.imageSty{
+  width: 80rpx;
+  height: 80rpx;
+  border: 2rpx solid #ffffff;
+  border-radius: 50%;
+}
+.imageStyBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} 
+.imageStyBtn image{
+  width: 80rpx;
+  height: 80rpx;
+}
+.redText{
+  width: 34rpx;
+  height: 34rpx;
+  background-color: rgb(177,13,25);
+  color: white;
+  font-size: 24rpx;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  border-radius: 50%;
+  margin-left:440rpx;
+}
+.friendList-list{
+  /* //padding: 0 30rpx; */
+}
+.topText{
+    color: rgb(92,92,92);
+    font-size: 24rpx;
+    height: 40rpx;
+    margin:20rpx 0rpx;
+    padding-left: 30rpx;
+    display: flex;
+    align-items: center;
+}
+.van-field__input{
+  height: 56rpx !important;
+  min-height: 56rpx !important;
+}
+.van-cell__left-icon-wrap,.van-cell__right-icon-wrap{
+  height: 56rpx !important;
+}
+.inputBlock{
+  display: flex;
+  align-items: center;
+  background-color: rgba(0,0,0, 0.05);
+  width: 685rpx;
+  height: 56rpx;
+  border-radius: 50rpx;
+  padding-left: 21rpx;
+}
+.inputBlock image{
+  width: 32rpx;
+  height: 32rpx;
+}
+.inputText{
+  color:rgb(146,146,146);
+  margin-left: 12rpx;
+  font-size: 28rpx;
+}

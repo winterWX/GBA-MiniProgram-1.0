@@ -1,0 +1,105 @@
+
+.topMainContent{
+  position: relative;
+}
+.topMainContentImage{
+  width: 100%;
+  height: 514rpx;
+}
+.secondeMainConten{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 70rpx;
+  left: 80rpx;
+}
+.arultImage{
+   width: 48rpx;
+   height: 48rpx;
+   border-radius: 50rpx;
+}
+.texteContent1{
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 188rpx;
+  font-size: 28rpx;
+  color: rgb(102,102,102);
+}
+.texteContent2{
+  position: absolute;
+  top: 240rpx;
+  text-align: center;
+  width: 100%;
+  font-size: 40rpx;
+  color: rgb(51,51,51);
+}
+.texteContent3{
+   width: 100%;
+   position: absolute;
+   top: 310rpx;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 24rpx;
+   color: rgb(146,146,146); 
+}
+.texteContent30{
+  border: 1rpx solid rgb(146,146,146);
+  padding: 7rpx 34rpx;
+}
+.texteCopy{
+  border: 1rpx solid rgb(0,168,101) !important;
+  color: rgb(0,168,101) !important;
+  padding: 7rpx 46rpx !important;
+}
+.texteContent4{
+  position: absolute;
+  top: 385rpx;
+  text-align: center;
+  width: 100%;
+  font-size: 24rpx;
+  color: rgb(102,102,102);
+}
+.textBottom{
+  margin-left: 16rpx;
+  font-size: 28rpx;
+  color: rgb(155,124,86);
+}
+.textContent{
+  padding: 50rpx 20rpx;
+  font-family: PingFangSC-Regular;
+  font-size: 28rpx;
+  color: rgb(51,51,51);
+}
+.textContent-titl{
+  font-size: 28rpx;
+  color: rgb(51,51,51);
+  margin-bottom: 10rpx;
+}
+.bottomBtn{
+  padding: 40rpx 30rpx 16rpx 30rpx;
+  position: fixed;
+  width: 690rpx;
+  bottom: 0;
+}
+.textContentText{
+  margin-bottom: 20rpx;
+}
+.btnSty{
+  height: 90rpx;
+  line-height: 90rpx;
+  width: 690rpx;
+  background-color: rgb(217,217,217);
+  font-size: 32rpx;
+  color: rgb(255,255,255);
+  /* border: 1rpx solid rgb(217,217,217); */
+}
+.bottomBtnColor{
+  height: 90rpx;
+  line-height: 90rpx;
+  width: 690rpx;
+  background-color: rgb(0,168,101);
+  font-size: 32rpx;
+  color: rgb(255,255,255);
+}

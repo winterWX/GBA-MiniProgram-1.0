@@ -1,0 +1,18 @@
+<view class="miain successsSty">
+  <view class="miainContent">
+    <view class="miainImage">
+      <image class="miainImage0" src="{{baseUrl + '/images/recommend/img_0.png'}}"></image>
+      <image class="miainImage1" src="{{baseUrl + '/images/recommend/img_1.png'}}"></image>
+      <image animation="{{aniLeft}}" class="miainImage2"
+        src="{{baseUrl + '/images/recommend/img_2.png'}}"></image>
+      <image animation="{{ani}}" class="miainImage3"
+        src="{{baseUrl + '/images/recommend/img_3.png'}}"></image>
+      <image animation="{{aniLe4}}" class="miainImage4"
+        src="{{baseUrl + '/images/recommend/img_4.png'}}"></image>
+      <image animation="{{aniLe5}}" class="miainImage4"
+        src="{{baseUrl + '/images/recommend/img_5.png' }}"></image>
+    </view>
+  </view>
+  <view class="tip">恭喜挑战完成 获得<text class="reward"> {{reward}} </text>积分！</view>
+    <button class="btn" catchtap="navigateActivityResult">查看战绩</button>
+</view>

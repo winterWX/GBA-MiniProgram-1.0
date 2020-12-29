@@ -1,0 +1,63 @@
+<view class="container">
+  <view class="headFix">
+    <view class="header">
+      <view class="header_item">
+        <view class="number">{{detail.continuousComplianceDays}}</view>
+        <view class="text">达标天数</view>
+      </view>
+      <view class="header_item">
+        <view class="number">{{detail.totalIntegral}}</view>
+        <!--<view class="number">0</view>-->
+        <view class="text">累计积分</view>
+      </view>
+      <view class="header_item">
+        <view class="number">{{detail.maxContinuousDays}}</view>
+        <view class="text">最大连续日</view>
+      </view>
+    </view>
+    <view class="bottom_title">
+      <view class="border"></view>
+      <view class="bottom_txt">达标记录</view>
+    </view>
+  </view>
+  <scroll-view scroll-y="true" style="height:{{scrollH}}px;" bindscrolltolower="bindscrolltolower" lower-threshold="50" >
+    <view class="history" wx:for="{{history}}" wx:for-index="key" wx:for-item="value" wx:key="id">
+      <view class="historyList" wx:for="{{ value }}" wx:for-index="a" wx:for-item="history" wx:key="id" wx:if="{{history.historyList.length>0}}">
+        <view class="hisory_title">{{key}}年{{history.month+1}}月</view>
+        <view class="hisList">
+        <view class="item" wx:for="{{ history.historyList }}" wx:key="index" wx:for-item="item">
+          <view class="item_container step">
+            <view class="dt">
+              <text>步数{{item.actualSteps}}</text>
+              <text> 积分+{{item.integral}}</text>
+            </view>
+            <view class="ft {{item.isDone ==2 ? 'disable' : ''}}">
+              {{ item.isDone == 2 ? '未达标': '已达标'}}
+            </view>
+          </view>
+          <view class="item_container step_detail">
+            <view class="dt time">
+              {{item.date}}
+            </view>
+            <!--wx add-->
+            <view class="ft" bindtap="todayIntegral" data-key="{{key}}" data-ind="{{a}}"  data-index="{{index}}" data-item="{{item}}" wx:if="{{item.isDone == 1 && item.date === dayTime && item.receiveStatus == 2}}">
+              {{ item.receiveStatus == 2 ? '领取' : ''}}
+            </view>
+             <!-- old  code-->
+            <view class="ft" bindtap="yesterdayIntegral" data-key="{{key}}" data-ind="{{a}}"  data-index="{{index}}" data-item="{{item}}" wx:if="{{item.isDone == 1 && item.date == yeseterDate && isReceive == true && item.receiveStatus == 2}}">
+              {{ item.receiveStatus == 2 ? '补领积分' : ''}}
+            </view>
+          </view>
+        </view>
+        </view>
+      </view>
+      <block wx:if="{{history == null}}">
+        <view class="empty">
+          <image src="{{imagesUrl +'/images/icn-empty-history@2x.png'}}" mode="aspectFit" />
+        </view>
+        <text class="emptyText">暂无数据</text>
+      </block>
+    </view>
+  </scroll-view>
+</view>
+<integralAmation integral="{{integralData}}" wx:if="{{forceNum}}"/>

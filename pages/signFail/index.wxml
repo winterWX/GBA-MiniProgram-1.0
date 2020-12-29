@@ -1,0 +1,25 @@
+<view class="container">
+    <view class="warn-box">
+        <image class="warn-img" src="../../image/medical/warn.png" mode="aspectFill" lazy-load="true"></image>
+    </view>
+    <block wx:if="{{invalid}}">
+        <view class="fail-tip">
+            二维码无效
+        </view>
+        <view class="friendly-tips">
+            您扫描的二维码无效，请确认二维码的有效性。
+        </view>
+        <button class="re-sign btn" catchtap="resign">重新扫描</button>
+        <button class="home btn" catchtap="goHome">首页</button>
+    </block>
+    <block wx:if="{{repeat}}">
+        <view class="fail-tip">
+            已完成签到，请勿重复扫描。
+        </view>
+        <view class="friendly-tips">
+            您已成功完成签到领积分，积分将于5个工作日后到账。
+        </view>
+        <button class="home btn" catchtap="goHome">退出</button>
+    </block>
+    
+</view>

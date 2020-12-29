@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+
+  },
+  "navigationBarTitleText": "我的挑战",
+  "navigationBarTextStyle": "black",
+  "backgroundTextStyle":"dark",
+  "onReachBottomDistance":50,
+  "enablePullDownRefresh": true
+}

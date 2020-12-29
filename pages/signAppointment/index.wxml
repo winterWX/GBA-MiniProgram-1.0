@@ -1,0 +1,65 @@
+<view class="container">
+    <view class="header">
+        <image class="head-bgimg" src="{{baseUrl + '/images/medical/banner-2@2x.png'}}"></image>
+    </view>
+    <view class="info">
+        <view class="title">门诊赴约签到得积分</view>
+        <view class="content">
+            扫码签到可获得10积分。该活动需要你提前预约并提供就诊信息，然后至线下诊所完成赴约。
+愿你一生平安康健，但不测风雨来临时，我们希望与你共担风雨。点击了解更多香港卓健医疗详情或香港中文大学医院详情相关医疗服务。
+        </view>
+    </view>
+    <view class="member">
+        <image class="title" src="{{baseUrl + '/images/medical/member-icon.png'}}"></image>
+        <view class="member-info">银会员20积分，金会员50积分</view>
+    </view>
+    <view class="activity">
+        <view class="title">活动详情</view>
+        <view class="point">
+            1.在本平台选择医疗机构完成在线医疗预约
+            <view>
+                <text class="tit">中大医疗预约：</text>
+                请在中大医疗预约中完成你的基本资料，等待电话回访确定你的到访记录，即完成预约；
+            </view>
+            <view>
+                <text class="tit">卓健医疗预约：</text>
+                请在卓健医疗预约中完成你的线下预约；
+            </view>
+        </view>
+        <view class="point">
+            2.在约定的时间完成你的门诊赴约，扫描二维码（可要求医护人员为你出示），验证成功后即已签到成功。
+        </view>
+        <view class="point" style="margin-bottom: 0rpx;">
+            3.相应的积分将在5个工作日内到账，可在积分详情中查看相应的积分纪录。
+        </view>
+    </view>
+    <view class="appointment-process">
+        <view class="item">
+            <image class="item-img" src="{{baseUrl + '/images/medical/mobile.png'}}" lazy-load="true"></image>
+            <view class="tip">
+                网上预约门诊
+            </view>
+        </view>
+        <image class="to" src="{{baseUrl + '/images/medical/dianer@2x.png'}}" lazy-load="true"></image>
+        <view class="item">
+            <image class="item-img" src="{{baseUrl + '/images/medical/siginin.png'}}" lazy-load="true"></image>
+            <view class="tip">
+                完成赴约扫描签到
+            </view>
+        </view>
+        <image class="to" src="{{baseUrl + '/images/medical/dianer@2x.png'}}" lazy-load="true"></image>
+        <view class="item">
+            <image class="item-img" src="{{baseUrl + '/images/medical/getreward.png'}}" lazy-load="true"></image>
+            <view class="tip">
+                5个工作日获取积分
+            </view>
+        </view>
+    </view>
+    <view class="btn-box">
+        <button class="sign" catchtap="scanCode">扫码签到</button>
+        <view class="appointment">
+            <button class="appointment-btn" bindtap="clickHandleHK">预约中大医疗</button>
+            <!-- <button wx:if="{{false}}" class="appointment-btn disabled" disabled="{{true}}" catchtap="clickHandle">预约卓健医疗</button> -->
+        </view>
+    </view>
+</view>

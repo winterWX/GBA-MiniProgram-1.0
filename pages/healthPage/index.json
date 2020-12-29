@@ -1,0 +1,12 @@
+{
+  "usingComponents": {
+      "challenge": "../../components/challenge/index",
+      "van-button": "vant-weapp/button/index",
+      "integralAmation": "../../components/integralAmation/index",
+      "stepAmaition": "../../components/stepAmaition/index",
+      "miniprogress": "../../components/miniprogress/miniprogress"
+  },
+  "enablePullDownRefresh": true,
+  "navigationBarTitleText": "乐健康"
+}
+

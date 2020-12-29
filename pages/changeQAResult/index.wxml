@@ -1,0 +1,40 @@
+<view class="container">
+    <view class="main">
+        <view class="header">
+            <image class="bg-img" src="{{bannerUrl}}"></image>
+            <!-- <view class="label">查看详情</view> -->
+            <view class="result-tip" wx:if="{{success}}">挑战成功，获得{{integral}}积分</view>
+            <view class="result-tip" wx:if="{{!success}}">噢，本次挑战失败，下次努力</view>
+        </view>
+        <view class="questions">
+            <view class="result">
+                <view class="item">
+                    <view class="title">答对题数</view>
+                    <view class="num">{{all}}</view>
+                </view>
+                <view class="item">
+                    <view class="title">答错题数</view>
+                    <view class="num">{{wrong}}</view>
+                </view>
+                <view class="item">
+                    <view class="title">正确率</view>
+                    <view class="num pass-rate">{{rate}}%</view>
+                </view>
+            </view>
+        </view>
+        <view class="middle-tip">- 题目解析 -</view>
+        <view class="question-info">
+            <view class="question-item" wx:for="{{questionAnalysis}}" wx:key="id" wx:for-item="question">
+                <view class="question">{{question.question}}</view>
+                <view class="answer">
+                    <view style="display: inline-block;">正确答案：{{question.correctAnswer}} {{question.isCorrect === 2 ?  " (" + question.answer + ")" : ''}}</view>
+                </view>
+                <view class="result {{ question.isCorrect === 1 ? 'correct' : 'error'}}">{{question.isCorrect === 1 ? '回答正确' : '回答错误'}}</view>
+             </view>
+        </view>
+    </view>
+    <view class="footer">
+        <button class="btn-lg btn-primary" catchtap="backToDetail">返回</button>
+    </view>
+</view>
+<integralAmation integral="{{integral}}" wx:if="{{integral !=0 && isSubmit && success}}"/>

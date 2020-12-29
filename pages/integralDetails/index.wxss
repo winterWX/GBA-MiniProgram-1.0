@@ -1,0 +1,88 @@
+page{
+  background-color: #ffffff;
+}
+.blue-content{
+  background-color:rgb(0,168,101);
+  height: 120rpx;
+  padding: 40rpx 30rpx;
+}
+.blueBlock{
+  display: flex;
+  align-items: center;
+}
+.blueBlockLeft-image{
+  width: 28rpx;
+  height: 28rpx;
+}
+.blueBlockNum{
+  width: 547rpx;
+  color: rgb(255,255,255);
+  font-size: 48rpx;
+  margin-bottom: 10rpx;
+  font-family: Flama-Semibold;
+}
+.blueBlockLeft{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.blueBlockLeftText{
+  font-size: 24rpx;
+  color: rgb(255,255,255);
+  margin-left: 10rpx;
+}
+.blueBlockText{
+  color: rgb(255,255,255);
+  font-size: 24rpx;
+}
+.blueBottomTitle{
+  color:rgb(51,51,51);
+  font-size: 30rpx;
+  font-family: PingFangSC-Medium;
+  height: 82rpx;
+  padding-left: 30rpx;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+}
+
+
+.itemContent{
+  height: 90rpx;
+  padding: 30rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  border-bottom: 1rpx solid rgb(237, 237, 237);
+}
+.blueBlockItem{
+  width: 630rpx;
+}
+.blueBlockLeftItem-image{
+  width: 28rpx;
+  height: 28rpx;
+}
+.blueBlockNumItem{
+
+  color: rgb(51,51,51);
+  font-size: 28rpx;
+  margin-bottom: 10rpx;
+  font-family: Flama-Semibold;
+}
+.blueBlockLeftItem{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.blueBlockLeftTextItem{
+  font-size: 24rpx;
+  color: rgb(102,102,102);
+  margin-left: 10rpx;
+}
+.blueBlockTextItem{
+  color: rgb(102,102,102);
+  font-size: 24rpx;
+}

@@ -1,0 +1,25 @@
+<view>
+    <view class="content-list" id="topHeight">
+        <view class="content-listInput">
+            <view class="inputBlock" bindtap="onFocusInput">
+              <image src="{{baseUrl + '/images/challenge/search@3x.png'}}" />
+              <view class="inputText">搜寻电话号码</view>
+            </view>
+        </view>
+        <view class="content-listItem" bindtap="newFriend">
+          <image  class="imageSty" src='{{baseUrl + "/images/addFriend/rectangle@2x.png"}}'></image>
+          <view class="item-text">朋友请求</view>
+          <view class="redText" wx:if="{{redTagShow}}">{{redTag}}</view>
+        </view>
+        <button class="content-listItem" open-type="share">
+            <view class="imageStyBtn">
+              <image class="imageStyBtn" src='{{baseUrl + "/images/addFriend/rectangle-2@2x.png"}}'></image>
+            </view>
+            <view class="item-text">新增好友</view>
+        </button>
+    </view>
+    <view class="friendList-list">
+         <view class="topText" wx:if="{{listData.length > 0}}">所有好友{{arrayNum}}</view>
+         <friendList bind:click="itemClick" empty-show="{{emptyShow}}" top-size="{{topSize}}" list-data="{{listData}}" bottom-hight="{{bottomHight}}" color="#3F82FD" />
+    </view>
+</view>

@@ -1,0 +1,183 @@
+page{
+  background-color: #ededed;
+}
+.main-top{
+  background-color: #ffffff;
+  height: 620rpx;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.05);
+  padding: 30rpx 30rpx 0rpx 30rpx;
+}
+.main-bottom{
+  background-color: #ffffff;
+  height: 215rpx;
+  margin-top: 30rpx;
+  padding: 30rpx;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.05);
+}
+.main-topTitle{
+  color: rgb（237,237,237）;
+  margin: 10rpx 0rpx;
+}
+.main-topSecode{
+  display: flex;
+  align-items: center;
+}
+.mainLeft{
+   height: 106rpx;
+   font-size: 88rpx;
+   color: rgb(51,51,51);
+   letter-spacing: -1.76rpx;
+}
+.mainRight2{
+  height: 15rpx;
+  font-size: 44rpx;
+  color: rgb(51,51,51);
+  letter-spacing: -1.76rpx;
+}
+.mainRight{
+  font-size: 24rpx;
+  color: rgb(146,146,146);
+  margin: 50rpx 0rpx 0rpx 5rpx;
+  position: relative;
+}
+.numlast{
+  height: 20rpx;
+  font-size: 18rpx;
+  color: #929292;
+  position: absolute;
+  /* //top: 20rpx; */
+}
+.mainBlock{
+  height: 212rpx;
+  background-color: rgb(237,237,237);
+  margin: 30rpx 0rpx 56rpx 0rpx;
+  position: relative;
+}
+.mainBlockSan{
+  position: absolute;
+  left: -268rpx;
+  top: -20rpx;  
+  margin-left: 305rpx;
+  border-width: 0 16rpx 20rpx;
+  border-style: solid;
+  border-color: transparent transparent #F6F6F6;
+
+} 
+.mainInit{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.mainBlockLeft{
+  width: 50%;
+  height: 92rpx;
+  border-right: 1rpx solid #C3C3C3;
+  text-align: center;
+}
+.mainBlockRight{
+  width: 50%;
+  height: 92rpx;
+  text-align: center;
+}
+.mainNum{
+   font-size: 56rpx;
+   color: rgb(51,51,51);
+   margin-bottom: 10rpx;
+}
+.mainText{
+   color: rgb(102,102,102);
+   font-size: 24rpx;
+}
+.derlopent{
+  height: 150rpx;
+  border-top: 1rpx solid #EEEEEE;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-TextBlock{
+  color: rgb(51,51,51);
+  font-size: 32rpx;
+  margin-bottom: 10rpx;
+}
+.mainBlocks{
+  color: rgb(102,102,102);
+  font-size: 28rpx;
+}
+.health-block{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.derlopent-title{
+   margin: 30rpx 0rpx 34rpx 0rpx;
+   font-size: 28rpx;
+   color: rgb(51,51,51);
+}
+.health-item1{
+  width: 15%;
+  text-align: center;
+}
+.health-item2{
+  width: 28%;
+  text-align: center;
+}
+.health-item3{
+  width: 22%;
+  text-align: center;
+}
+.health-item4{
+  width: 35%;
+  text-align: center;
+}
+.healthText{
+  color: rgb(146,146,146);
+  font-size: 20rpx;
+  margin-top: 16rpx;
+}
+.healthColor1{
+  width: 99.5%;
+  height: 10rpx;
+  background-color: rgb(155,124,86);
+  border-radius: 50rpx 0rpx 0rpx 50rpx;
+  margin-right: 0.5%;
+}
+.healthColor2{
+  width: 99.5%;
+  height: 10rpx;
+  background-color: rgb(52,163,68);
+  margin-left: 0.5%;
+  margin-right: 0.5%;
+}
+.healthColor3{
+  width: 99%;
+  height: 10rpx;
+  background-color: rgb(237,174,38);
+  margin-left: 0.5%;
+  margin-right: 0.5%;
+}
+.healthColor4{
+  width: 99.5%;
+  height: 10rpx;
+  background-color: rgb(177,13,25);
+  border-radius: 0rpx 50rpx 50rpx 0rpx;
+  margin-left: 0.5%;
+}
+.flagColor{
+  position: absolute;
+  background-color: rgb(155,124,86);
+  height: 20rpx;
+  width: 5rpx;
+  top: -5rpx;
+  left: 0rpx;   
+}
+.van-button--large{
+  background-color: #00a865 !important;
+  border: 1px solid #00a865 !important;
+}
+.mainBlocksBottom{
+  margin-bottom: 10rpx;
+}

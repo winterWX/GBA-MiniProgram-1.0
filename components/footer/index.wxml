@@ -1,0 +1,36 @@
+<van-tabbar
+  active="{{ active }}"
+  active-color="rgb(0,168,101)"
+  inactive-color="rgb(51,51,51)"
+  bind:change="onChange"
+  z-index="100"
+  class="hase_tabbar"
+>
+<block  wx:for="{{ menu }}" wx:key="index">
+  <van-tabbar-item class="{{((isLogin===0 || isLogin ===1 ) && (item.requiredLogin=== true))?'tabbar-item-login':''}}">
+        <image
+          slot="icon"
+          src="{{ item.iconPath }}"
+          mode="aspectFit"
+          style="width: 22px; height: 22px;"
+        />
+        <image
+          slot="icon-active"
+          src="{{ item.activeIconPath }}"
+          mode="aspectFit"
+          style="width: 22px; height: 22px;"
+        />
+        {{item.text}}
+        <button wx:if="{{(isLogin===0)&&(item.requiredLogin===true)}}" class="openTypeBtn" open-type="getUserInfo" bindgetuserinfo="getUserInfo" >
+        </button>
+  </van-tabbar-item>
+</block> 
+</van-tabbar>
+<van-popup
+  show="{{ isLogin==1 && requiredLogin===true}}"
+  position="right"
+  custom-style="height: 100%; width:100%;"
+  z-index="300"
+  bind:close="onClose"
+>
+</van-popup>

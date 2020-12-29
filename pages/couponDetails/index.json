@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "van-button": "vant-weapp/button/index",
+    "htmlView":"../../components/htmlView/htmlView"
+  },
+  "navigationBarTitleText": "优惠详情"
+}

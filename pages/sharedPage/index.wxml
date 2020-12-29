@@ -1,0 +1,22 @@
+<view class='recommend'>
+    <view class="recommend-image">
+       <image  class="personImge" src='https://wellness.hangseng.com/images/miniprogram/images/recommend/poster@2x.png'></image>
+       <view class="image-text">
+          <view class="userVal">
+            <image src='{{userInfoData.avatarUrl}}'></image>
+          </view>
+          <view class="image-text1">{{userInfoData.nickName}}</view> 
+          <view class="image-text2">邀你一起赚积分，换豪礼</view>
+         <view class="gift-image">
+            <image src='https://wellness.hangseng.com/images/miniprogram/images/recommend/gift@2x.png'></image>
+          </view>
+          <!-- <view class="image-text3">Hi 陈大文</view> -->
+          <view class="image-text4">{{userInfoData.nickName}}在[恒生健康]赚取积分享健康好礼，跟我来一起玩呀！</view>
+          <view class="image-text5">
+             <van-button type="primary" size="normal" class="rightBtn" open-type="getUserInfo" bindgetuserinfo="getUserInfo">立即领取50积分</van-button>
+          </view>
+       </view>
+    </view>
+</view>
+
+

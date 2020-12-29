@@ -1,0 +1,53 @@
+
+<view>
+  <view class="main-top">
+     <view class="main-topTitle">体重指数(BMI)</view>
+     <view class="main-topSecode"> 
+        <view  wx:if="{{BMIData.bmi ==='--'}}" class="mainRight2">{{BMIData.bmi}}</view>
+        <view  wx:if="{{BMIData.bmi !=='--'}}"  class="mainLeft">{{BMIData.bmi}}</view>
+        <view class="mainRight">（公斤）/（米）<text class="numlast">2</text></view>
+     </view>
+      <view class="mainBlock">
+         <view class="mainBlockSan"></view> 
+         <view class="mainInit">
+               <view class="mainBlockLeft">
+                  <view class="mainNum">{{BMIData.height}}</view>
+                  <view class="mainText">身高/厘米</view>
+               </view>
+               <view class="mainBlockRight">
+                  <view class="mainNum">{{BMIData.weight}}</view>
+                  <view class="mainText">体重/公斤</view>
+               </view>
+         </view>
+      </view>
+      <view class="derlopent">
+         <!-- <view class="derlopent-title">建议：体重过轻，不适合减脂，试试增肌吧</view> -->
+         <view class="health-block">
+            <view class="flagColor" style="background:{{background}};left:{{BMIleft}}%;"></view>
+            <view class="health-item1">
+               <view class="healthColor1"></view>
+               <view class="healthText">过轻</view>
+            </view>
+            <view class="health-item2"> 
+               <view class="healthColor2"></view>
+               <view class="healthText">适中</view>
+            </view>
+            <view class="health-item3">
+               <view class="healthColor3"></view>
+               <view class="healthText">过重</view>
+            </view>
+            <view class="health-item4">
+               <view class="healthColor4"></view>
+               <view class="healthText">肥胖</view>
+            </view>
+         </view>
+      </view>
+   </view>
+  <view class="main-bottom">
+      <view class="main-TextBlock">关于体重指标BMI</view>
+      <view class="mainBlocks">
+         <view class="mainBlocksBottom">体重指标（英文为Body Mass Index，简称BMI），是用来分析体重是否适中的最常用方法。</view>
+         <view>资料来源：香港特别行政区卫生署卫生防护中心。</view>
+      </view>
+  </view>
+</view>

@@ -1,0 +1,33 @@
+<!-- pages/answer/index.wxml -->
+<view class="container">
+    <view class="header">
+        <image class="bg-img" src="{{bannerUrl}}"></image>
+    </view>
+    <view class="main">
+        <view class="circle-out">
+            <view class="circle-in">
+                <view class="show-result">
+                    <text class="pass">{{quesIndex + 1}}/</text>
+                    <text class="all">{{questions.length}}</text>
+                </view>
+            </view>
+        </view>
+        <view class="answer-box">
+            
+            <view class="qa">
+                <view class="quesition">{{currentQ.question}}</view>
+                <view class="options">
+                
+                    <view style="{{'border:' + (!isConfirm && selected.optionId === item.optionId ? '2rpx solid  #00a865' : '')}}" class="option {{ confirm && confirm.optionId === item.optionId ? (isOk ? 'success' : 'cross') : '' }})" wx:for="{{currentQ.options}}" wx:key="id" catchtap="selectOption" data-answer="{{item}}">
+                        <view class="{{item.option.length <= 15 ? 'itemText' : '' }}">{{item.option}}</view>
+                        <image class="icon" src="{{baseUrl + '/images/question/no-thick.png'}}" wx:if="{{confirm && confirm.optionId === item.optionId && !isOk}}"></image>
+                        <image class="icon" src="{{baseUrl + '/images/question/yes-thick.png'}}" wx:if="{{confirm && confirm.optionId === item.optionId && isOk || isConfirm && !isOk && item.isCorrect === 1 }}"></image>                    
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <button class="btn btn-lg btn-primary" wx:if="{{!complete && isConfirm}}" catchtap="next">下一题</button>
+    <button class="btn btn-lg btn-primary {{!selected && !complete ? 'disabled' : ''}}" catchtap="confirm" disabled="{{!selected && !complete}}" wx:if="{{!isConfirm}}">确定</button>
+    <button class="btn btn-lg btn-primary" wx:if="{{complete}}" catchtap="submit">完成</button>
+</view>

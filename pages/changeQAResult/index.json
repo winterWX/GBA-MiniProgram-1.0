@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "integralAmation": "../../components/integralAmation/index"
+  },
+  "navigationBarTitleText": "健康知识王者赛"
+}

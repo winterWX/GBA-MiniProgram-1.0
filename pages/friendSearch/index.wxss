@@ -1,0 +1,70 @@
+page{
+  background-color: #ededed;
+}
+.content-friendList{
+  height: 140rpx;
+  background-color: #ffffff;
+  margin-bottom: 2rpx;
+  display: flex;
+  padding: 0 30rpx;
+  margin-top: 30rpx;
+}
+.leftBlock{
+  width: 600rpx;
+  display: flex;
+  align-items: center;
+}
+.leftBlock image{
+  width: 80rpx;
+  height: 80rpx;
+  border: 1rpx solid #ffffff;
+  border-radius: 50%;
+}
+.leftBlock .nameText{
+  margin-left: 20rpx;
+  color:rgb(51,51,51);
+  font-size: 28rpx;
+}
+.rightBlock{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(146,146,146);
+  font-size: 24rpx;
+}
+.btnSty{
+  height: 48rpx;
+  width:140rpx;
+  color: rgb(0,168,101);
+  border: 2rpx solid rgb(0,168,101);
+  text-align: center;
+  line-height: 48rpx;
+  padding:4rpx 11rpx;
+}
+.BlochShow{
+  margin: 240rpx auto;
+}
+.imageShow{
+   width:100%;
+   text-align:center;
+}
+.imsageShow{
+  text-align: center;
+}
+.imsageShow image{
+   width: 230rpx;
+   height: 230rpx;
+}
+.text1{
+  margin-top:30rpx;
+  font-size:32rpx;
+  color:rgb(51,51,51);
+  text-align: center;
+}
+.text2{
+  margin-top:30rpx;
+  font-size:32rpx;
+  color:rgb(51,51,51);
+  text-align: center;
+}

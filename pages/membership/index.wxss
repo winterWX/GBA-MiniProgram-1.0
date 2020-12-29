@@ -1,0 +1,193 @@
+page{
+  background-color: rgb(237, 237, 237);
+}
+.groupBlock{
+  height: 272rpx;
+}
+.topImage image{
+  width: 100%;
+}
+.nick {
+  margin-top: 20rpx;
+  padding: 0rpx 30rpx 20rpx 30rpx;
+  background-color: white;
+}
+.nickname {
+  font-size: 32rpx;
+  height: 48rpx;
+  line-height: 48rpx;
+  color: rgb(51, 51, 51);
+  padding: 30rpx 0rpx 18rpx 0rpx;
+}
+.input-name {
+  height: 48rpx;
+  line-height: 48rpx;
+  margin-bottom: 10rpx;
+}
+.line {
+  height: 2rpx;
+  background-color: rgb(146, 146, 146);
+}
+.lineRed {
+  height: 2rpx !important;
+  background-color: rgb(177,13,25) !important;
+}
+.tip {
+  font-size: 24rpx;
+  color: rgb(177,13,25);
+  padding: 20rpx 0rpx;
+  display: flex;
+  align-items: center;
+}
+.tip image{
+  width: 28rpx;
+  height: 24rpx;
+  margin-right: 10rpx;
+}
+
+.btn-finish {
+  background-color: rgb(0, 168, 101);
+  margin-top: 50rpx;
+  color: white;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+}
+.textRed{
+  color: rgb(177,13,25) !important;
+}
+.carkBlock{
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  background-color: rgba(0,0 ,0, 0.5);
+}
+.topImage1{
+  width: 288rpx;
+  height: 320rpx;
+  position: absolute;
+  top: 140rpx;
+  z-index: 12;
+}
+.topImage2{
+  width: 92rpx;
+  height: 54rpx;
+  position: absolute;
+  top: 404rpx;
+  left: 410rpx;
+  z-index: 13;
+}
+.carkBlock-main{
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.carkBlock-allMain{
+  position: absolute;
+  width: 651rpx;
+  height: 652rpx;
+  background-color: #ffffff;
+  top:399rpx
+}
+.bottomBlock image{
+  width: 40rpx;
+  height: 40rpx;
+  position: fixed;
+  bottom: 70rpx;
+}
+.imageBottom{
+  height: 80rpx;
+  width: 100%;
+}
+.text-main{
+  text-align: center;
+  padding: 30rpx;
+}
+.text1-main{
+   font-size: 28rpx;
+   color: rgb(102,102,102);
+   margin-bottom: 20rpx;
+}
+.text2-main{
+  margin-bottom: 20rpx;
+  color: rgb(155,124,86);
+  font-size: 38rpx;
+}
+.text3-main{
+  margin-bottom: 60rpx;
+  font-size: 28rpx;
+  color: rgb(51,51,51);
+}
+.text4-main{
+  margin-bottom: 30rpx;
+}
+.text5-main{
+  text-decoration: underline;
+}
+.van-button--primary {
+  background-color: #00a865 !important;
+  border: 1px solid #00a865 !important;
+}
+.topBlocks1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0rpx 30rpx;
+  background-color: #FDF8E7;
+  height: 120rpx;
+}
+.topBlocks12{
+  margin-top: 20rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0rpx 30rpx;
+  background-color: #F3F9F4;
+  height: 120rpx;
+}
+.topBlocksRightText{
+  margin: 10rpx 0rpx 20rpx 0rpx;
+  font-size: 24rpx;
+  color:rgb(102,102,102);
+}
+.groupBlock image{
+  width: 100%;
+  height: 100%;
+}
+.topBlocksLeft{
+  width: 43%;
+  display: flex;
+  align-items: center;
+  font-size: 28rpx;
+}
+.topBlocksRight{
+  width: 57%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28rpx;
+}
+.topBlocksLeft image{
+   width: 32rpx;
+   height: 32rpx;
+   margin-left: 25rpx;
+}
+.topBlocksRight image{
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 50rpx;
+  margin-right: 15rpx;
+}
+.topImage-main{
+  background-color: #ffffff;
+  padding: 0rpx 30rpx;
+}
+.foot-tip {
+  position: absolute;
+  bottom: 30rpx;
+  font-size: 24rpx;
+  color: #333333;
+  text-align: center;
+  width: 100%;
+}

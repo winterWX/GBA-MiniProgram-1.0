@@ -1,0 +1,40 @@
+<view>
+	<view class="view-wrap" style="height:{{bottomHight}}rpx;">
+		<scroll-view class="scroll-view"
+		             style="height:{{bottomHight}}rpx;"
+					 scroll-y
+					 scroll-top="{{scrollTop}}"
+					 bind:scroll="scroll">
+			<view class="block-wrap">
+				<view class="block" wx:for="{{list}}" wx:key="index">
+					<view wx:if="{{index == listItemCur}}" class="block__title block__title--cur">
+						<view class="title-item" style="{{style1}}">{{item.key}}</view>
+					</view>
+					<view wx:elif="{{index == listItemCur + 1}}" class="block__title">
+						<view class="title-item" style="{{style2}}">{{item.key}}</view>
+					</view>
+					<view wx:else class="block__title">
+						<view class="title-item">{{item.key}}</view>
+					</view>
+					<view class="block__item" wx:for="{{item.data}}" wx:key="j" wx:for-index="j" bindtap="itemClick" data-i="{{index}}" data-j="{{j}}">
+						<view class="item">
+							<view class="item__hd">
+							    <image class="item__hd_image" src="{{item.avatar}}"/>
+							</view>
+							<view class="item__bd">
+								<view class="info__name">{{item.name}}</view>
+							</view>
+						</view>
+					</view>
+				</view>
+			</view>
+			<view class="indicator {{touching && indicatorTop != -1 ? 'indicator--show' : ''}} {{treeKeyTran ? 'indicator--tran' : ''}}" style="top: {{indicatorTop}}px">
+				{{listData[treeItemCur].key}}
+			</view>
+		</scroll-view>
+		<view wx:if="{{list.length === 0 && emptyShow}}" class="view-wrap__empty">
+			<!-- <image class="empty-image" src="{{emptyUrl}}"></image> -->
+			<view class="empty-text">{{emptyText}}</view>
+		</view>
+	</view>
+</view>

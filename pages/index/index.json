@@ -1,0 +1,9 @@
+{
+  "usingComponents": {    
+    "footer": "../../components/footer/index",
+    "collectionOption": "../../components/collectionOption/index",
+    "miniprogress": "../../components/miniprogress/miniprogress"
+  },
+  "navigationBarTitleText": "首页",
+  "enablePullDownRefresh": true  
+}

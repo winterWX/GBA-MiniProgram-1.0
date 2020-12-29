@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "collectionOption": "../../components/collectionOption/index"
+  },
+  "navigationBarTitleText": "周周步数挑战赛"
+}

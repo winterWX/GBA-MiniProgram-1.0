@@ -1,0 +1,125 @@
+page{
+  background-color: #f8f8f8;
+}
+.info-main{
+  /* margin-top:15rpx; */
+  width: 100%;
+}
+.info{
+  height: 140rpx;
+  padding: 30rpx 32rpx;  
+  /* margin-bottom: 25rpx; */
+  background-color:#FFFFFF;
+  margin-top: 2rpx;
+}
+.top-block{
+  display: flex;
+}
+.top-block .title{
+  font-weight: 900;
+  width: 486rpx;
+  margin-right:20rpx;
+}
+.mainText{
+  font-family: PingFangSC;
+  font-size: 32rpx;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  color: #333333;
+}
+.top-block .top-blockImage{
+  width: 180rpx;
+  height: 140rpx;
+  border: 1rpx solid #e6e6e6;
+  border-radius: 10rpx;
+}
+.top-block .top-blockImageBoth{
+  width: 180rpx;
+  height: 140rpx;
+  background-color: #e6e6e6;
+  border: 1rpx solid #e6e6e6;
+  border-radius: 10rpx;
+}
+.mainTextHidden{
+  text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  height: 83.2rpx;
+}
+.info .description_text{
+  font-size: 32rpx;
+  margin-top: 5rpx;  
+  color: #666666;
+  text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.bottom-time{
+  margin-top: 10rpx;
+  margin: 15rpx 0 15rpx 0;
+  display: flex;
+  align-items: center;
+}
+.bottom-time .leftTime{
+  color: #AAAAAA;
+  font-size: 30rpx;
+  display: flex; 
+  width: 500rpx;
+}
+.numTagContent{
+  display: flex;
+  align-items: center;
+  height: 35rpx;
+}
+.numTag{
+  font-size: 26rpx;
+  width: 43rpx;
+  color: #AAAAAA;
+}
+.leftTime .itemBtn{
+  padding: 4rpx 6rpx;
+  margin-right: 5rpx;
+  margin-left: 5rpx;  
+}
+.bottom-time .rightShare{
+  display: flex;
+  align-items: center;
+  margin-left: 30rpx;
+}
+.bottom-time .rightShare image{
+  width: 34rpx;
+  height: 34rpx;
+  margin-top: -3rpx;
+}
+.rightShare .collectNum{
+  color: #AAAAAA;
+  margin-left: 6rpx;
+  font-size: 31rpx;
+}
+.timeText{
+  display: flex;
+  align-items: center;
+  font-family: PingFangSC;
+  font-weight: 300;
+  font-size: 24rpx;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  color: #929292;
+  margin-top: 26rpx;
+}
+.textNode{
+  width: 100%;
+  text-align: center;
+  color: #929292;
+}

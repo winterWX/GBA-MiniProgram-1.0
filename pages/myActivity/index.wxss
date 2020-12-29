@@ -1,0 +1,121 @@
+page {
+  color: #ededed;
+  height: 100%;
+}
+
+.container {
+  background-color: #ededed;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.container .my-activity {
+  flex: 1;
+}
+.activity-box {
+  padding: 36rpx 30rpx;
+  margin-bottom: 30rpx;
+  background-color: white;
+}
+
+.img {
+  display: block;
+  height: 200rpx;
+  width: 100%;
+}
+
+.activity-box .activity-content {
+  display: flex;
+  justify-content: space-between;
+  height: 50rpx;
+  line-height: 50rpx;
+  margin: 20rpx 0 10rpx 0;
+}
+
+.activity-box .activity-content .title {
+  flex: 1;
+  font-size: 32rpx;
+  color: #333333;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.activity-box .activity-desc {
+  color: #666666;
+  font-size: 24rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-bottom: 20rpx;
+}
+.activity-box .remain-days {
+  display: table-cell;
+  font-size: 24rpx;
+  background-color: #ededed;
+  height: 30rpx;
+  line-height: 30rpx;
+  border-radius: 10rpx;
+  padding: 4rpx 16rpx 4rpx 12rpx;
+  color: #00A865;
+  border: 2rpx solid #00A865;
+}
+
+.activity-box .remain-days .time-icon {
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 4rpx;
+  vertical-align: middle;
+}
+.activity-box .remain-days text {
+  vertical-align: middle;
+}
+.past-activity {
+  z-index: 3;
+  text-align: center;
+  color: #333333;
+  font-size: 24rpx;
+  text-decoration: blink;
+  background-color: #ededed;
+  padding: 30rpx 0;
+}
+.empty-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  text-align: center;
+}
+.empty-box .content-box {
+
+}
+.icon {
+  width: 210rpx;
+  height: 210rpx;
+  display: block;
+}
+.no-data {
+  font-size: 28rpx;
+  color: #333333;
+  margin-top: 50rpx;
+}
+.browse {
+  width: 144rpx;
+  height: 46rpx;
+  text-align: center;
+  line-height: 46rpx;
+  border: 2rpx solid #333333;
+  border-radius: 4rpx;
+  font-size: 24rpx;
+  color: rgb(51, 51, 51);
+  margin: 20rpx auto 0 auto;
+}
+.my-activity-btn {
+  margin: 60rpx 0rpx;
+  width: 690rpx;
+  color: #333333;
+  font-size: 32rpx;
+}

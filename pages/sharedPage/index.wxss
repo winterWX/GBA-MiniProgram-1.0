@@ -1,0 +1,69 @@
+.recommend-image{
+  position: relative;   
+}  
+.recommend-image .personImge{
+   width: 100%;
+   height: 1199rpx;
+}
+.image-text{
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 60rpx;
+}
+.userVal image{ 
+  width: 140rpx;
+  height: 140rpx;
+  border-radius: 50%;
+}
+.gift-image image{
+  width: 290rpx;
+  height: 176rpx;
+  margin: 30rpx 0 30rpx 10rpx;
+}
+.image-text1{
+   font-size: 30rpx;
+   color: rgb(155,124,86);
+   margin: 40rpx 0 15rpx 0;
+}
+.image-text2{
+  font-size: 30rpx;
+  color: rgb(155,124,86);
+}
+.image-text3{
+  font-size: 30rpx;
+  color: rgb(155,124,86);
+  margin-bottom: 30rpx;
+}
+.image-text4{
+  padding: 0 140rpx;
+  font-size: 24rpx;
+  color: rgb(102,102,102);
+  margin-bottom: 60rpx;
+  font-family: PingFangSC-Medium;
+}
+.image-btn{
+   width: 140rpx;
+   height: 48rpx;
+   border: 1rpx solid rgb(0,168,101);
+   color: rgb(0,168,101);
+   font-size: 24rpx;
+   border-radius: 4rpx;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.image-text5{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.van-button--normal{
+  width: 350rpx !important;
+  height: 86rpx !important;
+}
+.van-button--primary {
+  background-color: #00a865 !important;
+  border: 1px solid #00a865 !important;
+}

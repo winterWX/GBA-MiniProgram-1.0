@@ -1,0 +1,18 @@
+<view class='modal-mask' wx:if='{{show}}'>
+    <view class='modal-content'>
+        <view wx:if="{{title}}" class="title" hover-class="none">{{title}}</view>
+        <scroll-view scroll-y class='main-content'>
+            <slot></slot>
+        </scroll-view>
+        <view class='modal-footer' wx:if="{{rejectBtn}}">
+            <view wx:if='{{!single}}' class='cancel-btn' catchtap='cancel'>取消</view>
+            <view class='confirm-btn'>
+                <button open-type="openSetting" bindopensetting="confirmSetting" >确定</button>
+            </view>
+        </view>
+        <view class='modal-footer' wx:else>
+            <view wx:if='{{!single}}' class='cancel-btn' catchtap='cancel'>取消</view>
+            <view class='confirm-btn' catchtap='confirm'>继续</view>
+        </view>
+    </view>
+</view>

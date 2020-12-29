@@ -1,0 +1,102 @@
+.mainContent{
+  /* padding: 0rpx 30rpx; */
+}
+.itemContent{
+  padding: 20rpx 30rpx;
+}
+
+.swiper-tab{
+    width: 100%;
+    text-align: center;
+    line-height: 70rpx;
+}
+.swiper-tab-list{  
+    font-size: 28rpx;
+    display: inline-block;
+    width: 14%;
+    color: rgb(0,0,0);
+    margin-left: 9%;
+    margin-right: 9%;
+    text-align: center;
+}
+.on{ 
+    color: rgb(51,51,51);
+    border-bottom: 6rpx solid rgb(0,168,101);
+}
+.swiper-box{ 
+  padding: 0 4%;
+  display: block; 
+  height: 100%; 
+  width: 92%; 
+  overflow: hidden; 
+}
+/* .swiper-box view{
+    text-align: center;
+} */
+.swiper-tabItem{
+    width: 96rpx;
+}
+.item-content{
+  height: 144rpx;
+  margin-top: 20rpx;
+  position: relative;
+}
+.item-contentImage{
+    height: 144rpx;
+    width: 100%;
+}
+.itemSecondeImage{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0rpx;
+  width: 97%;
+  height: 144rpx;
+  padding-left: 20rpx;
+}
+.itemMiddenImage{
+    width: 96rpx;
+    height: 96rpx;
+    border-radius: 50rpx;
+}
+.itemBlock-main{
+  width: 14.35%;
+}
+.itemBlock{
+  margin-left: 18rpx;
+  width: 59%;
+}
+.itemBlockText1{
+  font-size: 28rpx;
+  color: rgb(51,51,51);
+  margin-bottom: 10rpx;
+}
+.itemBlockText2{
+  font-size: 24rpx;
+  color: rgb(102,102,102);
+}
+.itemBlockTextLast{
+  /* margin-left: 130rpx; */
+  /* //margin-left: 22%; */
+  width: 26%;
+  text-align: center;
+  color: rgb(155,124,86);
+  font-size: 28rpx;
+  font-family: PingFangSC-Medium;
+  margin-top: 6rpx;
+}
+.swpierItemContent{
+  padding-top: 20rpx;
+}
+.itemBlockTextLast-image{
+  width: 98rpx;
+  height: 98rpx;
+  margin-left: 155rpx;
+  color: rgb(155,124,86);
+  font-size: 28rpx;
+  font-family: PingFangSC-Medium;
+  margin-top: 10rpx;
+}
+.currentTabColor{
+  background-color: rgb(237,237,237) !important;
+}

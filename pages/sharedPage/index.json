@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "van-button": "vant-weapp/button/index"
+  },
+  "navigationBarTitleText": "推荐有礼",
+  "navigationBarTextStyle": "black"
+}

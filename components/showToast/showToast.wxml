@@ -1,0 +1,6 @@
+<view>
+  <view class="blockShow">
+    <image src="https://wellness.hangseng.com/images/miniprogram/images/success.png"/>
+  </view>
+  <view class="blockShowText">添加成功</view>
+</view>

@@ -1,0 +1,43 @@
+<view class="mainContent">
+  <view class="swiper-tab">
+      <view class="swiper-tab-list {{currentTab === '0' ? 'on' : ''}}"  data-current="0"  bindtap="swichNav">未使用</view>
+      <view class="swiper-tab-list {{currentTab === '1' ? 'on' : ''}}"  data-current="1"  bindtap="swichNav">已过期</view>
+      <view class="swiper-tab-list {{currentTab === '2' ? 'on' : ''}}"  data-current="2"  bindtap="swichNav">已使用</view>
+  </view>
+  <view wx:if="{{currentTab === '0'}}" class="itemContent">
+  <view class="item-content"  wx:for="{{detailArray}}" wx:key="index" data-id="{{item.id}}"  bindtap="immediateUse">
+        <image class="item-contentImage" src="https://wellness.hangseng.com/images/miniprogram/images/myCounty/quan@3x.png" />
+        <view class="itemSecondeImage">
+            <view class="itemBlock-main"><image  class="itemMiddenImage" src="{{item.attachmentUrl}}" /></view>
+            <view class="itemBlock">
+                <view class="itemBlockText1">{{item.name}}</view>
+                <view class="itemBlockText2">有效期至{{item.expiryTime}}</view>
+            </view>
+            <view class="itemBlockTextLast" wx:if="{{item.useTime === 0}}">立即使用</view>
+        </view>
+  </view></view>
+  <view wx:if="{{currentTab === '1'}}" class="itemContent">
+  <view class="item-content" wx:for="{{detailArray}}" wx:key="index" data-id="{{item.id}}" bindtap="immediateUse">
+                <image class="item-contentImage" src="https://wellness.hangseng.com/images/miniprogram/images/couponDetails/group-2-3@t3x.png" />
+                <view class="itemSecondeImage">
+                    <view class="itemBlock-main"><image  class="itemMiddenImage" src="{{item.attachmentUrl}}" /></view>
+                    <view class="itemBlock">
+                        <view class="itemBlockText1">{{item.name}}</view>
+                        <view class="itemBlockText2">有效期至{{item.expiryTime}}</view>
+                    </view>
+                    <image class="itemBlockTextLast-image" src="https://wellness.hangseng.com/images/miniprogram/images/myCounty/invalid-name@3x.png" />
+                </view>
+  </view></view>
+  <view wx:if="{{currentTab === '2'}}" class="itemContent">
+  <view class="item-content" wx:for="{{detailArray}}" wx:key="index" data-id="{{item.id}}" bindtap="immediateUse">
+                <image class="item-contentImage" src="https://wellness.hangseng.com/images/miniprogram/images/couponDetails/group-2-3@t3x.png" />
+                <view class="itemSecondeImage">
+                    <view class="itemBlock-main"><image  class="itemMiddenImage" src="{{item.attachmentUrl}}" /></view>
+                    <view class="itemBlock">
+                        <view class="itemBlockText1">{{item.name}}</view>
+                        <view class="itemBlockText2">有效期至{{item.expiryTime}}</view>
+                    </view>
+                    <image class="itemBlockTextLast-image" src="https://wellness.hangseng.com/images/miniprogram/images/myCounty/invalid-name@2x.png" />
+                </view>
+  </view></view>
+</view>

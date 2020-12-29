@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "footer": "../../components/footer/index",
+    "modalView": "../../components/modal/modal"
+  },
+  "navigationBarTitleText": "医疗服务"
+}

@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "friendList": "../../components/friendList/index",
+    "van-search": "vant-weapp/search/index"
+  },
+  "enablePullDownRefresh": true,
+  "navigationBarTitleText": "我的好友"
+}

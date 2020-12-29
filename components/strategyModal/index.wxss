@@ -1,0 +1,89 @@
+/* components/modal/modal.wxss */
+/*遮罩层*/
+.modal-mask{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 999;
+}
+/*遮罩内容*/
+.modal-content{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  background-color: #fff;
+  border-radius: 5rpx;
+  height: 586rpx;
+  width: 690rpx;
+}
+/*中间内容*/
+.main-content{
+  flex: 1;
+  height: 100%;
+  overflow-y: hidden; 
+  max-height: 80vh; /* 内容高度最高80vh 以免内容太多溢出*/
+}
+.imageAllText{
+  position: relative;
+}
+.topImage{
+  height: 282rpx;
+  width: 690rpx;
+}
+.topTexts{
+  position: absolute;
+  height: 282rpx;
+  width: 690rpx;
+  text-align: center;
+  top: 50rpx;
+}
+.topTexts image{
+  width: 100rpx;
+  height: 100rpx;
+}
+.topTextsName{
+  margin-top: 30rpx;
+}
+.platinum-main{
+  padding: 20rpx 0rpx;
+  width: 100%;
+  text-align: center;
+  font-size: 28rpx;
+  color: rgb(155,124,86);
+}
+.text2{
+  margin-top: 20rpx;
+}
+/*底部按钮*/
+.modal-footer{
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 25rpx;
+}
+.confirm-btn {
+  width: 632rpx;
+  height: 90rpx;
+  background-color: rgb(0,168,101);
+  color: rgb(255,255,255);
+  line-height: 90rpx;
+  border-radius: 5rpx;
+}
+.bottomClose{
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  bottom: 100px;
+  z-index: 999;
+}
+.bottomClose image{
+  width: 48rpx;
+  height: 48rpx;
+}

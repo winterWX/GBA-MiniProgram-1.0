@@ -1,0 +1,117 @@
+/* pages/signAppointment/index.wxss */
+page {
+    height: 100%;
+    background-color: #ededed;
+}
+.container {
+    height: 100%;
+}
+.container .header {
+    height: 290rpx;
+}
+.container .header .head-bgimg {
+    width: 100%;
+    height: 290rpx;
+}
+.container .info {
+    padding: 20rpx 30rpx;
+    border-bottom: 2rpx solid #ededed;
+    background-color: #fff;
+}
+.container .info .title {
+    color: #333333;
+    font-size: 32rpx;
+    height: 44rpx;
+    line-height: 44rpx;
+    margin-bottom: 10rpx;
+}
+.container .info .content {
+    color: #666666;
+    font-size: 28rpx;
+    line-height: 42rpx;
+}
+.container .member {
+    padding: 20rpx 30rpx;
+    margin-bottom: 20rpx;
+    background-color: #fff;
+}
+.container .member .title {
+    width: 208rpx;
+    height: 40rpx;
+    margin-bottom: 10rpx;
+}
+.container .member .member-info {
+    color: #666;
+    font-size: 28rpx;
+}
+.container .activity {
+    padding: 20rpx 30rpx;
+    background-color: #fff;
+}
+.container .activity .title {
+    color: #333;
+    font-size: 32rpx;
+}
+.container .activity .point {
+    color: #666;
+    font-size: 28rpx;
+    margin-bottom: 20rpx;
+}
+.container .activity .point .tit {
+    font-weight: 500;
+    margin-left: 50rpx;
+}
+.container .appointment-process {
+    padding: 20rpx 30rpx;
+    display: flex;
+    justify-content: space-around;
+    background-color: #fff;
+}
+.container .appointment-process .to {
+    width: 90rpx;
+    height: 16rpx;
+    margin-top: 40rpx;
+}
+.container .appointment-process .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container .appointment-process .item .item-img {
+    width: 100rpx;
+    height: 100rpx;
+    margin-bottom: 20rpx;
+}
+.container .appointment-process .item .tip {
+    width: 150rpx;
+    height: 80rpx;
+    text-align: center;
+    font-size: 28rpx;
+}
+.container .btn-box {
+    padding: 20rpx 30rpx;
+    background-color: #fff;
+    margin-bottom: 20rpx;
+}
+.container .btn-box .sign {
+    background-color: #00a865;
+    height: 90rpx;
+    line-height: 90rpx;
+    color: #fff;
+    margin-bottom: 20rpx;
+}
+/* .container .btn-box .appointment {
+    display: flex;
+    justify-content: space-between;
+} */
+.container .btn-box .appointment .appointment-btn {
+    /* width: 330rpx; */
+    height: 90rpx;
+    line-height: 90rpx;
+    background-color: #fff;
+    border: #929292;
+    color: #333;
+}
+.disabled {
+    background-color: #929292!important;
+}

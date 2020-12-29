@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "integralAmation": "../../components/integralAmation/index"
+  },
+  "navigationBarTitleText": "历史记录"
+}

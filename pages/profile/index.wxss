@@ -1,0 +1,248 @@
+page {
+  background-color: rgb(237, 237, 237);
+  height: 100%;
+}
+.container {
+  height: 100%;
+  background-color: #fff;
+}
+.healthBack {
+  width: 50%;
+  height: 200rpx;
+  background-color: #00a865;
+  color: black;
+  font-size: 40rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1rpx solid #ccc;
+}
+.progress-box {
+  height: 106rpx;
+  line-height: 106rpx;
+  border-bottom: 2rpx solid #b8b6b6;
+  padding: 0 38rpx 0 32rpx;
+  position: relative;
+  background-color: white;
+}
+
+.press-number-box {
+  width: 60rpx;
+  height: 60rpx;
+  line-height: 52rpx;
+  border-radius: 50%;
+  background-color: #00A865;
+  color: white;
+  text-align: center;
+  position: absolute;
+  top: 24rpx;
+  left: 32rpx;
+  z-index: 2;
+}
+
+.title {
+  background-color: rgb(237, 237, 237);
+  padding: 0 34rpx 0 30rpx;
+  height: 72rpx;
+  line-height: 72rpx;
+  font-size: 28rpx;
+}
+
+.title-basic {
+  font-size: 28rpx;
+  line-height: 40rpx;
+}
+
+.title-tip {
+  font-size: 24rpx;
+  line-height: 40rpx;
+  margin-left: 10rpx;
+  color: rgb(131, 123, 123);
+}
+
+.press-number {
+  font-size: 24rpx;
+}
+
+.progress-bar {
+  position: absolute;
+  top: 44rpx;
+  width: 630rpx;
+  left: 34rpx;
+}
+
+.gift {
+  width: 58rpx;
+  height: 55rpx;
+  z-index: 3;
+  position: absolute;
+  bottom: 35rpx;
+  right: 38rpx;
+}
+
+.userinfo-item-container {
+  height: 106rpx;
+  line-height: 106rpx;
+  border-bottom: 2rpx solid rgb(229, 229, 229);
+  padding: 0 30rpx 0 30rpx;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.avatar {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+.userinfo-item-label {
+  color: rgb(51, 51, 51);
+  font-size: 28rpx;
+}
+
+.userinfo-item-value__label {
+  color: rgb(51, 51, 51);
+  font-size: 28rpx;
+}
+
+.userinfo-item-value__icon {
+  width: 36rpx;
+  height: 36rpx;
+  vertical-align: middle;
+  transform: rotate(-180deg);
+}
+
+.memeber-label {
+  font-size: 30rpx;
+  color: rgb(51, 51, 51);
+}
+
+.memeber-label-value {
+  font-size: 26rpx;
+  color: rgb(51, 51, 51);
+}
+
+.hase-member-font {
+  font-size: 28rpx;
+  color: rgb(51, 51, 51);
+}
+
+.mb10 {
+  margin-bottom: 20rpx;
+}
+
+.disabled-color {
+  color: rgb(146, 146, 146);
+}
+
+/*模态框*/
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.modal-cancel {
+  position: absolute;
+  z-index: 2000;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.bottom-dialog-body {
+  width: 100%;
+  position: absolute;
+  z-index: 3000;
+  bottom: 0;
+  left: 0;
+  background: white;
+  /* padding: 0 30rpx 0 30rpx; */
+}
+
+/*动画前初始位置*/
+.bottom-positon {
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+}
+
+.Mselect {
+  width: 690rpx;
+  padding: 0 30rpx 0 30rpx;
+}
+
+.select-icon {
+  width: 42rpx;
+  height: 42rpx;
+}
+
+.Mselect .gender-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 30rpx 0;
+  background: #fff;
+  border-top: 2rpx solid #e5e5e5;
+}
+.Mcancel {
+  background: #fff;
+  padding: 40rpx 30rpx;
+}
+
+.icon-close {
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 30rpx;
+}
+
+.gender-title {
+  font-size: 33.4rpx;
+  color: rgb(51, 51, 51);
+  font-weight: bold;
+}
+
+.option-label {
+  width: 172.5rpx;
+  height: 146rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.icon-animal {
+  width: 96rpx;
+  height: 96rpx;
+}
+
+.icon-container {
+  position: relative;
+}
+
+.active {
+  position: absolute;
+  width: 36rpx;
+  height: 36rpx;
+  right: -5rpx;
+  bottom: 5rpx;
+}
+
+.animation-gift {
+  width: 56rpx;
+  height: 56rpx;
+  position: absolute;
+  right: 30rpx;
+  bottom: 30rpx;
+}
+

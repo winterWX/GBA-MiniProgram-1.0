@@ -1,0 +1,162 @@
+<view class="container">
+	<view class="header">
+		<view class="tip-box" wx:if="{{userInfo.completedCount !== 5}}">
+			<image class="bg" src="{{baseUrl + '/images/mine/background@2x.png'}}"></image>
+			<view class="profile-tip">{{ countNum }}个人信息尚未完善，<text class="link" catchtap="myProfilerEdit">完成即可获得100积分</text>。</view>
+		</view>
+		<view class="portrait" catchtap="profilePage">
+			<view class="header-box">
+				<image class="circle" src="{{baseUrl + '/images/mine/oval@2x.png'}}"></image>
+				<image class="avatar" src="{{avatarObjList[avatar].url ? avatarObjList[avatar].url : avatarObjList[0].url }}"></image>
+				<image class="edit-icon" src="{{baseUrl + '/images/mine/edit.png'}}"></image>
+			</view>
+			<view class="name">
+				{{userInfo.nickname}}
+			</view>
+		</view>
+		<view class="info">
+			<view class="item" catchtap="integralDetails">
+				<view class="num">
+					{{userInfo.integral}}
+				</view>
+				<view class="tip">
+					积分
+					<image class="icon" src="{{baseUrl + '/images/mine/fruit-icon.png'}}"></image>
+				</view>
+			</view>
+			<view class="dividing-line"></view>
+			<view class="item" catchtap="navigateCoupons">
+				<view class="num">
+					{{userInfo.couponNumber}}
+				</view>
+				<view class="tip">
+					优惠
+				</view>
+			</view>
+		</view>
+		<view class="member-info" catchtap="silverDetail">
+			<image class="img" wx:if="{{userInfo.level === 3 || userInfo.level === 5}}" src="{{baseUrl + '/images/mine/gold-member.png'}}"></image>
+			<image class="img" wx:if="{{userInfo.level === 2 || userInfo.level === 4}}" src="{{baseUrl + '/images/mine/silver-bg@2x.png'}}"></image>
+			<image class="img" wx:if="{{userInfo.level === 1}}" src="{{baseUrl + '/images/mine/copper-member.png'}}"></image>
+			<image class="lever-icon" wx:if="{{userInfo.level === 1}}" src="{{baseUrl + '/images/mine/copper.png'}}"></image>
+			<image class="lever-icon" wx:if="{{userInfo.level === 2 || userInfo.level === 4}}" src="{{baseUrl + '/images/mine/silver.png'}}"></image>
+			<view class="level gold" wx:if="{{userInfo.level === 3 || userInfo.level === 5}}">
+				金会员
+			</view>
+			<view class="level silver" wx:if="{{userInfo.level === 2 || userInfo.level === 4}}">
+				银会员
+			</view>
+			<view class="level copper" wx:if="{{userInfo.level === 1}}">
+				铜会员
+			</view>
+			<view class="guide {{color}} {{ (userInfo.level === 3 || userInfo.level === 5) ? 'goldBlock' : ''}}">
+				查看会员优惠
+			</view>
+		</view>
+	</view>
+	<view class="guider-box">
+		<view class="item" catchtap="navigateMyActivity">
+			<view class="left">
+				<image class="icon" src="{{baseUrl + '/images/mine/balloon.png'}}"></image>
+				<view class="label">
+					我的活动
+				</view>
+			</view>
+			<view class="right">
+				<image class="icon" src="{{baseUrl + '/images/mine/right-direction.png'}}"></image>
+			</view>
+		</view>
+		<view class="item" bindtap="sendFriend">
+			<view class="left">
+				<image class="icon" src="{{baseUrl + '/images/mine/gift.png'}}"></image>
+				<view class="label">
+					推荐有礼
+				</view>
+			</view>
+			<view class="right">
+				<image class="icon" src="{{baseUrl + '/images/mine/right-direction.png'}}"></image>
+			</view>
+		</view>
+		<view class="item" catchtap="addFriend">
+			<view class="left">
+				<image class="icon" src="{{baseUrl + '/images/mine/friend-icon.png'}}"></image>
+				<view class="label">
+					我的好友
+				</view>
+			</view>
+			<view class="right">
+				<image class="icon" src="{{baseUrl + '/images/mine/right-direction.png'}}"></image>
+			</view>
+		</view>
+		<view class="item" catchtap="messageCenter">
+			<view class="left">
+				<image class="icon" src="{{baseUrl + '/images/mine/message-icon.png'}}"></image>
+				<view class="label">
+					消息中心
+				</view>
+			</view>
+			<view class="right">
+				<!-- <view class="tip"></view> -->
+				<image class="icon" src="{{baseUrl + '/images/mine/right-direction.png'}}"></image>
+			</view>
+		</view>
+	</view>
+	<view class="guider-box">
+		<view class="item" catchtap="settingPage">
+			<view class="left">
+				<image class="icon" src="{{baseUrl + '/images/mine/setting.png'}}"></image>
+				<view class="label">
+					设置
+				</view>
+			</view>
+			<view class="right">
+				<image class="icon" src="{{baseUrl + '/images/mine/right-direction.png'}}"></image>
+			</view>
+		</view>
+		<view class="item" bindtap="aboutUser" data-flag="about">
+			<view class="left">
+				<image class="icon" src="{{baseUrl + '/images/mine/about-me.png'}}"></image>
+				<view class="label">
+					关于我们
+				</view>
+			</view>
+			<view class="right">
+				<image class="icon" src="{{baseUrl + '/images/mine/right-direction.png'}}"></image>
+			</view>
+		</view>
+		<view class="item" bindtap="textShowMain"  data-flag="contact">
+			<view class="left">
+
+
+				<image class="icon" src="{{baseUrl + '/images/mine/contact-us.png'}}"></image>
+				<view class="label">
+					联络我们
+				</view>
+			</view>
+			<view class="right">
+				<image class="icon" src="{{baseUrl + '/images/mine/right-direction.png'}}"></image>
+			</view>
+		</view>
+	</view>
+	<view class="modals modals-bottom-dialog" hidden="{{hideModal}}">
+		<view class="modals-cancel" bindtap="hideModal"></view>
+		<view class="bottom-dialog-body bottom-pos" animation="{{animationData}}">
+			<view class='msg-box-image' bindtap="closePage">
+				<view class="topTitle" wx:if="{{titleText}}">关于我们</view>
+				<view class="topTitle" wx:if="{{!titleText}}">联系我们</view>
+				<image src="{{baseUrl + '/images/mine/close@3x.png'}}"></image>
+			</view>
+			<view class='msg-box .msg-box2'>
+				<view class="itemBlock">
+					<view class="iphoneBlock">+（86）4001 2082 82</view>
+					<view class="iphoneBlock-image"><image src="{{baseUrl + '/images/mine/mask@3x.png'}}" /></view>
+				</view>
+				<view class="itemBlock itemBlockBottom">
+					<view class="iphoneBlock">+（852）28220228</view>
+					<view class="iphoneBlock-image"><image src="{{baseUrl + '/images/mine/mask@3x.png'}}" /></view>
+				</view>
+			</view>
+		</view>
+  </view> 
+	<footer class="footerContent" active="{{active}}"></footer>
+</view>

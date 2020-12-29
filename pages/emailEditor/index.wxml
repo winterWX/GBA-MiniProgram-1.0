@@ -1,0 +1,26 @@
+<view>
+		<view wx:if="{{emailEDit}}">
+			<view class="nick">
+				<view class="nickname">邮箱地址</view>
+				<input class="input-name" value="{{email=== '未绑定' ? '': email}}"  bindinput="nameChange"  placeholder='请输入邮箱地址'></input>
+				<view class="line {{showEmail ? 'showErroeLine' :''}}"></view>
+        <view wx:if="{{showEmail}}" class="showErroeSty">电子邮箱输入有误</view>
+			</view>
+			<view class='tip'>
+				<text>你需要通过邮箱获取验证码完成绑定。请输入正确有效的邮箱地址。</text>
+			</view>
+			<view class="btnSty"><van-button disabled="{{email=== '未绑定' || email.length === 0}}" type="primary" size="large" bindtap="sendEmail">验证电子邮箱</van-button></view>
+		</view>
+		<view wx:if="{{!emailEDit}}">
+				<view class="nick">
+					<view class="nickname">验证码</view>
+					<input class="input-name" value="{{ codeNum }}" bindinput="codeNumChange" placeholder='请输入验证码'></input>
+					<view class="line {{showErroe ? 'showErroeLine' :''}}"></view>
+          <view wx:if="{{showErroe}}" class="showErroeSty">验证码输入错误</view>
+				</view>
+				<view class='tip'>
+					<text>验证码已经通过电子邮件发送至您的电子邮件地址{{email}}。请及时查看邮箱并输入验证码完成绑定。</text>
+				</view>
+				<view class="btnSty"><van-button disabled="{{codeNum.length === 0}}" type="primary" size="large" bindtap="bindEmail">完成</van-button></view>
+		</view>
+</view>

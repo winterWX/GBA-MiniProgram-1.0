@@ -1,0 +1,194 @@
+/* components/integral/index.wxss */
+
+.mottoBox{
+  position: fixed;
+  z-index: 999999999999999999999;
+  top:0;
+  bottom: 0;
+  right: 0;
+  left: 0;  
+}
+.hideMottoBox{
+  display: none;
+}
+.MtranslateY{
+  height: 100%;  
+  /* transform: translate3d(0px, 0px, 0px);
+  transition: transform 800ms ease;*/ 
+   -webkit-animation: jump 1s ease-in-out 1;
+}
+.lostAimation.MtranslateY{
+   -webkit-animation: Lostjump 1s ease-in-out 1;
+   opacity: 0;
+}
+.action.MtranslateY{
+  transform: translateY(37%);
+}
+.showAmation{
+  width: 240rpx;
+  height: 240rpx;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.5); 
+   -webkit-animation: jumpAmation 600ms 1.05s ease-in-out 1;
+}
+.reward{
+ width:110rpx;
+ height: 110rpx;
+ margin: 0 auto;
+ padding-top: 30rpx;
+}
+.reward image{
+  width:110rpx;
+  height: 110rpx;
+}
+.rewardText{
+  margin: 30rpx;
+  height: 32rpx;
+  overflow: hidden;
+  box-sizing: content-box;
+  display: flex;  
+  font-size: 32rpx;
+  justify-content: center;
+  flex-flow:row nowrap;
+  line-height: 32rpx;
+  
+}
+.jifenAmation{
+ -webkit-animation: jifen .45s 2.1s ease-in-out 3;
+}
+.rewardTxtTitle{
+  color: #ffff;
+}
+.rewardTxtNum{
+  display: flex;
+  justify-content: flex-start;
+  flex-flow:row nowrap;
+  color: #F5D1AF;
+}
+
+@-webkit-keyframes jump {
+  0% {
+     transform: translateY(0%);
+    -webkit-animation-timing-function: ease-in;
+    opacity: 0; 
+  } 
+  10% {
+     transform: translateY(5%);   
+    opacity: .25; 
+  } 
+  10% {
+     transform: translateY(15%);   
+    opacity: .4; 
+  } 
+  30% {
+    transform: translateY(25%);
+    opacity: .6; 
+  }   
+  75% {
+   transform: translateY(35%);   
+   opacity: 1; 
+  }
+  100% {
+    transform: translateY(37%);
+    opacity: 1; 
+  }
+   /* 0% {
+     transform: translateY(37%);
+    -webkit-animation-timing-function: ease-in;
+    opacity: 0; 
+  } 
+  25% {
+     transform: translateY(30%);   
+    opacity: .2; 
+  } 
+  50% {
+     transform: translateY(30%);   
+    opacity: .1; 
+  }   
+  100% {
+    transform: translateY(37%);
+    opacity: 1; 
+  }    */
+}
+@-webkit-keyframes jumpAmation {
+  0% {
+    margin-top: 0;
+    -webkit-animation-timing-function: ease-in;
+  }
+  65% {
+    margin-top: -40rpx;
+    height: 240rpx;
+  }
+  75% {
+    height: 220rpx;
+  }
+  100% {
+    top: 0;
+    height: 240rpx;
+  }
+}
+@-webkit-keyframes jifen {
+  0% {
+     margin-top: translateY(0%);
+    -webkit-animation-timing-function: ease-in;
+  }
+  65% {
+    transform: translateY(40%);
+  }
+  75% {
+   transform: translateY(35%);
+  }
+  100% {
+    transform: translateY(37%);
+   
+  }
+}
+.number{
+ position: relative; 
+}
+.number_animate{
+  display: block;
+  box-sizing: border-box;  
+  user-select: none;
+  transform: translate3d(0px, 0px, 0px);
+  z-index: 1;
+  transition: transform 800ms ease;
+}
+.itemTxt{
+  height: 32rpx;
+}
+
+@-webkit-keyframes Lostjump {
+  0% {
+     transform: translateY(37%);
+    -webkit-animation-timing-function: ease-in;
+    opacity: 1; 
+  } 
+  25% {
+     transform: translateY(30%);   
+    opacity: .5; 
+  } 
+  50% {
+     transform: translateY(10%);   
+    opacity: .2; 
+  }   
+  100% {
+    transform: translateY(0%);
+    opacity: 0; 
+  }   
+  
+}
+.display-num {
+  z-index: 50000;
+  position: absolute;
+  color: #927452;
+  font-size:40rpx;
+  top:16rpx;
+  right: 16rpx;
+  background-color: #f0ccab;
+  width: 78rpx;
+  height: 78rpx;
+  line-height: 78rpx;
+  text-align: center;
+  border-radius: 39rpx
+}

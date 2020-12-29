@@ -1,0 +1,16 @@
+page{
+  background-color: #ededed;
+}
+.topText{
+  background-color: #ffffff;
+  padding: 30rpx;
+}
+.title{
+  color: rgb(102,102,102);
+  font-size: 24rpx;
+}
+.titleTop{
+  margin-bottom: 5rpx;
+  color: rgb(51,51,51);
+  font-size: 24rpx;
+}

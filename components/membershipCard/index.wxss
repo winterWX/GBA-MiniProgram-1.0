@@ -1,0 +1,324 @@
+page{
+  background-color: #ededed;
+}
+.imageBalockIndex{
+  position: relative;
+  height: 318rpx;
+  overflow: hidden;
+  z-index: 1;
+}
+.topLeftBlock{
+   display: flex;
+   align-items: center;
+   justify-self: center;
+   background-color: #ffffff;
+   padding: 10rpx 0rpx;
+   padding-left: 30rpx;
+   position: absolute;
+}
+.topLeftFrist{
+  padding-left: 0rpx !important;
+}
+.topLeftBlock image{
+  width: 650rpx;
+  height: 288rpx;
+}
+.itemImage{
+   margin-right: 20rpx;
+   z-index: 99;
+   position: relative;
+} 
+.itemImage3{
+  width: 100%;
+  padding: 0rpx 60rpx;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 30rpx;
+}
+.imageFlg{
+  margin-left: -20rpx;
+}
+.imageFlg2{
+ padding: 0rpx 30rpx;
+}
+.imageTopText{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 44rpx;
+  left: 30rpx;
+}
+.imageTopTextLeft{
+  display: flex;
+  align-items: center;
+  width: 450rpx;
+}
+.imageTopTextLeft image{
+  height: 40rpx;
+  width: 40rpx;
+}
+.itemImage1{
+  
+}
+.imageTopTextRight{
+  flex: 1;
+  border: 2rpx solid rgb(51,51,51);
+  border-radius: 50rpx;
+  padding: 3rpx 18rpx;
+  font-size: 24rpx; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+.imageRihtText{
+ color: rgb(13,13,13);
+ font-size: 32rpx;
+ margin-left: 30rpx;
+ font-family: PingFangSC-Medium;
+ /* font-weight: 550; */
+}
+.imageBottom{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 210rpx;
+  padding-left: 30rpx;
+}
+.imageBottom1{
+  width: 430rpx;
+  color: rgb(51,51,51);
+  font-size: 24rpx;
+  font-family: PingFangSC-Regular;
+  font-weight: 500;
+}
+.imageBottomText{
+  font-size: 28rpx;
+  color: rgb(51,51,51);
+  font-family: Flama-Medium;
+}
+.imageBottom2{
+  flex:1;
+}
+.imageBottom2{
+  color: rgb(51,51,51);
+  font-size: 24rpx;
+  padding-left: 45rpx;
+}
+.seliverBlockLeft{
+  width: 48%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 2rpx solid #ededed;
+  /* padding-left: 30rpx; */
+}
+.seliverBlockRight{
+  width: 52%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 10rpx;
+}
+.seliverBlock{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.seliverBlock{
+  height: 85rpx;
+  /* margin-top: 2rpx; */
+  background-color: #ffffff;
+  padding: 30rpx 0rpx;
+}
+.seliverTextImge image{
+  width: 80rpx;
+  height: 80rpx;
+}
+.silver-bgText{
+  position: absolute;
+  top:95rpx;
+  left: 30rpx;
+  color: rgb(51,51,51);
+  font-size: 24rpx;
+}
+
+
+.imageTopText3{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 44rpx;
+  left: 30rpx;
+}
+.imageTopTextLeft3{
+  display: flex;
+  align-items: center;
+  width: 450rpx;
+}
+.imageTopTextLeft3 image{
+  height: 40rpx;
+  width: 40rpx;
+}
+.imageRihtText3{
+  color: rgb(1255,212,120);
+  font-size: 32rpx;
+  margin-left: 30rpx;
+  font-family: PingFangSC-Medium;
+ }
+ .imageTopTextRight3{
+  flex: 1;
+  border: 2rpx solid rgb(255,212,120);
+  border-radius: 50rpx;
+  padding: 3rpx 18rpx;
+  font-size: 24rpx; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(255,212,120);
+}
+.silver-bgText3{
+  position: absolute;
+  top:95rpx;
+  left: 30rpx;
+  color: rgb(255,212,120);
+  font-size: 24rpx;
+}
+.imageBottom3{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 218rpx;
+  padding-left: 30rpx;
+}
+.imageBottom13{
+  width: 430rpx;
+  color: rgb(255,212,120);
+  font-size: 24rpx;
+  font-family: PingFangSC-Regular;
+}
+.imageBottomColor{
+  color: rgb(255,212,120) !important;
+}
+.imageBottoFu{
+  color: rgb(253,224,188);
+}
+.seliverTextImge{
+  flex: 1;
+}
+.seliverText{
+ padding-left: 30rpx;
+ width: 230rpx;
+}
+.seliverTextLeft{
+   color: rgb(51,51,51);
+   font-size: 28rpx;
+   width: 90%;
+}
+.seliverTextLeftBottom{
+  color: rgb(102,102,102);
+  font-size: 24rpx;
+  margin-top: 10rpx;
+  flex: 1;
+}
+
+.seliverBlockRight{
+  padding-left: 30rpx;
+}
+.seliverTextRight{
+  font-size: 28rpx;
+  color: rgb(51,51,51);
+
+}
+.seliverTextRightBottom{
+  font-size: 24rpx;
+  color: rgb(102,102,102);
+  margin-top: 10rpx;
+}
+.seliverTextRightBlock{
+  width: 270rpx;
+}
+.seliverTextImge{
+  flex: 1;
+}
+.silverBgImge .silver-bgImge{
+  width: 92rpx;
+  height: 92rpx;
+}
+.silverBgImge{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 282rpx;
+  top: 105rpx;
+}
+.silverBgImgen13 {
+  left: 287rpx !important;
+}
+.silverBgImgen .silver-bgImgen{
+  width: 92rpx;
+  height: 92rpx;
+}
+.silverBgImgen{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 315rpx;
+  top: 100rpx;
+}
+.page-section{
+  width: 100%;
+}
+.swiperItem{
+  display: inline !important;
+  width: 100%;
+}
+.itemImageLast{
+  left: 30rpx;
+}
+.topPaddingLeft{
+  padding-left: 50rpx !important;
+}
+
+.swiperItemSevlier{
+    margin-left: 30rpx;
+}
+.swiperItemSeconde{
+    margin-left: -40rpx;
+}
+.levelFristFive{
+    margin-left: 140rpx;
+}
+.levelSecomdeFive{
+    margin-left: 70rpx;
+}
+
+.afterBalck{
+  margin-left: 30rpx;
+}
+.aboubtBalck{
+ margin-left: -40rpx;
+}
+.secondeCardShow1{
+  margin-left: 130rpx;
+}
+.secondeCardShow2{
+  margin-left: 50rpx;
+}
+.secondeCardShow3{
+  margin-left: -30rpx;
+}
+.lastCareds1{
+  margin-left: 140rpx;
+}
+.lastCareds2{
+  margin-left: 70rpx;
+}

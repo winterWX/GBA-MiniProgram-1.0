@@ -1,0 +1,30 @@
+<!--components/integral/index.wxml-->
+<view class="{{show?'mottoBox':'mottoBox hideMottoBox'}}" style="z-index: 1000;">
+  <view class="{{!animateCompelte?'MtranslateY action':'MtranslateY lostAimation'}}">
+    <view class="showAmation">
+      <view class="reward">
+        <image  wx:if="{{integral === 10}}"   src="https://wellness.hangseng.com/images/miniprogram/images/img_0.png"   mode="aspectFit" />
+        <image  wx:if="{{integral === 50}}"   src="https://wellness.hangseng.com/images/miniprogram/images/img_50.png"  mode="aspectFit" />
+        <image  wx:if="{{integral === 100}}"  src="https://wellness.hangseng.com/images/miniprogram/images/img_100.png" mode="aspectFit" />
+        <view wx:if="{{integral !== 100 && integral !== 50 && integral !== 10}}" style="position: relative;">
+          <image  src="https://wellness.hangseng.com/images/miniprogram/images/otherCarde/group7.png" mode="aspectFit" />
+          <!-- <text class="display-num">{{integral}}</text> -->
+        </view>
+      </view> 
+      <view class="jifenAmation">
+        <view class="rewardText">
+          <view class="rewardTxtTitle">积分</view>
+          <view class="rewardTxtNum">+
+            <view class="number">
+              <view class="number_animate" style="transform: translate3d(0px, {{translateY}}px, 0px);" wx:if="{{!animateCompelte}}">
+                <view wx:for="{{numberAarry}}" wx:key="index" class="itemTxt">{{item}}</view>
+              </view>
+            <view class="reusult" wx:if="{{animateCompelte}}">{{numberAarry[numberAarry.length-1]}}</view>
+            </view></view>
+        </view>
+      </view>
+
+    </view>
+  </view>
+
+</view>

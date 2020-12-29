@@ -1,0 +1,21 @@
+
+<view class="container">
+    <view class="info">
+        <view class="title">
+            至浏览器预约线下门诊
+        </view>
+        <view class="introduce">
+            此处加入对中大机构的线下门诊的简单介绍，让用户决定复制跳转前获得更多的信息和动力。
+        </view>
+        <view class="introduce">
+            比如能提供什么医疗服务，需要到香港就诊等...
+        </view>
+    </view>
+    <view class="tip">
+        复制链接后转至浏览器打开，即可预约
+    </view>
+    <view class="link">
+        https://www.cuhkclinic.com.hk
+    </view>
+    <button class="btn" catchtap="copyData">复制链接</button>
+</view>

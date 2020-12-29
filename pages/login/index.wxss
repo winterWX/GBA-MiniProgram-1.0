@@ -1,0 +1,75 @@
+/* pages/login/index.wxss */
+.authorization{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding:30rpx;
+}
+.auth_image{
+  width: 100%;
+}
+.auth_image image{
+  width: 100%;
+}
+.auth_text_padding{
+  padding-top: 70rpx;
+  padding-bottom: 40rpx;
+}
+.auth_text{
+  font-family: PingFangSC;
+  font-size: 28rpx;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: rgba(0, 0, 0, 0.85);
+  text-align: left;
+  width: 100%;
+}
+.footer{
+  position: fixed;
+  z-index: 200;
+  height: 130rpx;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  box-shadow: 0 -1px 5px 0 rgba(0, 0, 0, 0.1);
+  bottom: 0px;
+  padding: 20rpx 30rpx;
+  display: flex;
+  justify-content: center;  
+  box-sizing: border-box;
+}
+.footer button{
+  font-family: PingFangSC;
+  font-size: 32rpx;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 90rpx;
+  letter-spacing: normal;
+  text-align: center;
+  height: 90rpx;
+  width: 330rpx;
+   padding: 0rpx;
+}
+.footer button:first-child{
+  border-radius: 2px;
+  border: solid 1px #929292;
+  color: #333333;
+  background-color: transparent;
+  margin-right: 30rpx;
+  margin-left:0rpx;
+ 
+}
+.footer button:last-child{
+  border-radius: 2px;
+  border: solid 1px #00a865;
+  color: #fff;
+  background-color: #00a865;
+  margin: 0rpx;  
+}
+button::after{
+  border: 0px;
+}

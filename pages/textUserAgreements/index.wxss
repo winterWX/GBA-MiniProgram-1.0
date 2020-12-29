@@ -1,0 +1,64 @@
+.contentAllContent{
+  padding: 30rpx;
+}
+.titleTop{
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 16.0000pt;
+  margin-bottom: 50rpx;
+}
+.insertName{
+  font-family: Arial;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 16.0000pt;
+  background: rgb(127,127,127);
+}
+.MsoTableGrid{
+  display: table;
+  border-collapse: separate;
+  white-space: normal;
+  line-height: normal;
+  font-weight: normal;
+  font-size: medium;
+  font-style: normal;
+  color: -internal-quirk-inherit;
+  text-align: start;
+  border-spacing: 2px;
+  border-color: grey;
+  font-variant: normal;
+  font-size: 10.0000pt;
+  border-collapse: collapse;
+  margin-left: 2.8500pt;
+  border: none;
+}
+.textCoy{
+  margin-bottom: 30rpx;
+}
+.textMain{
+  margin-bottom: 30rpx;
+}
+.bottomSty{
+  margin-bottom: 20rpx;
+  font-size: 1.17em;
+  font-weight: bold;
+}
+.insertCoy{
+  font-family: Arial;
+  font-style: italic;
+  background: rgb(127,127,127);
+}
+.yellowCoy{
+  font-family: Arial;
+  font-style: italic;
+  background: rgb(255,255,0);
+}
+.toStye{
+  text-decoration: line-through;
+  color: red;
+  text-decoration: line-through;
+}
+.bludsty{
+  text-decoration: underline;
+  color: blue;
+}

@@ -1,0 +1,469 @@
+/* pages/activityDetail/index.wxss */
+page {
+  background-color: #ededed;
+  height: 100%;
+}
+
+.container {
+  background-color: #ededed;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+}
+
+.container .disable-tip {
+  background-color: #F2F2F2;
+  color: #333;
+  padding: 30rpx 60rpx;
+  display: flex;
+  align-items: center;
+}
+
+.container .disable-tip .disable-icon {
+  width: 40rpx;
+  height: 40rpx;
+  margin: 4rpx 14rpx 0 0;
+}
+
+.container .main {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.activity-desc {
+  background-color: #fff;
+  font-size: 0;
+}
+
+.activity-desc .poster {
+  width: 100%;
+  height: 290rpx;
+}
+
+.activity-desc .content {
+  padding: 20rpx 30rpx 30rpx 30rpx;
+}
+
+.activity-desc .content .activity-content {
+  display: flex;
+}
+
+.activity-desc .activity-content .title {
+  flex: 1;
+  font-size: 32rpx;
+  color: #333333;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.activity-desc .remain-days {
+  font-size: 24rpx;
+  background-color: #F2FAF7;
+  height: 30rpx;
+  line-height: 30rpx;
+  border-radius: 10rpx;
+  display: table-cell;
+  padding: 4rpx 16rpx 4rpx 12rpx;
+  color: #00A865;
+  border: 2rpx solid #00A865;
+}
+
+.over {
+  font-size: 24rpx;
+  background-color: #ededed;
+  height: 30rpx;
+  line-height: 30rpx;
+  border-radius: 10rpx;
+  padding: 10rpx 30rpx;
+  color: #666666;
+  display: table-cell;
+}
+
+.activity-desc .remain-days .time-icon {
+  width: 40rpx;
+  height: 40rpx;
+  vertical-align: middle;
+}
+
+.activity-desc .remain-days text {
+  vertical-align: middle;
+}
+
+.activity-desc .activity-desc {
+  color: #666666;
+  font-size: 24rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-bottom: 20rpx;
+}
+
+.milepost-box {
+  background-color: white;
+  margin: 30rpx;
+  padding-bottom: 30rpx;
+}
+
+.milepost-box .milepost {
+  padding: 30rpx 30rpx 0 30rpx;
+  background-color: white;
+  height: 300rpx;
+  position: relative;
+}
+
+.milepost .header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 28rpx;
+  color: #333;
+  margin-bottom: 30rpx;
+}
+
+.milepost .header .activity-detail {
+  border-bottom: 2rpx solid #333;
+}
+
+.milepost .header .title {
+  font-size: 32rpx;
+}
+
+.progress-box {
+  padding-top: 20rpx;
+  position: relative;
+  top: 50rpx;
+}
+
+.progress-box .progress {
+  width: 100%;
+  height: 20rpx;
+  background-color: #ededed;
+  border-radius: 10rpx;
+  position: relative;
+  display: table;
+}
+
+.progress-box .progress .cell {
+  display: table-cell;
+}
+
+.progress-box .percent {
+  height: 20rpx;
+  width: 100%;
+  background-color: #00A865;
+  border-radius: 10rpx;
+  position: absolute;
+  top: 20rpx;
+  left: 0;
+  z-index: 3;
+  transition: all 3s;
+}
+
+.progress-box .progress .item {
+  width: 36rpx;
+  height: 36rpx;
+  border-radius: 18rpx;
+  position: absolute;
+  display: inline-block;
+  background-color: #fff;
+  top: -9rpx;
+  transform: translate(-18rpx);
+  z-index: 3;
+}
+
+.progress-box .progress .cell:first-child .item {
+  transform: translate(5rpx);
+}
+
+.progress-box .progress .cell:last-child .item {
+  transform: translate(-26rpx);
+}
+
+.progress-box .progress .cell .active-item {
+  width: 16rpx;
+  height: 16rpx;
+  border-radius: 8rpx;
+  position: absolute;
+  display: inline-block;
+  background-color: #fff;
+  top: 3rpx;
+  transform: translate(-8rpx);
+}
+
+.progress-box .progress .cell:last-child .active-item {
+  transform: translate(-20rpx);
+}
+
+.progress-box .progress .cell .reward {
+  font-size: 20rpx;
+  background-color: #9B7C56;
+  position: absolute;
+  height: 28rpx;
+  line-height: 28rpx;
+  border-radius: 14rpx;
+  padding: 0 8rpx;
+  bottom: 46rpx;
+  transform: translate(-50%);
+  color: #fff;
+}
+
+.progress-box .progress .cell:first-child .reward {
+  transform: translate(4rpx);
+}
+
+.progress-box .progress .cell:last-child .reward {
+  transform: translate(-90%);
+  min-width: 76rpx;
+  text-align: center;
+}
+
+.progress-box .progress .cell .reward .arrow {
+  width: 0;
+  height: 0;
+  border: 6rpx solid transparent;
+  border-top-color: #9B7C56;
+  position: absolute;
+  top: 28rpx;
+  left: 45%;
+}
+
+.progress-box .progress .cell:last-child .reward .arrow {
+  transform: rotate(-135deg);
+  left: 78%;
+  top: 22rpx;
+}
+
+.num {
+  position: absolute;
+  width: auto;
+  transform: translate(-60%);
+  top: 30rpx;
+  font-size: 24rpx;
+  height: 34rpx;
+  line-height: 34rpx;
+  color: #333333;
+}
+
+.progress-box .progress .cell:first-child .num {
+  transform: translate(0);
+}
+
+.progress-box .progress .cell:last-child .num {
+  transform: translate(-100%);
+}
+
+.unit {
+  position: absolute;
+  width: 91%;
+  bottom: 0rpx;
+  color: #929292;
+  font-size: 24rpx;
+}
+
+.unit .unit-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.unit .unit-box .step {
+  color: #00A865;
+  font-size: 28rpx;
+}
+
+.reward-btn {
+  height: 90rpx;
+  line-height: 90rpx;
+  margin: 30rpx 30rpx 0 30rpx;
+  background-color: #00A865;
+  color: white;
+}
+
+.reward-dis-btn {
+  height: 90rpx;
+  margin: 30rpx 30rpx 0 30rpx;
+  background-color: #D9D9D9;
+  color: #fff;
+}
+
+.activity-info {
+  margin: 0 30rpx 30rpx 30rpx;
+  background-color: #fff;
+  padding: 30rpx;
+  overflow-x: auto;
+}
+
+.activity-info .info-title {
+  color: #333333;
+  font-size: 32rpx;
+  height: 44rpx;
+  line-height: 44rpx;
+}
+
+.activity-info .content {
+  margin-top: 20rpx;
+  font-size: 28rpx;
+  color: #333333;
+}
+
+.btn-box {
+  background-color: #fff;
+  padding: 20rpx 30rpx;
+}
+
+.btn-box .btn {
+  width: 100%;
+  font-size: 32rpx;
+  color: #fff;
+  background-color: #00a865;
+}
+
+.btn-box .dis-btn {
+  width: 100%;
+  font-size: 32rpx;
+  color: #ffffff;
+  background-color: #D9D9D9;
+}
+
+.hero-list {
+  margin: 30rpx;
+  padding: 30rpx;
+  background-color: #ffffff;
+}
+
+.hero-list .hero-list-title {
+  color: #333333;
+  font-size: 32rpx;
+  height: 44rpx;
+  line-height: 44rpx;
+  font-weight: bolder;
+}
+
+.member-box {
+  display: flex;
+  align-items: center;
+  padding: 30rpx 0 30rpx 60rpx;
+  border-bottom: 2rpx solid #ededed;
+}
+
+.member-box .member-info {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.member-box .member-info .header {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 40rpx;
+  margin-right: 20rpx;
+}
+
+.member-info .index {
+  color: #929292;
+  font-size: 44rpx;
+  width: 60rpx;
+}
+
+.member-info .order {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.member-info .order .nickname {
+  color: #00A865;
+  font-size: 28rpx;
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 300rpx;
+  margin-bottom: 10rpx;
+}
+
+.member-info .order .rank {
+  color: #929292;
+  font-size: 24rpx;
+}
+
+.member-box .step-show {
+  color: #333333;
+  font-size: 44rpx;
+}
+
+.member-box .step-show text {
+  font-size: 24rpx;
+  color: #929292;
+  margin-left: 10rpx;
+}
+
+.medal {
+  width: 60rpx;
+  height: 76rpx;
+}
+
+.pl0 {
+  padding-left: 0;
+}
+
+.active {
+  color: #00A865 !important;
+}
+
+.more {
+  color: #333333;
+  font-size: 28rpx;
+  text-align: center;
+  padding: 20rpx 0rpx 0 0;
+}
+
+.add-friend {
+  color: #333333;
+  font-size: 28rpx;
+  text-align: center;
+  padding-bottom: 30rpx;
+}
+
+.add-friend text {
+  border-bottom: 2rpx solid #333;
+}
+
+.modal-body {
+  position: absolute;
+  left: 6%;
+  top: 50%;
+  width: 80%;
+  height: 240rpx;
+  margin-top: -150rpx;
+  z-index: 10000;
+  padding: 30rpx;
+  background-color: rebeccapurple;
+}
+
+.modal-body .flex {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30rpx 0 30rpx;
+}
+
+.modal-body .modal-content {
+  text-align: center;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+
+.modal-body .btn {
+  background-color: #00a865;
+  width: 200rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+.modal-body .dis {
+  width: 200rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+}

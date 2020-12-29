@@ -1,0 +1,43 @@
+.container {
+    position: relative;
+}
+.container .bg {
+    width: 100%;
+    height: 290rpx;
+}
+.container .content {
+    padding: 0rpx 30rpx;
+}
+.container .content .title {
+    color: #9b7c56;
+    font-size: 38rpx;
+    text-align: center;
+    margin: 30rpx 0 30rpx 0;
+}
+.container .content .tip {
+    color: #9b7c56;
+    font-size: 28rpx;
+    text-align: center;
+    margin-bottom: 50rpx;
+}
+.container .content .info {
+    color: #333;
+    font-size: 28rpx;
+}
+.container .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    padding: 30rpx;
+    text-align: center;
+}
+.container .footer .btn {
+    width: 690rpx;
+    margin:52rpx 0 30rpx 0;
+}
+.container .footer .statement {
+    text-align: center;
+    color: #5c5c5c;
+    font-size: 24rpx;
+    border-bottom: 2rpx solid #5c5c5c;
+}

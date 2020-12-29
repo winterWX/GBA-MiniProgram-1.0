@@ -1,0 +1,137 @@
+<view class="container">
+	<view wx:if="{{detail.status === 3}}" class="disable-tip">
+		<image class="disable-icon" src="{{baseUrl + '/images/pagePng/circle-info.png'}}">
+		</image>
+		<text>活动已结束</text>
+	</view>
+	<view class="main">
+		<view class="activity-desc">
+			<image class="poster" src="{{detail.thumb}}"></image>
+			<view class="content">
+				<view class="activity-content">
+					<text class="title">{{detail.title}}</text>
+				</view>
+				<view class="activity-desc">
+					<text>{{detail.description}}</text>
+				</view>
+				<view class="remain-days" wx:if="{{detail.status === 2}}">
+					<image class="time-icon" src="{{ baseUrl  + '/images/challenge/active-left-time.png'}}"></image>
+					<text>剩余{{detail.days}}天</text>
+				</view>
+				<view class="over" wx:if="{{detail.status === 3}}">
+					<text>已结束</text>
+				</view>
+			</view>
+		</view>
+		<!-- 里程碑 -->
+		<view class="milepost-box">
+			<view class="milepost">
+				<view class="header">
+					<view class="title">里程碑</view>
+					<navigator hover-class="none" url="../activityInfo/index?id={{activityId}}">
+						<view wx:if="{{!showDetail}}" class="activity-detail">活动详情</view>
+					</navigator>
+				</view>
+
+				<view class="progress-box">
+					<view class="percent" style="width: {{percent + '%'}}">
+					</view>
+					<view class="progress">
+						<view class="cell" wx:for="{{detail.mileStoneVo}}" wx:key="id" wx:for-item="step">
+							<view class="active-item" wx:if="{{step.received === 1}}"
+								style="left: {{ (100 / (detail.mileStoneVo.length-1)) * index + '%'}};z-index: 5;"></view>
+							<image src="{{baseUrl + '/images/otherCarde/star.png'}}" class="item"
+								wx:if="{{step.reward !==0 && (step.received === 2 || step.received === 3)}}"
+								style="left: {{ (100 / (detail.mileStoneVo.length-1)) * index + '%'}}"></image>
+							<view wx:if="{{step.reward !==0}}" class="reward"
+								style="left: {{ (100 / (detail.mileStoneVo.length-1)) * index + '%'}}">
+								{{step.reward}}积分
+								<view class="arrow"></view>
+							</view>
+							<view class="num" style="left: {{ (100 / (detail.mileStoneVo.length-1)) * index + '%'}}">
+								{{step.mileStoneTarget}}</view>
+						</view>
+					</view>
+				</view>
+				<view class="unit">
+					<view class="unit-box">
+						<view wx:if="{{detail.friendRank}}">
+							累计步数 <text class="step">{{detail.friendRank.self.steps}}</text>
+						</view>
+						<view class="unit-box__unit">单位： 步</view>
+					</view>
+				</view>
+			</view>
+			<button wx:if="{{isJoin && canReceivedReward && detail.status !== 3 && !completeChange}}" class="reward-btn" catchtap="receiveReward">立即领取{{reward}}积分</button>
+			<button wx:if="{{isJoin && !canReceivedReward && !completeChange && detail.status !== 3 }}"
+				class="reward-dis-btn">收起手机，走一走</button>
+			<button wx:if="{{completeChange || (detail.status === 3 && detail.isJoinStatus ==='2')}}" class="reward-btn" catchtap="navigateActivityResult">查看战绩</button>
+		</view>
+		<view wx:if="{{showDetail}}">
+			<view class="activity-info">
+				<view class="info-title">活动详情</view>
+				<rich-text class="content" type="'node'" nodes="{{detail.content}}"></rich-text>
+			</view>
+			<view class="activity-info">
+				<view class="info-title">活动规则及声明</view>
+				<rich-text class="content" type="'node'" nodes="{{detail.ruledescription}}"></rich-text>
+			</view>
+			<view class="btn-box">
+				<button wx:if="{{isLogin === 0 && detail.status ===2 && !isJoin}}" class="btn" type="primary" size="large"
+					open-type="getUserInfo" bindgetuserinfo="getUserInfo">一键参与</button>
+				<button wx:if="{{isLogin === 1 && detail.status === 2 && !isJoin}}" class="btn" catchtap="joinActivity"
+					data-id="{{detail.activityId}}">一键参与</button>
+				<button wx:if="{{detail.status === 1}}" class="dis-btn">未开始</button>
+				<button wx:if="{{detail.status === 3}}" class="dis-btn">活动已结束</button>
+			</view>
+		</view>
+		<view wx:if="{{!showDetail}}" class="hero-list">
+			<view class="hero-list-title">好友排名</view>
+			<view class="member-box">
+				<view class="member-info">
+					<image class="header"
+						src="{{avatarObjList[self.avatar] ? avatarObjList[self.avatar].url : defaultIcon}}">
+					</image>
+					<view class="order">
+						<view class="nickname">{{self.nickname}}（我自己）</view>
+						<view class="rank">第{{self.rank}}名</view>
+					</view>
+				</view>
+				<view wx:if="{{self.rank > 3 || (self.rank <= 3 && !self.completeTime) }}" class="step-show">{{self.steps}}<text>步</text></view>
+				<image wx:if="{{self.rank <= 3 && self.completeTime}}" src="{{baseUrl + '/images/challenge/medal.png'}}"
+					class="medal"></image>
+			</view>
+			<view class="member-box pl0" wx:if="{{heroList.length}}" wx:for="{{heroList}}" wx:for-item="hero" wx:key="id">
+				<view class="member-info">
+					<view class="index {{ index <= 2 ? 'active' : ''}}">{{ index + 1}}</view>
+					<image class="header"
+						src="{{avatarObjList[hero.avatar] ? avatarObjList[hero.avatar].url : (hero.avatarUrl ? hero.avatarUrl : defaultIcon)}}">
+					</image>
+					<view class="order">
+						<view class="nickname" style="color: #333;">{{hero.nickname}}</view>
+						<view class="rank" wx:if="{{hero.completeTime}}">{{hero.completeTime}}</view>
+						<view class="rank" wx:if="{{!hero.completeTime}}">累计{{hero.receivedIntegral}}积分</view>
+					</view>
+				</view>
+				<view class="step-show" wx:if="{{hero.rank > 3 || (hero.rank <= 3 && !hero.completeTime)}}">{{hero.steps}}<text>步</text></view>
+				<image src="{{baseUrl + '/images/challenge/medal.png'}}" class="medal" wx:if="{{hero.rank <= 3 && hero.completeTime}}"></image>
+			</view>
+			<navigator wx:if="{{heroList.length > 5}}" hover-class="none" url="../heroList/index?id={{activityId}}">
+				<view class="more">查看更多</view>
+			</navigator>
+		</view>
+		<navigator wx:if="{{heroList.length <= 5 && isLogin === 1 && detail.status === 2 && isJoin }}" hover-class="none"
+			url="../addFriend/index">
+			<view class="add-friend"><text>添加更多通讯录好友</text></view>
+		</navigator>
+		<view wx:if="{{showDialog}}" class="modal-body">
+			<view class="modal-title">提示</view>
+			<view class="modal-content">参加挑战须有授权微信运动</view>
+			<view class="flex">
+				<button class="dis" catchtap="closeModal">取消</button>
+				<button class="btn" open-type="openSetting" bindopensetting="callback">确认</button>
+			</view>
+		</view>
+	</view>
+</view>
+<integralAmation integral="{{reward}}" wx:if="{{showAnimation}}" style="z-index:4;" />

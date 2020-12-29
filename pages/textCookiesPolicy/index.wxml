@@ -1,0 +1,109 @@
+<view class="contentAllContent">
+    
+<view class="titleTop">Hang Seng Bank | <text class="titleMindden">[Insert name of Wellness App] </text>| Cookies Policy</view>
+
+<view class="titleSecon">Use of Cookies, Spotlight Tags and Web Beacons etc.</view>
+
+<view class="threeCoy">We may gather the following information through the use of "cookies". Cookies are small bits of information that are automatically stored on your web browser in your computer, mobile phone or other device for accessing the Internet ("device") that can be retrieved by this Site/mobile application. Cookies will:</view>
+
+ 
+
+<view class="threeCoy">· record your visit to this Site/mobile application for analysing the number of visitors to this Site/mobile application, users’ general usage patterns.</view>
+
+<view class="threeCoy">· record your personal usage patterns, profile, preferences and interests through your use of this Site/mobile application and for improving your experience.</view>
+
+<view class="threeCoy">· allow us to recognise your device and will store information about your personalised settings (such as language preference, useful links settings) and your use of this Site/mobile application (such as visit and logon sessions, as well as your behavior, pattern and footprints regarding the use of this Site/application), thus enabling us to provide more useful features to you, to tailor the content of our websites and mobile applications to suit your interests.</view>
+
+
+<view class="threeCoy">We will be able to access the information stored on the cookies. These data obtained through cookies may be further comingled and matched with your personal data collected and used or to be collected and used by the Bank in accordance with the <text class="blueCoy">[Notice]</text> <text class="yellocode">[KWM Note: insert hyperlink when link to the Notice is available]</text>, including but not limited to your demographic data, <text class="blueCoy">transaction details and transaction pattern</text> and behaviour. Where permitted by your marketing preferences, we may use these data and your personal data to provide you with promotional materials or direct marketing.</view>
+
+
+<view class="threeCoy">Most browsers are initially set to accept cookies. If you prefer, you can, during your visit at this Site/ mobile application, set your browser to disable cookies or to inform you when they are set – please see our <text bindtap="cookieNotice" class="cookieNotice" wx:if="{{!cookieNoticeShow}}">cookie notice</text><text class="cookieNotice" wx:if="{{cookieNoticeShow}}"><web-view src="https://www.hsbc.com/cookie-notice">cookie notice</web-view></text><text class="yellocode">[KWM Note: We have changed “cookies policy”  to “cookie notice” because the link goes to a page titled “Cookie notice”.]</text> for more details of how to do this. By disabling cookies, you may not be able to take full advantage of this Site/ mobile application.</view>
+
+
+
+<view class="threeCoy">If you accept cookies during your use of this Site/ mobile application or continue to use this Site/mobile application, you will be acknowledging that your information and personal data (if any) is being collected, stored, accessed and used as outlined above.</view>
+
+<view class="threeCoy">If you are a user of this mobile application, please note that we store and access software on your device to aid security, maintain the connection to our system, allow us to monitor how this app is being used, and save your preferences. The purpose of these cookies is set out below:</view>
+
+
+
+<view class="threeCoy">Name</view>
+ 
+<view class="threeCoy">Description</view>
+ 
+
+<view class="threeCoy">Native-app</view>
+ 
+<view class="threeCoy">Identify the version of the app</view>
+ 
+
+<view class="threeCoy">Device type</view>
+ 
+<view class="threeCoy">Identify the device type of app including the version of device and the model of device</view>
+ 
+
+<view class="threeCoy">Device ID</view>
+ 
+<view class="threeCoy">Identify the device unique user ID</view>
+ 
+
+
+<view class="threeCoy">We may also work with third parties to research certain usage and activities on this Site/mobile application for us. These third party research agencies include Sizemek, Bing, Google Campaign Manager (DoubleClick Campaign Manager) / Google Ads (AdWords)/ Google Display & Video 360 (DoubleClick Bid Manager), Google Webmaster, Yahoo!, Facebook, WeChat, Yahoo, theTradeDesk, Nielsen//NetRatings, Webtrends, Celebrus and <text class="blueCoy">Adobe</text>. They use technologies such as tracking tags, cookies, spotlight monitoring and web beacons to collect information for this research. They use the information collected through such technologies (i) to find out more about users of this Site/mobile application, including the number of the visitors, user demographics, preferences, interests, behaviour and usage patterns, (ii) for internal reporting and (iii) to improve the effectiveness of our marketing.</view>
+
+<view class="threeCoy">They collect information and then share it with us but these information may possibly be comingled and matched with your personal data collected or to be collected by us in accordance with the Notice to enable your identity to be directly or indirectly ascertained. As part of the information that we share with them, we may share your advertising identifier and "installation event" (which means the data in relation to when you first install or use this Site/mobile application). Personally identifiable information about you may be collected or shared by Sizmek, Bing, Google Campaign Manager (DoubleClick Campaign Manager) / Google Ads (AdWords)/ Google Display & Video 360 (DoubleClick Bid Manager) / Google Webmaster, Facebook, WeChat, WebTrends, Yahoo, theTradeDesk, Celebrus and Adobe with us as a result of this research. Should you wish to disable the cookies associated with such technologies, you may change the setting on your browser. Please see our cookie notice for more details of how to do this. However, in disabling cookies you may not be able to enter certain parts of this Site/ mobile application.</view>
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+<view class="threeCoy">· To find out more about the use of cookies and the information-collecting practices and opt-out procedures of third parties research agencies, including Sizmek, Bing, DoubleClick Bid Manager/ Google Adwords/ Google Webmaster, Facebook, WeChat, WebTrends, Yahoo, theTradeDesk, Celebrus and Adobe, please visit:</view>
+
+<view class="threeCoy">o Sizmek’s website at http://www.sizmek.com/about-us/privacy;</view>
+
+<view class="threeCoy">o Bing’s website at https://privacy.microsoft.com/en-us/privacystatement:</view>
+
+<view class="threeCoy">o Google Campaign Manager (DoubleClick Campaign Manager) / Google Ads (AdWords)/ Google Display & Video 360 (DoubleClick Bid Manager)/Google Adwords/Google Webmaster’s website at http://www.google.com/intl/en/policies/privacy/;</view>
+
+<view class="threeCoy">o Facebook’s website at[https://www.facebook.com/policy.php] <text class="yellocode">[KWM Note: HASE to confirm link to Facebook’s data policy website];</text></view>
+
+<view class="threeCoy">o WeChat website at https://www.wechat.com/en/cookies_policy.html;</view>
+
+<view class="threeCoy">o WebTrends' website at http://ondemand.webtrends.com/privacypolicy.asp#PSFV</view>
+
+<view class="threeCoy">o Yahoo’s website at https://policies.yahoo.com/hk/zh-hant/yahoo/privacy/index.htm</view>
+
+<view class="threeCoy">o theTradeDesk’s website at http://www.thetradedesk.com/general/privacy-policy;</view>
+
+<view class="threeCoy">o Celebrus website at https://www.d4t4solutions.com/company-information/privacy-statement/; and</view>
+
+<view class="threeCoy">o Adobe’s website at http://www.adobe.com/privacy.</view>
+
+ 
+
+ 
+
+</view>

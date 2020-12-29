@@ -1,0 +1,97 @@
+/**scan.wxss**/
+.scan-view {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  /* background-color: #B9BEC4; */
+  position: fixed;
+  align-items: center;
+}
+.scan-view .scan-border {
+  width: 100%;
+  height: 100%;
+}
+.scan-view .title {
+  color: #fff;
+  font-size: 32rpx;
+  margin: 60rpx 0 130rpx 0;
+  text-align: center;
+} 
+
+.scan-camera {
+  width: 100%;
+  height: 100%;
+  border-radius: 6rpx;
+}
+
+.cover-corner {
+  width: 30rpx;
+  height: 30rpx;
+  position: absolute;
+}
+
+.cover-left-top {
+  left: 90rpx;
+  top: 200rpx;
+}
+
+.cover-right-top {
+  right: 90rpx;
+  top: 200rpx;
+}
+
+.cover-left-bottom {
+  left: 90rpx;
+  top: 770rpx;
+}
+
+.cover-right-bottom {
+  right: 90rpx;
+  top: 770rpx;
+}
+
+.scan-animation {
+  position: absolute;
+  top: 200rpx;
+  left: 90rpx;
+  width: 570rpx;
+  height: 100rpx;
+}
+.scan-view .scan-border .scan-camera .tip {
+  color: #fff;
+  text-align: center;
+  font-size: 32rpx;
+  margin-top: 30rpx;
+  position: absolute;
+  top: 810rpx;
+  left: 220rpx;
+}
+.mask {
+  background-color: black;
+  opacity: 0.2;
+  position: absolute;
+  top: 0;
+}
+.mask-top {
+  top: 0;
+  width: 100%;
+  height: 200rpx;
+}
+.mask-bottom {
+  top: 798rpx;
+  width: 100%;
+  height: 598rpx;
+}
+.mask-left {
+  top: 200rpx;
+  left: 0rpx;
+  width: 90rpx;
+  height: 598rpx;
+}
+.mask-right {
+  top: 200rpx;
+  right: 0rpx;
+  width: 90rpx;
+  height: 598rpx;
+}

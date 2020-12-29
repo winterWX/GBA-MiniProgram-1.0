@@ -1,0 +1,38 @@
+.container {
+    padding: 20rpx 30rpx;
+}
+.container .warn-box {
+    margin: 350rpx 0 30rpx 0;
+    display: flex;
+    justify-content: space-around;
+}
+.container .warn-box .warn-img {
+    width: 150rpx;
+    height: 150rpx;
+}
+.container .fail-tip {
+    color: #333;
+    font-size: 32rpx;
+    text-align: center;
+    margin: 20rpx o;
+}
+.container .friendly-tips {
+    font-size: 28rpx;
+    color: #666;
+    text-align: center;
+    padding: 20rpx 0;
+}
+.btn {
+    height: 90rpx;
+    line-height: 90rpx;
+}
+.container .re-sign {
+    background-color: #00a865;
+    color: #fff;
+    margin: 30rpx 0;
+}
+.container .home {
+    background-color: #fff;
+    color: #333;
+    border: 2rpx solid #929292;
+}

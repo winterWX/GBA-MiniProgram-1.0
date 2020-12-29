@@ -1,0 +1,43 @@
+<view class="challenge">
+  <view class="title">
+    <view class="title_dt">连续挑战</view>
+    <view class="title_dd title_ft" bindtap="gotoHistory">历史记录</view>    
+  </view>
+  <view class="steps_tips">已连续{{continuousComplianceDays}}天</view>
+  <view class="steps">
+    <!-- <view class="steps_reward" wx:if="{{days.integral !=='' && list[list.length-1].receiveStatus =='2'}}"> -->
+    <view class="steps_reward">
+      <view class="reward_tips" >
+        <!-- //再坚持{{days.day}}天领{{days.integral}}积分 -->
+        {{days.day}}{{days.integral}}
+        <view class="popper_arrow">
+        <image src="https://wellness.hangseng.com/images/miniprogram/images/iconArrow5X5@2x.png" mode="aspectFit" />
+        </view>
+      </view>
+    </view>
+    <view class="steps_list">
+      <!-- <view class="step_item"  class="{{item.receiveStatus == 1 || item.reward == 0 || item.receiveStatus == 3 ? 'disable step_item' : ((item.receiveStatus == 3 && item.reward != 0 && item.isdone == 1 && item.dayName =='昨天') || (item.isdone == 1 && item.receiveStatus == 2) || (item.receiveStatus == 2 && item.reward !== 0 && item.isdone == 1 && item.dayName == '今日') ? 'active step_item' : 'step_item')}}" wx:for="{{ list }}" wx:key="index"> -->
+
+        <view class="step_item"  class="{{(item.receiveStatus == 1 || item.reward == 0 || item.receiveStatus == 3) ? 'disable step_item' : ((item.receiveStatus == 2 && item.reward != 0 && item.isdone == 1 && item.dayName =='昨天') || (item.isdone == 1 && item.receiveStatus == 2) || (item.receiveStatus == 2 && item.reward !== 0 && item.isdone == 1 && item.dayName == '今日') ? 'active step_item' : 'step_item')}}" wx:for="{{ list }}" wx:key="index">
+        <view class="step_item_top" bindtap="receiveIntegral" data-item="{{item}}" data-index="{{index}}">
+        
+          <!-- <view class="item_info">{{item.receiveStatus == 1 || item.receiveStatus == 3 ? '已领' : (item.reward == 0 ? '过期' : (item.receiveStatus == 2 && item.reward != 0 && item.dayName =='昨天'  ? '补领' : '+'+item.reward))}}</view> -->
+
+          <view class="item_info">{{(item.receiveStatus == 1 || item.receiveStatus == 3 ) ? '已领' : (item.reward == 0 ? '过期' : (item.receiveStatus == 2 && item.reward != 0 && item.isdone == 1 && item.dayName == '昨天' ? '补领' : ((item.receiveStatus == 2 && item.reward !== 0 && item.isdone == 1 && item.dayName == '今日') ? '领取' : '+' +item.reward)))}}</view>
+          <view class="item_image">
+            <image src="{{item.iconPath }}" mode="widthFix"/>            
+          </view>
+        </view>
+        <view class="step_item_bottom">
+          {{item.dayName}}
+        </view>
+      </view>
+
+    </view>
+
+  </view>
+  <view class="tips">
+    连续7天当日领取50积分 连续28天当日可领取100积分
+  </view>
+</view>
+<integralAmation integral="{{integral}}" wx:if="{{integral !=0}}"/>

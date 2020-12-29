@@ -1,0 +1,302 @@
+page{
+  background-color: #ededed;
+}
+/* .slierMain{
+  padding-top: 30rpx;
+} */
+.top-mainText{
+   display: flex;
+   justify-content: center;
+   background-color: #ffffff;
+   padding-top: 30rpx;
+}
+.leftImageCode-text{
+  position: absolute;
+  margin-right: 11rpx;
+  text-align: center;
+  width: 334rpx;
+  height: 542rpx;
+  top:0;
+  padding-top: 20rpx;
+}
+.roghtImageCode-text{
+  position: absolute;
+  margin-right: 11rpx;
+  text-align: center;
+  width: 334rpx;
+  height: 542rpx;
+  top:0;
+  padding-top: 20rpx;
+}
+.leftImageCode{
+  width: 334rpx;
+  height: 542rpx;
+}
+.left-mainText{
+  position: relative;
+  margin-right: 11rpx;
+}
+.right-mainText{
+  position: relative;
+  margin-left: 11rpx;
+}
+.roghtImageCode{
+  width: 334rpx;
+  height: 542rpx;
+}
+.leftImge image{
+   width: 120rpx;
+   height: 120rpx;
+}
+.rightImge image{
+  width: 220rpx;
+  height: 120rpx;
+}
+.text1{
+  margin-bottom: 30rpx;
+}
+.leftImge{
+  margin-bottom: 40rpx;
+}
+.rightImge{
+  margin-bottom: 40rpx;
+}
+.text1{
+  font-size: 24rpx;
+  color: rgb(51,51,51);
+}
+.text2{
+  color: rgb(155,124,86);
+  margin-bottom: 30rpx;
+  font-size: 28rpx;
+}
+.text3{
+  color: rgb(51,51,51);
+  margin-bottom: 5rpx;
+  font-size: 28rpx;
+}
+.text4{
+  margin-bottom: 25rpx;
+  font-size: 28rpx;
+}
+.text5{
+  display: flex;
+  justify-content: center;
+}
+.btnClass{
+  font-size: 28rpx;
+  width: 66%;
+  height: 79rpx;
+  line-height: 79rpx;
+  border: 1rpx solid rgb(155,124,86);
+  border-radius: 10rpx;
+  color:rgb(155,124,86);
+}
+.midden-text{
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 26rpx 0rpx 24rpx 0rpx;
+  color: rgb(51,51,51);
+  font-size: 28rpx;
+}
+.midden-text image{
+   width: 40rpx;
+   height: 34rpx;
+   margin-right: 20rpx;
+}
+.bottom-main{
+  margin-top: 20rpx;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20rpx;
+}
+.bottom-mainOut{
+  width: 90%;
+  min-height: 514rpx;
+  background-color: #ffffff;
+  padding: 30rpx;
+}
+.bottomBtn{
+  height: 130rpx;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bottomBtnBlue{
+  width: 89%;
+  height: 90rpx;
+  line-height: 90rpx;
+  background-color: rgb(0,168,101);
+  font-size: 32rpx;
+  text-align: center;
+  color: rgb(255,255,255);
+  border-radius: 10rpx;
+}
+.listTop-text{
+  display: flex;
+  align-items: center;
+  color: rgb(155,124,86);
+  font-size: 28rpx;
+}
+.listTop-text image{
+  width: 40rpx;
+  height: 40rpx;
+  margin-right:10rpx;
+}
+.listBottom-text image{
+  width: 40rpx;
+  height: 40rpx;
+  margin-right:10rpx;
+}
+.listItem{
+  padding: 12rpx 0rpx 20rpx 0rpx;
+  display: flex;
+  flex-wrap: wrap;
+}
+.everyItem{
+    display: flex;
+    color: rgb(51,51,51);
+    font-size: 24rpx;
+    padding: 10rpx 0rpx;
+    padding-right: 20rpx;
+    word-break: break-all;
+    margin-right: 8%;
+    width: 38%;
+}
+.everyItem image{
+  margin-right: 20rpx;
+  padding-top: 10rpx;
+  width: 20rpx;
+  height: 16rpx;
+}
+.listBottom{
+  min-height: 266rpx;
+}
+.listBottom-text{
+  padding: 30rpx 0rpx 0rpx 0rpx;
+  display: flex;
+  align-items: center;
+  color: rgb(155,124,86);
+  font-size: 28rpx;
+}
+.listItemBottom{
+  padding: 12rpx 0rpx;
+  display: flex;
+  flex-wrap: wrap;
+}
+.bottomTexts{
+   font-size: 24rpx;
+   color: rgb(51, 51, 51);
+   text-decoration: underline;
+   margin-top: 20rpx;
+}
+.goldTextLink{
+  text-decoration: underline;
+}
+.copyWriting-text{
+  font-size: 24rpx;
+  color: rgb(51, 51, 51);
+}
+.blockMain{
+  min-height: 178rpx;
+  border-bottom: 1rpx solid rgb(237,237,237);
+}
+/*模态框*/
+.modals {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.modals-cancel {
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.bottom-dialog-body {
+  position: absolute;
+  z-index: 10001;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 30rpx 30rpx 0rpx 30rpx;
+  min-height: 320rpx;
+  background-color: #fff;
+  border-radius: 30rpx 30rpx 0rpx 0rpx;
+}
+/*动画前初始位置*/
+.bottom-pos {
+-webkit-transform: translateY(100%);
+transform: translateY(100%);
+}
+.userinfo-avatar{
+width: 60rpx;
+height: 60rpx;  
+margin-top:10rpx ;
+}
+.userinfo-image{
+float: left;
+}
+.text-content{
+padding-left: 10rpx;
+}
+.msg-box{
+  margin-top: 30rpx;
+  font-size: 28rpx;
+  color: rgb(51,51 ,51)
+}
+.msg-box2{
+  margin-top: 37rpx;
+  font-size: 28rpx;
+  color: rgb(51,51 ,51)
+}
+.msg-box-image{
+  padding: 10rpx 0rpx 0rpx 0rpx;
+  display: flex;
+  align-items: center;
+}
+.topTitle{
+  width: 95%;
+  font-size: 32rpx;
+  color: rgb(51,51 ,51);
+}
+.msg-box-image image{
+  width: 28rpx;
+  height: 28rpx;
+  float: right;
+}
+.itemBlock{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 130rpx;
+}
+.itemBlockBottom{
+  border-top: 1rpx solid rgb(215,216,214);
+}
+.iphoneBlock{
+  font-size: 28rpx;
+  color: rgb(51,51,51);
+  width: 90%;
+  width: 95%;
+}
+.iphoneBlock-image{
+  flex: 1;
+}
+.iphoneBlock-image image{
+  width: 44rpx;
+  height: 40rpx;
+}
+.msg-box-imageBlock{
+  padding-bottom: 30rpx !important;
+}

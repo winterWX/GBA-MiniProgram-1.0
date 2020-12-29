@@ -1,0 +1,22 @@
+<view>
+    <view class="blue-content">
+        <view class="blueBlock">
+           <view class="blueBlockNum">{{integral}}</view>
+           <view class="blueBlockLeft">
+              <image class="blueBlockLeft-image" src="https://wellness.hangseng.com/images/miniprogram/images/myCounty/oval-2@3x.png" />
+              <view class="blueBlockLeftText" catchtap="integralRules">积分规则</view>
+           </view>
+        </view>
+        <view class="blueBlockText">积分将于{{expiryTime}}到期</view>
+    </view>
+    <view class="blueBottomTitle">已获得积分</view>
+    <view class="itemContent" wx:for="{{detailArray}}">
+        <view class="blueBlockItem">
+           <view class="blueBlockNumItem">{{item.type}}</view>
+           <view class="blueBlockTextItem">{{item.createTime}}</view>
+        </view>
+        <view class="blueBlockLeftItem">
+          <view class="blueBlockLeftTextItem">{{item.integral}}</view>
+        </view>
+    </view>
+</view>

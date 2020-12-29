@@ -1,0 +1,9 @@
+{
+  "component": true,
+  "usingComponents": {
+    "van-tabbar": "vant-weapp/tabbar/index",
+    "van-tabbar-item": "vant-weapp/tabbar-item/index",
+    "van-button": "vant-weapp/button/index",
+    "van-popup": "vant-weapp/popup/index"
+  }
+}

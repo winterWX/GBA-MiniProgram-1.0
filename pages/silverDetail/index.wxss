@@ -1,0 +1,625 @@
+
+.vipBlock{
+  padding:20rpx 46rpx 0rpx 36rpx;
+}
+.vipTopBlock{
+    position:relative;
+    height:132rpx;
+    padding-left:30rpx;
+    border:2rpx solid rgb(216,216,216);
+    color: #5E5E5E;
+    background-color:#D8D8D8;
+    font-size:28rpx;
+    line-height: 190rpx;
+}
+.vipBottomBlock{
+    height:66rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20rpx;
+    background-color:rgb(0,0,0);
+    color:rgb(255,255,255);
+}
+.creRight{
+  position:absolute;
+  height:68rpx;
+  width:68rpx;
+  background-color:rgb(128,128,128);
+  border-radius:50rpx;
+  left: 560rpx;
+  top: 60rpx;
+}
+.integralAct-main2{
+  height: 275rpx !important;
+  padding: 30rpx 30rpx 10rpx 30rpx !important;
+}
+.integralAct-main{
+  height: 424rpx;
+  background-color: #ffffff;
+  margin-top:20rpx;
+  padding: 30rpx;
+  position: relative;
+  /* z-index: -1; */
+}
+.integralActTitle{
+  font-size: 32rpx;
+  font-family: PingFang-SC-Bold;
+}
+.progressBlockImage image{
+  height: 100rpx;
+  width: 100%;
+}
+.progressBlockText image{
+  width: 92rpx;
+  height: 80rpx;
+}
+.progressBlockImage{
+  margin-top: 20rpx;
+  position: relative;
+}
+.progressBlockText{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  height: 100rpx;
+}
+.progressSecore{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20rpx;
+  font-size: 24rpx;
+  color: rgb(51,51,51);
+}
+.progressBlockPosee{
+  height: 20rpx;
+  background-color: rgb(237,237,237);
+  border-radius: 50rpx;
+  width: 100%;
+  z-index: 1;
+  margin-top: -18rpx;
+}
+.progressBlock{
+  margin-top: -10rpx;
+  /* position: relative; */
+}
+.glodBlock{
+  left: 95rpx;
+}
+/* .progressBlockBlue{
+    position: absolute;
+    top: 145rpx;
+    width: 100%;
+    height: 20rpx;
+    background-color: rgb(0,168,101);
+    border-radius: 50rpx;
+    z-index: 10;
+} */
+.progressBlockBlue{
+  /* position: absolute;
+  top: 145rpx;
+  width: 100%; */
+  height: 100%;
+  background-color: rgb(0,168,101);
+  border-radius: 50rpx;
+  z-index: 10;
+}
+.rabie{
+  background-color: rgb(255,255,255);
+  border-radius: 50%;
+  width: 16rpx;
+  height: 16rpx;
+  /* z-index: 11; */
+}
+.progressSecore .itemBlock{
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  text-align: center;
+}
+.rab-item{
+  height: 40rpx;
+}
+.rab-item1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10rpx;
+}
+.progressCark{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-top: 8rpx;
+}
+.progressCark image{
+    /* width: 126rpx; */
+    width: 145rpx;
+    height: 158rpx;
+}
+.blockText{
+  /* width: 126rpx; */
+  width: 100%;
+  height: 158rpx;
+  text-align: center;
+}
+.topText{
+  color: rgb(155,124,86);
+  font-size: 28rpx;
+  margin-bottom: 10rpx;
+  margin-top: 5rpx;
+  width: 100%;
+}
+.minText{
+  color: rgb(102,102,102);
+  font-size: 20rpx;
+  height: 95rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bottomTextTop{
+  font-size: 24rpx;
+  color: rgb(102,102,102);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.bottomText{
+  font-size: 24rpx;
+  color: rgb(102,102,102);
+  width: 475rpx;
+}
+.bottomText1{
+   font-size: 32rpx;
+   color: rgb(155,124,86);
+   margin-bottom: 20rpx;
+}
+.bottomText2{
+  font-size: 28rpx;
+  color: rgb(102,102,102);
+}
+.blockTextTop{
+  position: relative;
+  text-align: center;
+}
+.blockText{
+  position: absolute;
+  top: 12rpx;
+  left: 2rpx;
+  /* left: 22rpx; */
+}
+.progressBlockText1{
+  font-size: 24rpx;
+  color: rgb(51,51,51);
+  margin-right: 30rpx;
+}
+.progressBlockText2{
+  font-size: 24rpx;
+  color: rgb(51,51,51);
+  border: 2rpx solid rgb(51,51,51);
+  padding: 5rpx 10rpx;
+}
+.progressBlockText20{
+  font-size: 24rpx;
+  color: rgb(51,51,51);
+  padding: 5rpx 10rpx;
+  margin-right: 200rpx;
+}
+.progressBlockTextone{
+  font-size: 24rpx;
+  color: rgb(51,51,51);
+  padding: 5rpx 0rpx;
+  margin-right: 185rpx;
+}
+.progressBlockText3{
+  font-size: 24rpx;
+  color: rgb(151,111,23);
+  border: 2rpx solid rgb(151,111,23);
+  padding: 5rpx 10rpx;
+}
+.progressBlockText30{
+  font-size: 24rpx;
+  color: rgb(7,56,36);
+  border: 2rpx solid rgb(7,56,36);
+  padding: 5rpx 10rpx;
+}
+.bouttomImage{
+  background-color: #ffffff;
+  margin-top: 20rpx;
+  padding: 30rpx;
+}
+.noCardShow{
+  margin-top: 0rpx !important;
+}
+.bouttomTitlr{
+  font-size: 32rpx;
+  color: rgb(51,51,51);
+  margin-bottom: 20rpx;
+}
+.bouttomImage .bottomSeliveImage{
+  height: 210rpx;
+  width: 100%;
+}
+.bouttomImage .bottomImage{
+  height: 766rpx;
+  width: 100%;
+}
+.insrusBlock1{
+  position: relative;
+  margin-right: 15rpx;
+}
+.insrusBlock12{
+  position: relative;
+  margin-left: 15rpx;
+}
+.insrusImage1{
+  position: absolute;
+  top: 20rpx;
+  left: 40rpx;
+  font-size: 28rpx;
+  color: rgb(51,51,51);
+}
+.insrusImageText1{
+  position: absolute;
+  top: 20rpx;
+  left: 32rpx;
+  font-size: 28rpx;
+  color: rgb(51,51,51);
+}
+.insrusImageText2{
+  position: absolute;
+  top: 65rpx;
+  left: 48rpx;
+  font-size: 28rpx;
+  color: rgb(51,51,51);
+}
+.insrusBlock1 image{
+  width: 330rpx;
+  height: 148rpx;
+}
+.insrusBlock12 image{
+  width: 330rpx;
+  height: 148rpx;
+}
+.insrusBlock{
+  display: flex;
+  align-items: center;
+}
+.bottomBlockGold{
+  height: 132rpx;
+  background-color: rgba(95,95,95,0.05);
+  padding: 30rpx;
+  display: flex;
+  margin-top: 15rpx;
+}
+.bottomBlockGold image{
+  width: 162rpx;
+  height: 146rpx;
+  margin-left: 30rpx;
+}
+.bottomTextSecondeLeva2{
+   background-color: #ffffff !important;
+   height: 195rpx !important;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.bottomAfter{
+  height: 194rpx;
+  width: 690rpx;
+  background-color: rgba(95,95,95,0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.textReck{
+  color: rgb(51,51,51) !important;
+  font-weight: 600 !important;
+}
+
+.bottomTextSeconde{
+  height: 132rpx;
+  background-color: rgba(95,95,95,0.05);
+  padding: 30rpx;
+  display: flex;
+  margin-top: 20rpx;
+}
+.bottomTextSeconde image{
+  width: 162rpx;
+  height: 146rpx;
+  margin-left: 30rpx;
+}
+.bottomTextSecondeBlock{
+  font-size: 24rpx;
+  color: rgb(102,102,102);
+  width: 475rpx;
+}
+.bottomTextSecondeBlock1{
+  font-size: 32rpx;
+  color: rgb(155,124,86);
+  margin-bottom: 20rpx;
+}
+.bottomTextSecondeBlock2{
+ font-size: 28rpx;
+ color: rgb(102,102,102);
+}
+.container-main{
+  background-color: #ffffff;
+}
+.page-body-main{
+ padding:  0rpx  30rpx;
+}
+.container .page-body{
+  height: 135rpx;
+}
+.page-body swiper{
+  height: 135rpx;
+}
+.swiper{
+  height: 135rpx;
+}
+.glodBottom{
+  width: 100%;
+  height: 190rpx;
+  background-color: #ffffff;
+  padding: 30rpx;
+  margin-top: 20rpx;
+}
+.glodBottomBlock{
+   display: flex;
+   align-items: center;
+}
+.glodBottomTitle{
+  font-size: 32rpx;
+  color: rgb(51,51,51);
+  margin-bottom: 50rpx;
+}
+.glodBottomLeft{
+  border-right: 1rpx solid rgb(237,237,237);
+}
+.glodBottomItem{
+  display: flex;
+  align-items: center;
+}
+.glodBottomText{
+  width: 260rpx;
+}
+.glodBottomImage{
+  flex: 1;
+  padding-right: 20rpx;
+}
+.glodBottomImage image{
+ height: 76rpx;
+ width: 76rpx;
+}
+.glodBottomPind{
+  padding-left: 30rpx;
+  width: 215rpx !important;
+}
+.glodBottomText1{
+  
+  font-size: 28rpx;
+  color:rgb(51,51,51);
+}
+.glodBottomText2{
+  font-size: 24rpx;
+  color: rgb(102,102,102);
+  margin-top: 10rpx;
+}
+
+.carkBlock{
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  background-color: rgba(0,0 ,0, 0.5);
+  z-index: 10;
+}
+.topImage1{
+  width: 288rpx;
+  height: 320rpx;
+  position: absolute;
+  top: 140rpx;
+  z-index: 12;
+}
+.topImage2{
+  width: 92rpx;
+  height: 54rpx;
+  position: absolute;
+  top: 404rpx;
+  left: 410rpx;
+  z-index: 13;
+}
+.carkBlock-main{
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.carkBlock-allMain{
+  position: absolute;
+  width: 650rpx;
+  height: 550rpx;
+  background-color: #ffffff;
+  top:330rpx;
+  z-index: 12;
+}
+.bottomBlock image{
+  width: 40rpx;
+  height: 40rpx;
+  position: fixed;
+  bottom: 70rpx;
+}
+.imageBottom{
+  height: 80rpx;
+  width: 100%;
+}
+.text-main{
+  text-align: center;
+  padding: 30rpx;
+}
+.text1-main{
+   font-size: 28rpx;
+   color: rgb(102,102,102);
+   margin-bottom: 20rpx;
+}
+.text2-main{
+  margin-bottom: 20rpx;
+  color: rgb(155,124,86);
+  font-size: 38rpx;
+}
+.text3-main{
+  margin-bottom: 60rpx;
+  font-size: 28rpx;
+  color: rgb(51,51,51);
+}
+.text4-main{
+  padding: 0 70rpx;
+  margin-top: -130rpx;
+}
+.text5-main{
+  text-decoration: underline;
+}
+.van-button--primary {
+  background-color: #00a865 !important;
+  border: 1px solid #00a865 !important;
+}
+.topBlocks1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0rpx 30rpx;
+  background-color: #FDF8E7;
+  height: 120rpx;
+}
+.topBlocks12{
+  margin-top: 20rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0rpx 30rpx;
+  background-color: #F3F9F4;
+  height: 120rpx;
+}
+.topBlocksRightText{
+  margin: 10rpx 0rpx 20rpx 0rpx;
+  font-size: 24rpx;
+  color:rgb(102,102,102);
+}
+.groupBlock image{
+  width: 100%;
+  height: 100%;
+}
+.topBlocksLeft{
+  width: 43%;
+  display: flex;
+  align-items: center;
+  font-size: 28rpx;
+}
+.topBlocksRight{
+  width: 57%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28rpx;
+}
+.topBlocksLeft image{
+   width: 32rpx;
+   height: 32rpx;
+   margin-left: 25rpx;
+}
+.topBlocksRight image{
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 50rpx;
+  margin-right: 15rpx;
+}
+.topImage-main{
+  background-color: #ffffff;
+  padding: 0rpx 30rpx;
+}
+.carkBlockMainImage{
+  width: 650rpx;
+  height: 550rpx;
+}
+.carkBlockClose{
+  width: 100%;
+  position: absolute;
+  top: 10px;
+  text-align: right;
+  right: 30rpx;
+}
+.carkBlockClose image{
+   width: 52rpx;
+   height: 52rpx;
+}
+.carkBlockTitle{
+  position: absolute;
+  top: 55rpx;
+  width: 100%;
+  text-align: center;
+  color: rgb(155,124,86);
+  font-size: 36rpx;
+}
+.carkSeconde .carkBlockAfter{
+  width: 570rpx;
+  height: 364rpx;
+}
+.carkSeconde{
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 130rpx;
+}
+.aboutBlock{
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  height: 148rpx;
+  top: 35rpx;
+}
+.aboutBlock .tenImage{
+  width: 514rpx;
+  height: 148rpx;
+}
+.textContent{
+  position: absolute;
+  width: 100%;
+  padding-left: 235rpx;
+  text-align: left;
+  top: 35rpx;
+}
+.textContent1{
+  font-size: 28rpx;
+  color:rgb(51,51,51);
+  margin-bottom: 10rpx;
+}
+.textContent2{
+  font-size: 24rpx;
+  color:rgb(102,102,102);
+}
+.leftContent{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 62rpx;
+  left: 100rpx;
+  color: rgb(155,124,86);
+}
+.firstFlg{
+  margin-right: 10rpx;
+  font-size: 24rpx
+}
+.firstNum{
+  margin-top: -20rpx;
+  font-size: 60rpx;
+}
+.minTextAfter{
+  width: 100rpx;
+}

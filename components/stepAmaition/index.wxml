@@ -1,0 +1,12 @@
+<view class="step_amation {{indexStep ? 'stepAmation1' : ''}}">
+<view class="wrap {{indexStep ? 'wrapIndex' : ''}}">   
+    <view class="box-bottom">
+        <view class="circle-bottom" style=" transform: rotate({{rotateNum}}deg);"></view>
+    </view>
+    <view class="mask">
+      <view class="stepTxt">今日步数</view>
+      <view class="{{num>=targetSteps?'stepTarget act':'stepTarget'}}"><view class="txt">10000</view></view>
+      <view class="stepNumber">{{num}}</view>   
+    </view>
+</view>
+</view>

@@ -1,0 +1,79 @@
+page {
+  color: #ededed;
+  height: 100%;
+}
+
+.container {
+  background-color: #ededed;
+  /* height: 100%; */
+}
+
+.activity-box {
+  padding: 36rpx 30rpx;
+  margin-bottom: 30rpx;
+  background-color: white;
+}
+
+.img {
+  display: block;
+  height: 200rpx;
+  width: 100%;
+}
+
+.activity-box .activity-content {
+  display: flex;
+  justify-content: space-between;
+  height: 50rpx;
+  line-height: 50rpx;
+  margin: 20rpx 0 10rpx 0;
+}
+
+.activity-box .activity-content .title {
+  flex: 1;
+  font-size: 32rpx;
+  color: #333333;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.activity-box .remain-days {
+  font-size: 24rpx;
+  background-color: #ededed;
+  height: 30rpx;
+  line-height: 30rpx;
+  border-radius: 10rpx;
+  padding: 10rpx 30rpx;
+  color: #666666;
+  display: table-cell;
+}
+
+
+.activity-box .activity-desc {
+  color: #666666;
+  font-size: 24rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-bottom: 20rpx;
+}
+
+.empty-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+}
+.icon {
+  width: 210rpx;
+  height: 210rpx;
+  display: block;
+}
+.no-data {
+  font-size: 28rpx;
+  color: #333333;
+  margin-top: 50rpx;
+}

@@ -1,0 +1,122 @@
+<view class="contentAllContent">
+    <view class="toptitle">
+        <view  class="toptitle1">Hang Seng Bank Limited – [<text class="toptitle1abfer">insert name of Wellness App</text>] (“app”)</view>
+
+        <view  class="toptitle2">Privacy Policy Statement (“Statement”)</view>
+    </view>
+
+ 
+<view class="allBottom"><text class="allmiain">[KWM Notew</text></view>
+
+<view class="allBottom "><text class="allmiain">· We have used the bank’s PPS as base and made minimal changes to the extent necessary and relevant to the Wellness App.</text></view>
+
+<view class="allBottom"><text class="allmiain">· We note that the Privacy Commissioner issued a Guidance on Preparing Personal Information Collection Statement and Privacy Policy Statement in July 2013 (“Guidance”) setting out an extensive list of recommended disclosures to be included in a PICS and PPS (“Content Requirements”).</text></view>
+
+<view class="allBottom"><text class="allmiain">· Notwithstanding the extensive Content Requirements, we note a general trend for Hong Kong banks to have a reader-friendly / concise PPS (not meeting all the Content Requirements), to be read together with a fully compliant PICS. HASE has adopted a similar approach for the bank’s PPS and PICS, and we have no strong objections against it. </text></view>
+
+<view class="allBottom"><text class="allmiain">· We have also included the following statement at the beginning of this PPS to ensure all contents of PICS are incorporated by reference – to ensure the Content Requirements for PPS are met: “This Statement should be read together with the Notice to Customers and Other Individuals relating to the Personal Data (Privacy) Ordinance (the “Notice”) and Cookies Policy.”]</text></view>
+
+
+<view class="allBottom">This Statement should be read together with our [Notice to Customers and Other Individuals relating to the Personal Data (Privacy) Ordinance] (www.[<text class="hyperlink">hyperlink</text>]) (the “Notice”) and Cookies Policy (www.[<text class="hyperlink">hyperlink</text>]). [<text class="allmiain">KWM Note: HASE to insert links when available</text>]</view>
+
+ 
+
+<view class="allBottom allBottom22">Our privacy principles</view>
+
+ 
+
+<view class="allBottom">Hang Seng Bank Limited ("we", "us" or "our") builds its business on trust between our customers and ourselves. To preserve the confidentiality of all personal data you provide to us, we maintain the following privacy principles:</view>
+
+ 
+
+<view class="allBottom">(a) Transparency: We will be clear and transparent as to how we collect and use data, including providing data subjects (including customers, vendors, visitors, and various other persons using the app, including their representatives, agents or nominees) with a statement of how we may use their data where required.</view>
+
+ 
+
+<view class="allBottom">(b) Fair and lawful usage: We will only collect, process and store data lawfully and where we have a legitimate reason to do so.</view>
+
+ 
+
+<view class="allBottom">(c) Limited purposes: We will collect and process data for specified and lawful purposes, and will not use it for further, incompatible purposes without first taking all steps necessary under applicable data privacy laws and regulations.</view>
+
+ 
+
+<view class="allBottom">(d) Data minimisation and adequacy: We will ensure our collection, retention and processing of data is proportionate. We will strike an appropriate balance to ensure that we process sufficient data to carry on our business and achieve any specified lawful purposes, while making sure that we do not collect, retain or process excessive amounts of data.</view>
+
+ 
+
+<view class="allBottom">(e) Data quality and accuracy: We will maintain appropriate standards of data quality and integrity, and we will implement policies in respect of data accuracy, including taking steps to avoid data becoming out of date where appropriate.</view>
+
+ 
+
+<view class="allBottom">(f) Data security and retention: We will retain data securely, implement appropriate data retention policies, and we will dispose of data securely once it is no longer required. We will ensure that appropriate processes are put in place so only those acting on our behalf with a business requirement to access such data are authorised and able to do so. </view>
+
+ 
+
+<view class="allBottom">(g) Training and awareness: We will ensure that those acting on our behalf with access to data are trained appropriately on their obligations regarding those data.</view>
+
+ 
+
+<view class="allBottom">(h) Data subject rights: We will ensure that data subjects’ rights are observed in accordance with applicable data privacy laws and regulations, including any timeline established thereby.</view>
+
+ 
+
+    <view class="allBottom">(i) Third parties: Where we appoint a vendor or agent, we will require them to apply standards equivalent to these data privacy principles. We will only disclose data to governmental or judicial bodies or law enforcement or agencies or our regulators where this is allowed by applicable Data Privacy Laws and Regulations, or otherwise required by applicable laws and regulations. </view>
+
+ 
+
+    <view class="allBottom">(j) Data transfers: Where we voluntarily transfer data to another HSBC Group entity, third party or to another jurisdiction, we will ensure that the data transfer is lawful and that the recipient is required to apply the same, or equivalent, standards as these data privacy principles.</view>
+
+ 
+
+    <view class="allBottom">By maintaining our commitment to these principles, we will ensure that we respect the inherent trust that you place in us.</view>
+
+ 
+
+    <view class="allBottom">In addition to our duty of confidentiality to customers, we shall at all times observe the above privacy principles and the Personal Data (Privacy) Ordinance of the Hong Kong SAR in collecting, maintaining and using the personal data of customers in accordance with the Notice.</view>
+
+ 
+
+ 
+
+    <view class="allBottom allBottom22">Marketing promotions</view>
+
+ 
+
+    <view class="allBottom">Occasionally we may collect personal data from you when you visit this app or when you participate in a contest or promotion (whether online, over the telephone or at one of our branches), the collection and use of your personal data is governed by the Notice. We only collect personal data from you if you voluntarily provide it to us. We may use your personal data to inform you of products, services and other marketing materials which we think may be of interest to you. We or our external research agencies on our behalf may also invite you to participate in market research and surveys and other similar activities. Please refer to paragraph [10] of the Notice for details of our use of your personal data for direct marketing purposes.</view>
+
+ 
+
+    <view class="allBottom">You can choose to receive marketing and other promotional materials by email and you may opt-out from receiving these materials at any time [by informing us via <text class="branches">our branches</text>, customer services hotline, <text class="branches">e-Banking online forms</text> or by mail] [<text class="allmiain">KWM Note: Please confirm opt-out channels</text>].</view>
+
+ 
+
+    <view class="allBottom">If at any time you would like us to stop sending you direct mailings, please contact our representatives by calling:</view>
+
+ 
+
+    <view class="allBottom">o [(852) 2998 9188 for Prestige Banking customers</view>
+
+    <view class="allBottom">o (852) 2822 8228 for Preferred Banking customers</view>
+
+    <view class="allBottom">o (852) 2822 0228 for other customers] [KWM Note: HASE to update contact methods for Wellness customers]</view>
+
+ 
+
+    <view class="allBottom">We will then, at no cost to you, act on your request within 30 days and ensure not to include you in future direct marketing promotions.</view>
+
+ 
+
+ 
+
+    <view class="allBottom allBottom22">Contact us</view>
+
+
+    <view class="allBottom">Request for access to personal data or correction of personal data or for information regarding policies and practices on personal data and kinds of personal data held should be addressed to:</view>
+
+    <view class="linksty">Data Protection Officer</view>
+    <view class="linksty">Hang Seng Bank Limited</view>
+    <view class="linksty">83 Des Voeux Road Central</view>
+    <view class="linksty">Hong Kong SAR</view>
+    <view class="linksty">Fax: (852) 2868 4042</view>
+</view>

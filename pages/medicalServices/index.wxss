@@ -1,0 +1,129 @@
+page {
+    height: 100%;
+}
+.medical-box {
+    height: 100%;
+    background-color: #ededed;
+    margin-bottom: 110rpx;
+}
+.medical-box .rotation {
+    height: 290rpx;
+}
+.medical-box .container {
+    margin-bottom: 20rpx;
+}
+.slide-image {
+    height: 290rpx;
+    width: 100%;
+}
+.slide-word {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.slide-word .outpatient {
+    color: #9b7c56;
+    font-size: 32rpx;
+    height: 44rpx;
+    line-height: 44rpx;
+    font-weight: bolder;
+    margin: 40rpx 0 20rpx 30rpx;
+}
+.slide-word .appointment {
+    color: #333333;
+    font-size: 28rpx;
+    height: 40rpx;
+    line-height: 40rpx;
+    margin-left: 30rpx;
+}
+
+.slide-word .gold-silver-title {
+    padding: 10rpx;
+    background-color: rgba(138, 138, 138, 0.11);
+    width: 188rpx;
+    height: 20rpx;
+    line-height: 20rpx;
+    font-size: 20rpx;
+    border-radius: 20rpx;
+    color: #333333;
+    margin: 0 0 0 30rpx;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 50rpx;
+}
+.gold-silver-title .icon {
+    width: 20rpx;
+    height: 20rpx;
+    margin-right: 5rpx;
+}
+.hospital {
+    margin-bottom: 20rpx;
+}
+.hospital .hospital-info {
+    position: relative;
+    width: 100%;
+    height: 350rpx;
+}
+.hospital .hospital-info .bg-img {
+    width: 100%;
+    height: 350rpx;
+}
+.hospital .hospital-info .hospital-icon {
+    position: absolute;
+    width: 350rpx;
+    height: 60rpx;
+    top: 30rpx;
+    left: 30rpx;
+}
+.hospital .hospital-info .basic-info {
+    margin: 0 30rpx;
+    position: absolute;
+    top: 110rpx;
+    font-size: 24rpx;
+    color: #666;
+}
+.hospital .hospital-info .forward {
+    position: absolute;
+    width: 36rpx;
+    height: 20rpx;
+    left: 50%;
+    transform: translate(-18rpx);
+    bottom: 20rpx;
+}
+.hospital .function-list {
+    height: 154rpx;
+    padding: 40rpx 120rpx;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+.hospital .function-list .function-item .icon {
+    width: 116rpx;
+    height: 90rpx;
+    margin-bottom: 20rpx;
+}
+.hospital .function-list .function-item .text {
+    font-size: 28rpx;
+    color: #333;
+    height: 40rpx;
+    line-height: 40rpx;
+}
+.main-content .content {
+    color: #333;
+    font-size: 28rpx;
+    line-height: 42rpx;
+    word-break: break-all;
+} 
+.main-content .content .rule {
+    border-bottom: 2rpx solid #333;
+}
+.footerContent{
+    width: 100%;
+    height: 112rpx;
+    position:fixed; 
+    bottom:0;
+    border-top: 1rpx solid rgb(242,242,242);
+}

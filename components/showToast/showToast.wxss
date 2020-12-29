@@ -1,0 +1,17 @@
+.blockShow{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0,0,0, 0.5);
+  width: 256rpx;
+  height: 218rpx;
+}
+.blockShow image{
+    width: 84rpx;
+    height: 84rpx;
+}
+.blockShowText{
+  margin-top: 21rpx;
+  color: rgb(255,255,255);
+  font-size: 32rpx;
+}

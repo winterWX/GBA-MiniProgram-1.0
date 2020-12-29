@@ -1,0 +1,20 @@
+<view class="container">
+	<view class="item">
+		<view wx:if="{{!noData}}" wx:for="{{stepInfo}}" wx:key="id">
+		<view class="month">{{item.month}}</view>
+		<view class="{{index === 1 ? 'itemContent' : ''}}">
+				<view wx:for="{{item.data}}" wx:for-item="step" wx:key="index" class="date">
+					<view class="date-label">{{step.date}}</view>
+					<view class="step-num">{{step.steps}}步</view>
+				</view>
+			</view>
+		</view>	
+	</view>
+	<view wx:if="{{noData}}" class="empty">
+		<image class="empty-icon" src="{{imagesUrl + '/images/icn-empty-history@2x.png'}}"></image>
+		<text class="no-data">暂无历史数据</text>
+	</view>
+	<view class="footer">
+		可查看一年内的数据
+	</view>
+</view>

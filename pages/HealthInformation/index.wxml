@@ -1,0 +1,81 @@
+<view class="container_main">
+    <!-- 导航栏 -->
+    <view class="scrollView">
+        <scroll-view scroll-x class="navbar" scroll-with-animation scroll-left="{{scrollLeft}}rpx">
+            <view class="nav-item" wx:for="{{tabLists}}" wx:key="id" bindtap="tabSelect" data-id="{{index}}">
+                <view class="nav-text {{index==tabCur?'tab-on':''}}">{{item.tag}}</view>
+            </view>
+        </scroll-view>
+        <view class="liebiao-img">
+            <view bindtap="searchBlock" class="liebiao-leftImg">
+                <image src='{{baseUrl + "/images/healthInfo/icon-search@2x.png"}}'></image>
+            </view>
+            <view bindtap="tagsShare" class="liebiao-rigthImg">
+                <image src='{{baseUrl + "/images/healthInfo/icon-filter@2x.png"}}'></image>
+            </view>
+        </view>
+        <view class="topTipBlock" wx:if="{{topTipShow}}">
+            <view class="topSan"></view>
+            <view class="topTip">
+                <view class="topTipTiele">设定你喜爱的话题。</view>
+                <image bindtap="topTipImageColse" class="topTipImage" src="{{baseUrl + '/images/healthInfo/icon-close-white@2x.png'}}"></image>
+            </view>
+        </view>
+    </view>
+    <view class="info-main">
+        <view class="info" wx:for="{{listData}}" wx:key="id">
+            <view class="top-block" bindtap="listClick" data-itemid="{{item.id}}">
+                <view class="title">
+                    <view class="mainText mainTextHidden">{{item.title}}</view>
+                    <view class="timeText">
+                        <view class="timeTextLeft">{{item.inputtime}}</view>
+                    </view>
+                </view>
+                <view wx:if="{{item.thumb !==''}}">
+                    <image class="top-blockImage" src="{{item.thumb}}"></image>
+                </view>
+                <view wx:else>
+                    <image class="top-blockImageBoth"></image>
+                </view>
+            </view>
+        </view>
+    </view>
+    <!-- -------------tagContent modals-------------------------- -->
+    <view class="modals modals-bottom-dialog" hidden="{{hideModal}}">
+        <view class="modals-cancel" bindtap="hideModal"></view>
+        <view class="bottom-dialog-body bottom-pos" animation="{{animationData}}">
+            <view class='msg-box'>
+                <view class='aumsg'>
+                    <view class="searchList-main">
+                        <view class="myTagList">
+                            <view class="myTagList-title">我关注的话题</view>
+                            <view class="myTagRight">(拖拽标签可排序)</view>
+                        </view>
+                        <view class="searchList">
+                            <view class='item_container' wx:for='{{myTagData}}' wx:key="index">
+                                <view class="item {{index==current?'moving':'normal'}}" style="left:{{index==current?move_x:item.left}}px;top:{{index==current?move_y:item.top}}px;width:{{u_w}}px;" catchtouchmove="move" bindtouchstart="movestart" bindtouchend="moveend" bindtap="myTagItemFun" data-index="{{index}}">
+                                    {{item.tag}}
+                                    <image wx:if="{{editStute && item.tag !=='热门推荐'}}" src='{{baseUrl + "/images/healthInfo/icon-clear.png"}}'></image>
+                                </view>
+                            </view>
+                        </view>
+                    </view>
+                    <view class="bottomTage">
+                        <view class="bottomTage-title">全部话题</view>
+                        <view class="intringData">
+                            <view class="viewBtnBoxint" bindtap="addTagBbtn" wx:for="{{forYouData}}" wx:key="index" data-index="{{index}}">
+                                <view class="viewBtn">{{item.tag}}</view>
+                                <image wx:if="{{editStute && item.tag !=='热门推荐'}}" src="{{baseUrl + '/images/healthInfo/icon-add.png'}}"></image>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+                <view class="tagBtn">
+                    <van-button type="primary" size="large" color="#00a865" bindtap="editTagDone">
+                        完 成
+                    </van-button>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

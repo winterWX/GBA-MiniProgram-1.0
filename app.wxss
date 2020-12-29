@@ -1,0 +1,20 @@
+/**app.wxss**/
+.container { 
+  font-family: PingFangSC;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+.btn-lg {
+  height: 90rpx;
+  line-height: 90rpx;
+  color: #fff;
+}
+.btn-primary {
+  background-color: #00a865;
+}
+.disabled {
+  background-color: #d9d9d9;
+}

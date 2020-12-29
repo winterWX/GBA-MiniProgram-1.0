@@ -1,0 +1,43 @@
+<view class="details-main {{isLogin  !== 3 ? 'mainContentBlock' : ''}}">
+   <integralAmation integral="{{integralNum}}" wx:if="{{integraFlg}}" />
+    <view class="mainContent">
+       <view class="mainContent-title">{{contentAll.title}}</view>
+       <view class="main-gitPic">
+            <!-- <view class="gitPic">
+                <image src='{{contentAll.avatar}}'></image>
+            </view> -->
+            <view class="details-tipContent">
+                <view class="details-tip">
+                        <!-- <view class="details-tipTitle">{{contentAll.author}}</view> -->
+                        <view class="details-tipTime">{{contentAll.createTime}}</view>
+                </view>
+                <!-- <view class="details-tag">
+                        <view class="details-Btn" wx:if="{{contentAll.tags !==''}}">{{contentAll.tags}}</view>
+                        <view class="details-RightBtn" bindtap="colletArtDaitle" wx:if="{{colletArt === '2' }}">
+                        <image class="details-image" src = '{{imagesUrl + "/images/healthInfo/icon-collect@2x.png"}}'></image>
+                        <view class="details-intall">收藏</view>
+                        </view>
+                        <view class="details-RightBtn"  bindtap="cancelColletArtDaitle"  wx:if="{{colletArt === '1'}}">
+                        <view class="details-intall">已收藏</view>
+                        </view>
+                </view> -->
+            </view>
+       </view>
+       <view class="artContent">
+          <!-- <view class="artContent-image"><image src="{{contentAll.thumbLocation}}"></image></view> -->
+          <view class="contentAllContent">
+              <htmlView detail ="{{contentAll.content}}"/>
+          </view>
+       </view>
+    </view>
+    <view class="bottomFlaotContent" wx:if="{{bottomFlaotShow}}">
+        <view class="bottomFlaot">
+            <view class="bottom-image"><image src="{{imagesUrl + '/images/healthInfo/icon-chevron-double-down@2x.png'}}"></image></view>
+            <van-button class="bottom-tipBtn"  type="primary" size="large"  open-type="getUserInfo" bindgetuserinfo="getUserInfo">登录后阅读全文</van-button>
+            <view class="bottom-soce">
+            <image src ='{{imagesUrl + "/images/healthInfo/icon-gift@2x.png"}}'></image>
+            <view class="bottom-soBtn">登录后每天阅读文章，单次可最多获取10积分。</view>
+            </view>
+        </view>
+    </view>
+</view>

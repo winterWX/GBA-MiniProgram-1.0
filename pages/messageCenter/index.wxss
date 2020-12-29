@@ -1,0 +1,15 @@
+page {
+    height: 100%;
+}
+.container {
+    height: 100%;
+}
+.container .box {
+    height: 100%;
+    line-height: 100%;
+    text-align: center;
+    color: #00A865;
+    font-size: 32rpx;
+    margin-top: 370rpx;
+    font-weight: bolder;
+}

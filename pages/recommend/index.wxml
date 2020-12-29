@@ -1,0 +1,67 @@
+<view class='recommend'>
+    <view class="recommend1-image" wx:if="{{recommendFlg}}">
+      <view class="recommend1-content">
+           <view class="personImgeTop">
+                <image  class="personImge1" src='{{imagesUrl + "/images/recommend/banner@2x.png"}}'></image>
+                <view class="personImgeText">
+                    <view class="image-text1">你有新的好友申请</view>
+                    <!--<view class="image-text2">好友注册成功，双方各得50积分</view> -->
+                </view>
+            </view>
+            <view class="bomtton-btn1">
+               <!-- <van-button type="primary" size="large" open-type="share">邀请微信好友</van-button> -->
+                <van-button type="default" size="normal" class="leftBtn" bindtap="createShareImage">生成海报</van-button>
+                <van-button type="primary" size="normal" class="rightBtn" open-type="share">邀请微信好友</van-button>
+            </view>
+         </view>
+         <view class='listPerson'>
+               <view class="listPerson-title"> 
+                    <view class="listPerson-item">
+                        <view>累计成功推荐(名)</view>
+                        <view class="numText">{{invitData.personNum}}</view>
+                    </view>
+                    <view class="listPerson-item">
+                        <view>累计获得积分</view>
+                        <view class="numText">{{invitData.totalIntegral}}</view>
+                    </view>
+               </view>
+               <view class="listPerson-title1" wx:for="{{invitData.invitationList}}"> 
+                    <view class="listPerson-item1">
+                        <view class="textItem">{{item.phoneNumber}}</view>
+                        <view class="numText1">昵称：{{item.nickName}}</view>
+                    </view>
+                    <view class="listPerson-itemRight">
+                        <view class="textItem textItemTy">推荐成功</view>
+                        <view class="numText12">+{{50}}</view>
+                    </view>
+               </view>
+         </view>
+    </view>
+    <view class="recommend-image" wx:if="{{!recommendFlg}}">
+       <image  class="personImge" src='{{imagesUrl + "/images/recommend/background@2x.png"}}'></image>
+       <view class="image-text">
+          <view class="image-text1">分享好友 一起赚积分</view>
+          <view class="image-text2">好友注册成功，双方各得50积分</view>
+          <view class="threeText">- 简单三步立享积分 -</view>
+          <view class='blockImge'>
+              <view class='blockImge-item'>
+                  <image src="{{imagesUrl + '/images/recommend/share@3x.png'}}"></image>
+                  <view  class='blockImge-text blockImgeFirst'>分享给好友</view>
+              </view>
+              <view class='blockImge-item'>
+                  <image  src="{{imagesUrl + '/images/recommend/register-2@3x.png'}}"></image>
+                  <view class='blockImge-text blockImgeTwo'>好友注册</view>
+              </view>              
+              <view class='blockImge-item'>
+                  <image  src="{{imagesUrl + '/images/recommend/point-2@3x.png'}}"></image>
+                  <view   class='blockImge-text'>双方各得50积分</view>
+              </view>
+          </view>
+       </view>
+      <view class="bomtton-btn">
+         <van-button type="default" size="normal" class="leftBtn" bindtap="createShareImage">生成海报</van-button>
+         <van-button type="primary" size="normal" class="rightBtn" open-type="share">邀请微信好友</van-button>
+      </view>
+    </view>
+    <share-box isCanDraw="{{isCanDraw}}" bind:initData="createShareImage" />
+</view>

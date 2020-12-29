@@ -1,0 +1,18 @@
+<view>
+      <van-search
+          value="{{ value }}"
+          placeholder="搜寻电话号码"
+          focus='{true}'
+          show-action
+          shape="round"
+          bind:change="onChange"
+          bind:search="onSearch"
+          bind:cancel="onCancel"
+    />
+    <view wx:for="{{showArray}}" class="content-friendList">
+        <view class="leftBlock">
+            <image src="{{item.avatar}}"/>
+            <view class="nameText">{{item.nickname}}</view>
+        </view>
+    </view>
+</view>

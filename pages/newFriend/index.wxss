@@ -1,0 +1,148 @@
+page{
+  background-color: #ededed;
+}
+.content-list{
+  margin-top:20rpx;
+}
+.content-friendList{
+  height: 140rpx;
+  background-color: #ffffff;
+  margin-bottom: 2rpx;
+  display: flex;
+  padding: 0 30rpx;
+}
+.leftBlock{
+  width: 520rpx;
+  display: flex;
+  align-items: center;
+}
+.rightBlock{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(146,146,146);
+  font-size: 24rpx;
+}
+.btnSty{
+  height: 48rpx;
+  width:140rpx;
+  color: rgb(0,168,101);
+  border: 2rpx solid rgb(0,168,101);
+  text-align: center;
+  line-height: 48rpx;
+  padding:4rpx 11rpx;
+}
+.leftBlock image{
+  width: 80rpx;
+  height: 80rpx;
+  border: 1rpx solid #ffffff;
+  border-radius: 50%;
+}
+.leftBlock .nameText{
+  margin-left: 20rpx;
+  color:rgb(51,51,51);
+  font-size: 28rpx;
+}
+.van-button--primary {
+  background-color: #00a865 !important;
+  border: 1px solid #00a865 !important;
+}
+.initFriend{
+   position: fixed;
+   width: 100%;
+   text-align: center;
+   /* left: 0;
+   right: 0; */
+   top: 0;
+   bottom: 0;
+   background-color:rgba(0,0,0, 0.5) ;
+   margin:0 auto ;
+}
+.topBlock{
+  width: 100%;
+  position: relative;
+  z-index: 999;
+  top: 142rpx;
+}
+.topBlock_image2{
+  width: 580rpx;
+  height: 708rpx;
+}
+.topBlock_image1{
+   width: 140rpx;
+   height: 140rpx;
+   border-radius: 50%;
+}
+.topBlock_image2hang{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.topBlock_image1hang{
+  position: absolute;
+  top:0rpx;
+  width: 100%;
+}
+.topBlock_name{
+  position: absolute;
+  width: 100%;
+  top: 158rpx;
+  color: rgb(68,68,68);
+  font-size: 32rpx;
+}
+.topBlock_text1{
+  position: absolute;
+  font-weight: 600;
+  width: 100%;
+  color: rgb(155,124,86);
+  font-size: 32rpx;
+  top: 213rpx;
+  font-family: PingFangSC-Medium;
+}
+.topBlock_text2{
+  position: absolute;
+  width: 100%;
+  color: rgb(102,102,102);
+  font-size: 28rpx;
+  top: 286rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: PingFangSC-Regular;
+}
+.textli{ width: 400rpx; }
+.topBlock_btnTom{
+  position: absolute;
+  width: 100%;
+  top: 405rpx;
+}
+.van-button--normal {
+   padding: 0 119rpx !important;
+   font-size: 32rpx !important;
+}
+.bottom-image{
+  position: absolute;
+  width: 100%;
+  top: 760rpx;
+}
+.bottom-image image{
+  width: 80rpx;
+  height: 80rpx;
+}
+.imageShow{
+  margin: 300rpx auto;
+}
+.imageShowBottom{
+  width:230rpx;
+  height:230rpx;
+}
+.imageShowBottomText{
+  text-align: center;
+  margin-top: 30rpx;
+  font-size:32rpx;
+  color:rgb(51,51,51);
+}
+.imageShowBottomAfter{
+   text-align: center;
+}

@@ -1,0 +1,105 @@
+page {
+  height: 100%;
+  background-color: #ededed;
+}
+/* .container {
+  background-color: #f3f3f3;
+  padding-bottom: 110rpx;
+} */
+.container .member-info {
+  text-align: center;
+  margin-top: 40rpx;
+  position: relative;
+  height: 128rpx;
+}
+.container .member-info .img {
+  width: 694rpx;
+  height: 128rpx;
+}
+.container .member-info .level {
+  position: absolute;
+  height: 40rpx;
+  line-height: 40rpx;
+  font-size: 28rpx;
+  font-weight: 500;
+  left: 120rpx;
+  top: 50rpx;
+}
+.container .member-info .gold {
+  color: #ffd478;
+}
+.goldBlock{
+  color: #ffd478 !important;
+}
+.container .member-info .silver {
+  color: #304352;
+}
+.container .member-info .copper {
+  color: #0d0d0d;
+}
+.container .member-info .lever-icon {
+  position: absolute;
+  bottom: 36rpx;
+  left: 62rpx;
+  width: 46rpx;
+  height: 46rpx;
+}
+
+.container .member-info .guide {
+  position: absolute;
+  height: 40rpx;
+  line-height: 40rpx;
+  font-size: 28rpx;
+  font-weight: 500;
+  right: 72rpx;
+  top: 50rpx;
+}
+.container .content {
+  background-color: #f3f3f3;
+  margin-bottom: 130rpx;
+}
+.container .guider-box {
+  padding: 0 30rpx;
+  background-color: #fff;
+  margin-bottom: 20rpx;
+}
+.container .guider-box .item {
+  border-bottom: 2rpx solid #f3f3f3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30rpx 0;
+}
+.container .guider-box .item .left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .guider-box .item .right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .guider-box .item .right .label {
+  font-size: 36rpx;
+  color: #666;
+}
+.container .guider-box .item .left .icon {
+  width: 64rpx;
+  height: 64rpx;
+  margin-right: 26rpx;
+}
+.container .guider-box .item .left .label {
+  font-size: 30rpx;
+  color: #333;
+}
+.container .guider-box .item .right .tip {
+  width: 16rpx;
+  height: 16rpx;
+  background-color: #b10d19;
+  border-radius: 50%;
+}
+.container .guider-box .item .right .icon {
+  width: 36rpx;
+  height: 36rpx;
+}

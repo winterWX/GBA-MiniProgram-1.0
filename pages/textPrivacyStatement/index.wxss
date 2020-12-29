@@ -1,0 +1,49 @@
+.contentAllContent{
+  padding: 30rpx;
+}
+.toptitle{
+   margin-bottom: 50rpx;
+   width: 100%;
+}
+
+.toptitle1{
+  margin: 0pt;
+  margin-bottom: .0001pt;
+  font-family: Arial;
+}
+.toptitle1abfer{
+  font-family: Arial;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 12.0000pt;
+  background: rgb(127,127,127);
+}
+.allBottom{
+  margin-bottom: 30rpx;
+}
+.allmiain{
+  font-weight: bold;
+  font-style: italic;
+  background: rgb(255,255,0);
+}
+.hyperlink{
+  font-family: Arial;
+  font-weight: bold;
+  font-style: italic;
+  background: rgb(127,127,127);
+}
+.branches{
+  text-decoration: line-through;
+  color: red;
+  text-decoration: line-through;
+}
+.allBottom22{
+  font-family: Arial;
+  color: rgb(0,112,192);
+  font-weight: bold;
+}
+.linksty{
+  font-family: Arial;
+  color: rgb(0,0,0);
+  font-weight: bold;
+}

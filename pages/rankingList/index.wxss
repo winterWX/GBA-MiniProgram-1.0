@@ -1,0 +1,82 @@
+/* pages/heroList/index.wxss */
+page {
+    height: 100%;
+  }
+  .hero-container {
+    height: 100%;
+    background-color: #EDEDED;
+  }
+  .member-box {
+    display: flex;
+    align-items: center;
+    padding: 30rpx 30rpx;
+    border-top: 2rpx solid #ededed;
+    background-color: #fff;
+  }
+  
+  .member-box .member-info {
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
+  
+  .member-box .member-info .header {
+    width: 80rpx;
+    height: 80rpx;
+    border-radius: 40rpx;
+    margin-right: 20rpx;
+  }
+  
+  .member-info .index {
+    color: #929292;
+    font-size: 44rpx;
+    width: 60rpx;
+  }
+  
+  .member-info .order {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .member-info .order .nickname {
+    color: #333;
+    font-size: 28rpx;
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 300rpx;
+    margin-bottom: 10rpx;
+  }
+  
+  .member-info .order .rank {
+    color: #929292;
+    font-size: 24rpx;
+  }
+  
+  .member-box .step-show {
+    color: #333333;
+    font-size: 44rpx;
+  }
+  
+  .member-box .step-show text {
+    font-size: 24rpx;
+    color: #929292;
+    margin-left: 10rpx;
+  }
+  .mb10 {
+    margin-bottom: 20rpx;
+  }
+  .active {
+    color: #00A865!important;
+  }
+  .bottom-text{
+    width: 100%;
+    text-align: center;
+    margin-top: 80rpx;
+    font-size: 28rpx;
+    text-decoration: underline;
+    color: rgb(102,102,102);
+  }
