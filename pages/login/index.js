@@ -38,21 +38,18 @@ Page({
       avatarUrl: app.globalData.userInfo.avatarUrl,
       invitationCode: app.globalData.invitationCode
     }
-    // wx.showLoading({
-    //   title: 'loading...',
-    // });
+    wx.showLoading({ title: 'loading...' });
     let url = app.globalData.baseUrl + '/remote/register/miniProgram/add';
     wxAjax('POST', url, parms).then(res => {
         if (res.data.code === 200) {
+            wx.hideLoading();  //关闭loading
             const { data: { data: { token, phoneNumber,integral={}, isFriend}}} = res;
             if(!whiteList.includes(phoneNumber)){
                 wx.showModal({
                   title: '提示',
                   content: '您没有登录权限',
                   showCancel: false,
-                  success (res) {
-                    if (res.confirm) { wx.redirectTo({ url: '../index/index'}); }
-                  }
+                  success (res) { if (res.confirm)  wx.redirectTo({ url: '../index/index'}) }
                 })
             }else{
                 app.globalData.isLogin = 3;  //登录成功
@@ -63,7 +60,7 @@ Page({
                 if(this.data.urlTag === 'pageTag' && integralFlg === 'true'){
                     wx.redirectTo({ url: '../index/index?flag='+ integralFlg });
                 }else if((this.data.urlTag === 'pageTag' && integralFlg === '') && !isFriend){
-                  
+  
                     let addSuccess = 'addSuccess';
                     wx.redirectTo({ url: '../newFriend/index?addSuccess='+ addSuccess });
                 }else if(this.data.urlTag === 'pageTag' && isFriend){
@@ -76,13 +73,13 @@ Page({
                 })
             }
         } else {
+            wx.hideLoading();
             wx.showModal({
               showCancel: false,
               content: res.message,
               success: (res) => { }
             })
         }
-        //wx.hideLoading()
     });
   },
   getPhoneNumber (e) { //获取电话信息     

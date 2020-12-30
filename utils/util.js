@@ -51,7 +51,7 @@ const wxAjax = (method, url, data = {}) => {
       success: (res) => {
        if (!app.globalData.sessionFail && (res.data.code === 999988 || res.data.code === 999997 || res.data.code === 999995 || res.data.code === 999994)) {
           //wx.setStorageSync('sessionFail', true);
-          app.globalData.sessionFail = true; //标记已经被逼下线   
+          app.globalData.sessionFail = true;   //标记已经被逼下线   
           app.globalData.userInfo = null;
           app.globalData.token = '';
           app.globalData.isLogin = 0;
