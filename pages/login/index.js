@@ -44,14 +44,14 @@ Page({
         if (res.data.code === 200) {
             wx.hideLoading();  //关闭loading
             const { data: { data: { token, phoneNumber,integral={}, isFriend}}} = res;
-            if(!whiteList.includes(phoneNumber)){
-                wx.showModal({
-                  title: '提示',
-                  content: '您没有登录权限',
-                  showCancel: false,
-                  success (res) { if (res.confirm)  wx.redirectTo({ url: '../index/index'}) }
-                })
-            }else{
+            // if(!whiteList.includes(phoneNumber)){
+            //     wx.showModal({
+            //       title: '提示',
+            //       content: '您没有登录权限',
+            //       showCancel: false,
+            //       success (res) { if (res.confirm)  wx.redirectTo({ url: '../index/index'}) }
+            //     })
+            // }else{
                 app.globalData.isLogin = 3;  //登录成功
                 app.globalData.token = token;
                 app.globalData.phoneNumber = phoneNumber;
@@ -71,7 +71,7 @@ Page({
                   url: this.data.url + '?flag=' + integralFlg,
                   complete: () => {}
                 })
-            }
+            //}
         } else {
             wx.hideLoading();
             wx.showModal({
@@ -88,16 +88,12 @@ Page({
     } else {
       wx.redirectTo({
         url: '../index/index',
-        complete: () => {
-
-        }
+        complete: () => { }
       })
     }
   },
   stopLogin () {
-    wx.redirectTo({
-      url: '../index/index'
-    })
+    wx.redirectTo({ url: '../index/index' })
   },
   whiteList(num){
       let whiteList = [123,34534,345345]
