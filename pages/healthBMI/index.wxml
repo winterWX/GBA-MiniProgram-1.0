@@ -1,7 +1,7 @@
 
 <view>
   <view class="main-top">
-     <view class="main-topTitle">体重指数(BMI)</view>
+     <view class="main-topTitle">体重指标(BMI)</view>
      <view class="main-topSecode"> 
         <view  wx:if="{{BMIData.bmi ==='--'}}" class="mainRight2">{{BMIData.bmi}}</view>
         <view  wx:if="{{BMIData.bmi !=='--'}}"  class="mainLeft">{{BMIData.bmi}}</view>
@@ -26,11 +26,11 @@
             <view class="flagColor" style="background:{{background}};left:{{BMIleft}}%;"></view>
             <view class="health-item1">
                <view class="healthColor1"></view>
-               <view class="healthText">过轻</view>
+               <view class="healthText">偏瘦</view>
             </view>
             <view class="health-item2"> 
                <view class="healthColor2"></view>
-               <view class="healthText">适中</view>
+               <view class="healthText">正常</view>
             </view>
             <view class="health-item3">
                <view class="healthColor3"></view>

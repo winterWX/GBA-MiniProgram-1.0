@@ -32,7 +32,7 @@
         </view>
         <!-- receiveStatus	领取状态(1:已领,2:未领,3:补领)  isDone	完成状态(1:完成,2:未完成) -->
         <view class="topSetting-btn">
-            <van-button  wx:if='{{startStatus}}' class="{{startStatus ? 'topSetting-vanBtn' :''}}" bindtap="settingDataBtn">开启健康数据访问</van-button>
+            <van-button  wx:if='{{startStatus}}' class="{{startStatus ? 'topSetting-vanBtn' :''}}" bindtap="settingDataBtn">开启健康数据</van-button>
             <van-button  wx:if='{{ (stepsNum.isDone === "2" || stepsNum.todaySteps === 0)  && !startStatus}}'>还差{{startStep}}步即可领10积分</van-button>
             <van-button  wx:if='{{ stepsNum.receiveStatus === "2" && stepsNum.isDone === "1" }}' class="topSetting-vanBtn"  bindtap="integralBtn">马上领取{{stepsNum.integral}}积分奖励</van-button>
             <van-button  wx:if='{{ stepsNum.receiveStatus === "1" && stepsNum.isDone === "1" }}'>已领取</van-button>

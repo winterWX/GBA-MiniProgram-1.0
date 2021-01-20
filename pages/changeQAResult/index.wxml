@@ -22,7 +22,7 @@
                 </view>
             </view>
         </view>
-        <view class="middle-tip">- 题目解析 -</view>
+        <view class="middle-tip">- 重温题目 -</view>
         <view class="question-info">
             <view class="question-item" wx:for="{{questionAnalysis}}" wx:key="id" wx:for-item="question">
                 <view class="question">{{question.question}}</view>

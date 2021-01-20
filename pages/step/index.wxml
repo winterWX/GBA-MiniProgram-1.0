@@ -39,7 +39,7 @@
 		</view>
 	</view>
 	<view class="history-step" catchtap="toHistoryStep">
-		<text class="label">历史步数</text>
+		<text class="label">历史数据</text>
 		<image class="icon" src="https://zhj.wellness.hangseng.com/images/miniprogram/images/back3.png" ></image>
 	</view>
 	<view class="step-description">

@@ -1,7 +1,7 @@
 <view class="containerTip"  wx:if="{{!tipUpdate}}">
     <view class="contaBlock">
       <view class="containerAfter"><image  class="imageIcon" src="{{imagesUrl + '/images/healthInfo/icon@2x.png'}}"/></view>
-      <view class="containerText">健康数据无法获取，授权后可为你记录和查看健康情况，授权步数数据更可享100积分。</view>
+      <view class="containerText">暂未授权绑定健康数据，授权后绑定可为你记录运动及身体情况，新用戶一经连接更可享100积分。</view>
     </view>
     <view class="containerBtn" bindtap="getWeRunStepsData">立即授权</view>
 </view>

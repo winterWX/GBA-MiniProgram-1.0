@@ -498,7 +498,7 @@ Page({
       that.setData({
         textObject:{ 
           textObject : tip === 'day' ? '今日运动时间' : (tip === 'week' || tip === 'month'? '总活动时间' : ''),
-          caloriesText: tip === 'day' ? '今日消耗/卡路里' : (tip === 'week' || tip === 'month'? '消耗/千卡' : ''),
+          caloriesText: tip === 'day' ? '日消耗/卡路里' : (tip === 'week' || tip === 'month'? '消耗/千卡' : ''),
           distanceText: tip === 'day' ? '今日距离/公里' : (tip === 'week' || tip === 'month'? '距离/公里' : '')
         }
       })

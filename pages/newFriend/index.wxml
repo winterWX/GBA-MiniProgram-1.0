@@ -24,6 +24,6 @@
     </view>
     <view wx:if="{{friendList.length === 0 && listHiden}}" class="imageShow">
         <view class="imageShowBottomAfter"><image class="imageShowBottom" src="https://zhj.wellness.hangseng.com/images/miniprogram/images/addFriend/search-result@3x.png" /></view>
-        <view class="imageShowBottomText" >暂无好友</view>
+        <view class="imageShowBottomText" >没有好友请求</view>
     </view>
 </view>

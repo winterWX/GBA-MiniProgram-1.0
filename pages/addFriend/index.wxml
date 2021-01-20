@@ -8,7 +8,7 @@
         </view>
         <view class="content-listItem" bindtap="newFriend">
           <image  class="imageSty" src='{{baseUrl + "/images/addFriend/rectangle@2x.png"}}'></image>
-          <view class="item-text">朋友请求</view>
+          <view class="item-text">好友请求</view>
           <view class="redText" wx:if="{{redTagShow}}">{{redTag}}</view>
         </view>
         <button class="content-listItem" open-type="share">
