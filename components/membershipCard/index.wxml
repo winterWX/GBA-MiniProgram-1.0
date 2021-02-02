@@ -62,7 +62,7 @@
                         <view  class="imageTopText">
                            <view class="imageTopTextLeft">
                               <image  src="https://zhj.wellness.hangseng.com/images/miniprogram/images/silver/silver@3x.png"/>
-                              <view   class="imageRihtText">银会员</view>
+                              <view   class="imageRihtText">{{activeData.level == 2 ? '一般银会员' : 'VIP银会员'}}</view>
                            </view>
                            <view class="imageTopTextRight" bindtap="upgradeCard" data-card="image2">立即升级</view>
                         </view>
@@ -98,7 +98,7 @@
                <view  class="imageTopText3">
                   <view class="imageTopTextLeft3">
                      <image  src="https://zhj.wellness.hangseng.com/images/miniprogram/images/silver/qingtong-2-copy-5@3x.png"/>
-                     <view class="imageRihtText3">金会员</view>
+                     <view class="imageRihtText3">{{activeData.level == 3 ? '一般金会员' : 'VIP金会员'}}</view>
                   </view>
                   <view class="imageTopTextRight3" bindtap="upgradeCard" data-card="image3">会员续期</view>
                </view>
@@ -115,7 +115,8 @@
       <view class="seliverBlockLeft" bindtap="myCoupons">
          <view class="seliverText">
             <view class="seliverTextLeft">我的优惠</view>
-            <view class="seliverTextLeftBottom">折扣券、现金券</view>
+            <!-- <view class="seliverTextLeftBottom">折扣券、现金券</view> -->
+            <view class="seliverTextLeftBottom">折扣券</view>
          </view>
          <view class="seliverTextImge">
             <image src="https://zhj.wellness.hangseng.com/images/miniprogram/images/silver/group-19@3x.png" />
@@ -123,7 +124,7 @@
       </view>
       <view class="seliverBlockRight">
          <view class="seliverTextRightBlock" bindtap="intergRalDatails">
-            <view class="seliverTextRight">积分详情</view>
+            <view class="seliverTextRight">我的积分</view>
             <view class="seliverTextRightBottom" >积分{{activeData.integralRemainDays}}天后过期</view>
          </view>
          <view class="seliverTextImge">

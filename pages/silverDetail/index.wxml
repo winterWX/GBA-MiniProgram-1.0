@@ -2,7 +2,7 @@
     <membership-card  activeData ="{{activeData}}" infoLevel ="{{infoLevel}}" bind:parentLevel="parentCallBack" />
     <view wx:if="{{activeData.level === 1 && LockFlg}}">
         <view class="integralAct-main">
-            <view class="integralActTitle">{{couponTypeText}}积分兑换</view>
+            <view class="integralActTitle">Olive积分换领</view>
             <view class="progressSecore">
                 <view  class="itemBlock" wx:for="{{activeData.mileStones}}" wx:key="id" style="width:{{secoreNun}}%;">
                     <view class="rab-item">{{item.targetIntegral}}</view>
@@ -21,7 +21,7 @@
                         <view class="minText"><view class="minTextAfter">{{item.couponName}}</view></view>
                         <view class="bottomTextTop" wx:if="{{item.received === 1}}" >已领取</view>
                         <view class="bottomTextTop textReck" wx:if="{{item.received === 2}}" bindtap="receivedFun" data-index="{{index}}">领取</view>
-                        <view class="bottomTextTop" wx:if="{{item.received === 3}}" >未达成</view>
+                        <view class="bottomTextTop" wx:if="{{item.received === 3}}" >未领取</view>
                     </view>
                 </view>
             </view>
@@ -35,7 +35,7 @@
                                     <image src="{{baseUrl + '/images/silver/newImage/group-12@3x.png'}}"/>
                                     <view class="progressBlockText">
                                         <image src="{{baseUrl+'/images/silver/newImage/group-2@t3x.png'}}"/>
-                                        <view class="progressBlockText1">现金券积分兑换 唯尊享码升级会员专享</view>
+                                        <view class="progressBlockText1">优惠券积分兑换 唯尊享码升级会员专享</view>
                                         <view class="progressBlockText2">立即查看</view>
                                     </view>
                                 </view>
@@ -82,7 +82,7 @@
             <!-- <view class="vipBottomBlock" >vvip尊享升级，权益更多</view> -->
         </view>
         <view class="integralAct-main">
-            <view class="integralActTitle">{{couponTypeText}}积分兑换</view>
+            <view class="integralActTitle">Olive积分换领</view>
             <view class="progressSecore">
                 <view  class="itemBlock" wx:for="{{activeData.mileStones}}" wx:key="id" style="width:{{secoreNun}}%;">
                     <view class="rab-item">{{item.targetIntegral}}</view>
@@ -103,7 +103,7 @@
                         </view>
                         <view class="bottomTextTop" wx:if="{{item.received === 1}}">已领取</view>
                         <view class="bottomTextTop textReck" wx:if="{{item.received === 2}}" bindtap="receivedFun" data-index="{{index}}">领取</view>
-                        <view class="bottomTextTop" wx:if="{{item.received === 3}}">未达成</view>
+                        <view class="bottomTextTop" wx:if="{{item.received === 3}}">未领取</view>
                     </view>
                 </view>
             </view>
@@ -117,7 +117,7 @@
                                     <image src="{{baseUrl+'/images/silver/newImage/group-12@3x.png'}}"/>
                                     <view class="progressBlockText">
                                         <image src="{{baseUrl+'/images/silver/newImage/group-2@t3x.png'}}"/>
-                                        <view class="progressBlockText1">现金券积分兑换唯尊享码升级会员专享</view>
+                                        <view class="progressBlockText1">优惠券积分兑换 唯尊享码升级会员专享</view>
                                         <view class="progressBlockText2">立即查看</view>
                                     </view>
                                 </view>
@@ -169,7 +169,7 @@
     </view>
     <view wx:if="{{activeData.level === 3 && LockFlg}}">
         <view class="integralAct-main integralAct-main2">
-            <view class="integralActTitle">{{couponTypeText}}积分兑换</view>
+            <view class="integralActTitle">Olive积分换领</view>
             <view class="progressSecore">
                 <view  class="itemBlock" wx:for="{{activeData.mileStones}}" wx:key="id" style="width:{{secoreNun}}%;">
                     <view class="rab-item">{{item.targetIntegral}}</view>
@@ -188,7 +188,7 @@
                         <view class="minText"><view class="minTextAfter">{{item.couponName}}</view></view>
                         <view class="bottomTextTop" wx:if="{{item.received === 1}}">已领取</view>
                         <view class="bottomTextTop textReck" wx:if="{{item.received === 2}}" bindtap="receivedFun" data-index="{{index}}">领取</view>
-                        <view class="bottomTextTop" wx:if="{{item.received === 3}}">未达成</view>
+                        <view class="bottomTextTop" wx:if="{{item.received === 3}}">未领取</view>
                     </view>
                 </view>
             </view>
@@ -203,7 +203,7 @@
                                 <image src="{{baseUrl+'/images/silver/newImage/group-12@3x.png'}}"/>
                                 <view class="progressBlockText">
                                     <image src="{{baseUrl + '/images/silver/newImage/group-2@t3x.png'}}"/>
-                                    <view class="progressBlockText1">现金券积分兑换唯尊享码升级会员专享</view>
+                                    <view class="progressBlockText1">优惠券积分兑换 唯尊享码升级会员专享</view>
                                     <view class="progressBlockText2">立即查看</view>
                                 </view>
                             </view>
@@ -287,7 +287,7 @@
             <!-- <view class="vipBottomBlock" >vvip尊享升级，权益更多</view> -->
         </view>
         <view class="integralAct-main">
-            <view class="integralActTitle">{{couponTypeText}}积分兑换</view>
+            <view class="integralActTitle">Olive积分换领</view>
             <view class="progressSecore">
                 <view  class="itemBlock" wx:for="{{activeData.mileStones}}" wx:key="id" style="width:{{secoreNun}}%;">
                     <view class="rab-item">{{item.targetIntegral}}</view>
@@ -306,7 +306,7 @@
                         <view class="minText"><view class="minTextAfter">{{item.couponName}}</view></view>
                         <view class="bottomTextTop" wx:if="{{item.received === 1}}">已领取</view>
                         <view class="bottomTextTop textReck" wx:if="{{item.received === 2}}" bindtap="receivedFun" data-index="{{index}}">领取</view>
-                        <view class="bottomTextTop" wx:if="{{item.received === 3}}">未达成</view>
+                        <view class="bottomTextTop" wx:if="{{item.received === 3}}">未领取</view>
                     </view>
                 </view>
             </view>
@@ -361,7 +361,7 @@
             <view class="vipBottomBlock" >恒生保险客户尊享升级，礼遇更多</view>
         </view>
         <view class="integralAct-main" style="height: 275rpx;">
-            <view class="integralActTitle">{{couponTypeText}}积分兑换</view>
+            <view class="integralActTitle">Olive积分换领</view>
             <view class="progressSecore">
                 <view  class="itemBlock" wx:for="{{activeData.mileStones}}" wx:key="id" style="width:{{secoreNun}}%;">
                     <view class="rab-item">{{item.targetIntegral}}</view>
@@ -381,7 +381,7 @@
                         <view class="minText"><view class="minTextAfter">{{item.couponName}}</view></view>
                         <view class="bottomTextTop" wx:if="{{item.received === 1}}">已领取</view>
                         <view class="bottomTextTop textReck" wx:if="{{item.received === 2}}" bindtap="receivedFun" data-index="{{index}}">领取</view>
-                        <view class="bottomTextTop" wx:if="{{item.received === 3}}">未达成</view>
+                        <view class="bottomTextTop" wx:if="{{item.received === 3}}">未领取</view>
                     </view>
                 </view>
             </view>
@@ -413,8 +413,8 @@
             <view class="bouttomTitlr">会员礼遇</view>
                 <view class="bottomBlockGold">
                     <view class="bottomText">
-                    <view class="bottomText1">X2倍积分</view>
-                    <view class="bottomText2">银会员享2倍活动积分</view>
+                    <view class="bottomText1">X2倍Olive积分</view>
+                    <view class="bottomText2">银会员享2倍Olive积分</view>
                     </view>
                     <image src="{{baseUrl + '/images/silver/newImage/x-2-point@3x.png'}}"/>
                 </view>
@@ -425,7 +425,7 @@
                     </view>
                     <image src="{{baseUrl+'/images/otherCarde/selier.PNG'}}"/>
                 </view> -->
-                <view>
+                <view class="bouttomTitlrTop">
                     <view class="bouttomTitlr">银会员专享限时优惠</view>
                     <view class="insrusBlock">
                     <view class="insrusBlock1">
@@ -479,7 +479,7 @@
                                     <image src="{{baseUrl+'/images/silver/newImage/group-12@3x.png'}}"/>
                                     <view class="progressBlockText">
                                         <image src="{{baseUrl+'/images/silver/newImage/group-2@t3x.png'}}"/>
-                                        <view class="progressBlockText1">现金券积分兑换唯尊享码升级会员专享</view>
+                                        <view class="progressBlockText1">优惠券积分兑换 唯尊享码升级会员专享</view>
                                         <view class="progressBlockText2">立即查看</view>
                                     </view>
                                 </view>
@@ -520,8 +520,8 @@
             <view class="bouttomTitlr">会员礼遇</view>
                 <view class="bottomBlockGold">
                     <view class="bottomText">
-                        <view class="bottomText1">X5倍积分</view>
-                        <view class="bottomText2">金会员享5倍会员活动积分</view>
+                        <view class="bottomText1">X5倍Olive积分</view>
+                        <view class="bottomText2">金会员享5倍Olive积分</view>
                     </view>
                     <image src="{{baseUrl+'/images/silver/newImage/x-5-point@3x.png'}}"/>
                 </view>
@@ -532,7 +532,7 @@
                     </view>
                     <image src="{{baseUrl+'/images/otherCarde/glogs.PNG'}}"/>
                 </view> -->
-                <view class="bouttomTitlr">金会员专享限时优惠</view>
+                <view class="bouttomTitlr bouttomTitlrTop">金会员专享限时优惠</view>
                 <view class="insrusBlock">
                     <view class="insrusBlock1">
                         <image src="{{baseUrl+'/images/silver/newImage/group-2@3gx.png'}}"/>
@@ -598,7 +598,7 @@
                                     <image src="{{baseUrl+'/images/silver/newImage/group-12@3x.png'}}"/>
                                     <view class="progressBlockText">
                                         <image src="{{baseUrl + '/images/silver/newImage/group-2@t3x.png'}}"/>
-                                        <view class="progressBlockText1">现金券积分兑换唯尊享码升级会员专享</view>
+                                        <view class="progressBlockText1">优惠券积分兑换 唯尊享码升级会员专享</view>
                                         <view class="progressBlockText2">立即查看</view>
                                     </view>
                                 </view>

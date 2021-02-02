@@ -21,7 +21,7 @@
                         <view class="numText">{{invitData.personNum}}</view>
                     </view>
                     <view class="listPerson-item">
-                        <view>累计获得积分</view>
+                        <view>累计获得Olive积分</view>
                         <view class="numText">{{invitData.totalIntegral}}</view>
                     </view>
                </view>
@@ -41,7 +41,7 @@
        <image  class="personImge" src='{{imagesUrl + "/images/recommend/background@2x.png"}}'></image>
        <view class="image-text">
           <view class="image-text1">分享好友 一起赚积分</view>
-          <view class="image-text2">好友注册成功，双方各得50积分</view>
+          <view class="image-text2">好友注册成功，双方各得50 Olive积分</view>
           <view class="threeText">- 简单三步立享积分 -</view>
           <view class='blockImge'>
               <view class='blockImge-item'>

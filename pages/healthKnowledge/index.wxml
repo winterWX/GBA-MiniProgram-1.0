@@ -2,7 +2,7 @@
     <image class="bg" src="{{bannerUrl}}"></image>
     <view class="content">
         <view class="title">{{title}}</view>
-        <view class="tip">共{{questionNumber}}题，答对80%将获得{{reward}}积分</view>
+        <view class="tip">共{{questionNumber}}题，答对80%将获得{{reward}} Olive积分</view>
         <view class="info">
             {{content}}
         </view>

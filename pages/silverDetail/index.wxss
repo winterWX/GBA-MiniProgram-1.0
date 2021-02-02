@@ -623,3 +623,9 @@
 .minTextAfter{
   width: 100rpx;
 }
+.bouttomTitlrTop{
+  margin-top: 30rpx;
+}
+.bouttomTitlrTop{
+  margin-top: 30rpx;
+}

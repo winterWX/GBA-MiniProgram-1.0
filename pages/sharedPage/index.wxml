@@ -11,7 +11,7 @@
             <image src='https://zhj.wellness.hangseng.com/images/miniprogram/images/recommend/gift@2x.png'></image>
           </view>
           <!-- <view class="image-text3">Hi 陈大文</view> -->
-          <view class="image-text4">{{userInfoData.nickName}}在[恒生健康]赚取积分享健康好礼，跟我来一起玩呀！</view>
+          <view class="image-text4">{{userInfoData.nickName}}在恒生Olive赚取积分享健康好礼，跟我来一起玩呀！</view>
           <view class="image-text5">
              <van-button type="primary" size="normal" class="rightBtn" open-type="getUserInfo" bindgetuserinfo="getUserInfo">立即领取50积分</van-button>
           </view>

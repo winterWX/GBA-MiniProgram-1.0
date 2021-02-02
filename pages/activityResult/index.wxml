@@ -6,7 +6,7 @@
   <view class="rank-info">
     <view wx:if="{{success}}" class="tip text-middle">恭喜完成周周步数挑战</view>
     <view wx:if="{{!success}}" class="tip text-middle">很可惜，未完成周周步数挑战赛</view>
-    <view class="reward-tip text-middle">恭喜你已获得积分</view>
+    <view class="reward-tip text-middle">恭喜你已获得Olive积分</view>
     <view class="reward text-middle"><text>{{self.receivedIntegral ? self.receivedIntegral : 0}}</text></view>
     <view class="rank text-middle">好友排名</view>
     <view class="rank-num text-middle">{{self.rank ? self.rank : '--'}}</view>

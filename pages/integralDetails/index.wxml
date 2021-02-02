@@ -2,10 +2,10 @@
     <view class="blue-content">
         <view class="blueBlock">
            <view class="blueBlockNum">{{integral}}</view>
-           <view class="blueBlockLeft">
+            <view class="blueBlockLeft">
               <image class="blueBlockLeft-image" src="https://zhj.wellness.hangseng.com/images/miniprogram/images/myCounty/oval-2@3x.png" />
-              <view class="blueBlockLeftText" catchtap="integralRules">积分规则</view>
-           </view>
+              <view class="blueBlockLeftText" catchtap="integralRules">Olive积分规则</view>
+            </view>
         </view>
         <view class="blueBlockText">积分将于{{expiryTime}}到期</view>
     </view>

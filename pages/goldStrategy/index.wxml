@@ -16,9 +16,9 @@
         <view  class="roghtImageCode-text">
           <view class="text1">快速升级</view>
           <view class="rightImge"><image  src="{{imagesUrl + '/images/strategy/group-3@3xg.png'}}" /></view>
-          <view class="text2">尊享金会员</view>  
+          <view class="text2">VIP金会员</view>  
           <view class="text3">购买恒生保险</view>
-          <view class="text4">即升级尊享金会员</view>
+          <view class="text4">即升级VIP金会员</view>
           <view class="text5"  bindtap="textShowMain" data-show="num"><view class="btnClass">了解恒生保险</view></view>
         </view>
       </view>
@@ -56,7 +56,7 @@
     </view>
   </view>
   <view class="bottomBtn">
-      <view class="bottomBtnBlue" bindtap="btnNetoPage">已有恒生尊享码，立即升级金会员</view>
+      <view class="bottomBtnBlue" bindtap="btnNetoPage">已有恒生尊享码，立即升级成为VIP金会员</view>
   </view>
   <view class="modals modals-bottom-dialog" hidden="{{hideModal}}">
             <view class="modals-cancel" bindtap="hideModal"></view>
@@ -67,7 +67,7 @@
                         <image src='{{imagesUrl + "/images/mine/close@3x.png"}}'></image>
                       </view>
                       <view class='msg-box'>
-                          恒生尊享码是一组专属于你的号码，成功成为恒生银行或恒生保险客户，即可从电邮/短讯获得此号码，如有查询，可以询问你的客户经理。
+                        恒生尊享码是一组专属于你的号码，成功成为恒生银行或恒生保险客户，即可从电邮/短讯获得此号码，如有查询，可以询问你的客户经理。
                     </view>
                 </view>
                 <view wx:if="{{!whatHangsheng}}">
@@ -77,13 +77,12 @@
                       </view>
                       <view class='msg-box .msg-box2'>
                           <view class="itemBlock">
-                            <view class="iphoneBlock">+（86）4001 2082 82</view>
+                            <view class="iphoneBlock">(852) 2596 6262</view>
                             <!-- <view class="iphoneBlock-image"><image src="{{imagesUrl + '/images/mine/mask@3x.png'}}" /></view> -->
                           </view>
-                          <view class="itemBlock itemBlockBottom">
+                          <!-- <view class="itemBlock itemBlockBottom">
                             <view class="iphoneBlock">+（852）28220228</view>
-                            <!-- <view class="iphoneBlock-image"><image src="{{imagesUrl + '/images/mine/mask@3x.png'}}" /></view> -->
-                          </view>
+                          </view> -->
                     </view>
                 </view>
             </view>

@@ -36,7 +36,7 @@
             <van-button class="bottom-tipBtn"  type="primary" size="large"  open-type="getUserInfo" bindgetuserinfo="getUserInfo">登录后阅读全文</van-button>
             <view class="bottom-soce">
             <image src ='{{imagesUrl + "/images/healthInfo/icon-gift@2x.png"}}'></image>
-            <view class="bottom-soBtn">登录后每天阅读文章，单次可最多获取10积分。</view>
+            <view class="bottom-soBtn">每天阅读健康头条, 最多可获10 Olive积分。</view>
             </view>
         </view>
     </view>

@@ -2,7 +2,7 @@
 	<view class="header">
 		<view class="tip-box" wx:if="{{userInfo.completedCount !== 5}}">
 			<image class="bg" src="{{baseUrl + '/images/mine/background@2x.png'}}"></image>
-			<view class="profile-tip">{{ countNum }}个人信息尚未完善，<text class="link" catchtap="myProfilerEdit">完成即可获得100积分</text>。</view>
+			<view class="profile-tip">{{ countNum }}个人信息尚未完善，<text class="link" catchtap="myProfilerEdit">完成即可获得100 Olive积分</text>。</view>
 		</view>
 		<view class="portrait" catchtap="profilePage">
 			<view class="header-box">
@@ -20,7 +20,7 @@
 					{{userInfo.integral}}
 				</view>
 				<view class="tip">
-					积分
+					我的积分
 					<image class="icon" src="{{baseUrl + '/images/mine/fruit-icon.png'}}"></image>
 				</view>
 			</view>
@@ -30,7 +30,7 @@
 					{{userInfo.couponNumber}}
 				</view>
 				<view class="tip">
-					优惠
+					我的优惠
 				</view>
 			</view>
 		</view>
@@ -148,13 +148,13 @@
 			</view>
 			<view class='msg-box .msg-box2'>
 				<view class="itemBlock">
-					<view class="iphoneBlock">+（86）4001 2082 82</view>
+					<view class="iphoneBlock">(852) 2596 6262</view>
 					<view class="iphoneBlock-image"><image src="{{baseUrl + '/images/mine/mask@3x.png'}}" /></view>
 				</view>
-				<view class="itemBlock itemBlockBottom">
+				<!-- <view class="itemBlock itemBlockBottom">
 					<view class="iphoneBlock">+（852）28220228</view>
 					<view class="iphoneBlock-image"><image src="{{baseUrl + '/images/mine/mask@3x.png'}}" /></view>
-				</view>
+				</view> -->
 			</view>
 		</view>
   </view> 
