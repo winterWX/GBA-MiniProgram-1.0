@@ -248,10 +248,10 @@ Page({
           this.setData({appName:'华为运动'});
           break;
         case 'Sensor':
-          this.setData({appName:'计步器'});
+          this.setData({appName:'手机计步器'});
           break;       
         case 'iOS':
-          this.setData({appName:'苹果健康'});
+          this.setData({appName:'Apple健康'});
           break;
         case 'Samsung':
           this.setData({appName:'三星'});
@@ -260,7 +260,7 @@ Page({
           this.setData({appName:'华为运动云'});
           break;
         case 'string':
-            this.setData({appName:'以下数据来自“微信运动”。'});
+            this.setData({appName:'以下数据来自“微信健康”。'});
             break;
         default:
           break;

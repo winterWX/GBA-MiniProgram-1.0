@@ -15,7 +15,7 @@ page{
   height: 28rpx;
 }
 .blueBlockNum{
-  width: 547rpx;
+  width: 490rpx;
   color: rgb(255,255,255);
   font-size: 48rpx;
   margin-bottom: 10rpx;

@@ -230,7 +230,7 @@ page{
   left: 0;
   right: 0;
   padding: 30rpx 30rpx 0rpx 30rpx;
-  min-height: 320rpx;
+  min-height: 200rpx;
   background-color: #fff;
   border-radius: 30rpx 30rpx 0rpx 0rpx;
 }

@@ -1,7 +1,7 @@
 <view class="container">
 	<view class="title">
 		<text class="title-basic">基本信息</text>
-		<text class="title-tip" wx:if="{{!received}}">(完成后即得100积分)</text>
+		<text class="title-tip" wx:if="{{!received}}">(完成后即得100 Olive积分)</text>
 	</view>
 	<view class="content-box">
 		<block wx:if="{{ !received }}">

@@ -89,7 +89,7 @@ Component({
             },
             {
               type: 'text',
-              text: `${app.globalData.userInfo.nickName}在[恒生健康]赚取积分享健康好礼，跟我来一起玩呀！`,
+              text: `${app.globalData.userInfo.nickName}在恒生Olive赚取积分享健康好礼，跟我来一起玩呀！`,
               css: {
                 top: '480rpx',
                 left: '375rpx',

@@ -44,14 +44,6 @@ Page({
         if (res.data.code === 200) {
             wx.hideLoading();  //关闭loading
             const { data: { data: { token, phoneNumber,integral={}, isFriend}}} = res;
-            // if(!whiteList.includes(phoneNumber)){
-            //     wx.showModal({
-            //       title: '提示',
-            //       content: '您没有登录权限',
-            //       showCancel: false,
-            //       success (res) { if (res.confirm)  wx.redirectTo({ url: '../index/index'}) }
-            //     })
-            // }else{
                 app.globalData.isLogin = 3;  //登录成功
                 app.globalData.token = token;
                 app.globalData.phoneNumber = phoneNumber;
@@ -71,8 +63,19 @@ Page({
                   url: this.data.url + '?flag=' + integralFlg,
                   complete: () => {}
                 })
-            //}
-        } else {
+        }else if(res.data.code === 999000 || res.data.code === 999888){   //白名单(999000)  , 999888 ---用户注销
+            wx.hideLoading();
+            wx.showModal({
+              title: '提示',
+              content: res.data.code === 999000 ? '您没有登录权限':( res.data.code === 999888 ? '登录资料错误' :''),
+              showCancel: false,
+              success (res) {
+                if (res.confirm) {
+                  wx.redirectTo({ url: '../index/index'});
+                }
+              }
+            })
+      }else {
             wx.hideLoading();
             wx.showModal({
               showCancel: false,

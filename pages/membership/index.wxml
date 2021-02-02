@@ -9,7 +9,7 @@
             </view>
             <view class="topBlocksRight">
                 <image src="{{imagesUrl + '/images/silver/silver@3x.png'}}"/>
-                <view>永恒银会员+尊享好礼</view>
+                <view>VIP银会员+尊享好礼</view>
             </view>
           </view>
           <view class="topBlocks12">
@@ -19,7 +19,7 @@
             </view>
             <view class="topBlocksRight">
                 <image src="{{imagesUrl + '/images/silver/qingtong-2-copy-5@3x.png'}}" />
-                <view>一年金会员+尊享好礼</view>
+                <view>一年VIP金会员+尊享好礼</view>
             </view>
           </view>
           <view class="topBlocksRightText">提供新的尊享码续期一年</view>

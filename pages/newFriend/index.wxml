@@ -16,8 +16,8 @@
            <view class="topBlock_image2hang"><image class="topBlock_image2"  src="https://zhj.wellness.hangseng.com/images/miniprogram/images/addFriend/invalid-name@2x.png" /></view>
           <view class="topBlock_image1hang"><image class="topBlock_image1"  src="{{userInfoData.avatarUrl}}"/></view>
           <view class="topBlock_name" >{{userInfoData.nickName}}</view>
-          <view class="topBlock_text1" >邀请你成为[恒生健康]好友</view>
-          <view class="topBlock_text2"><view class="textli">“快快加我为好友，一起在[恒生健康]运动打卡吧”</view></view>
+          <view class="topBlock_text1" >邀请你成为他的恒生Olive好友</view>
+          <view class="topBlock_text2"><view class="textli">“快快加我为好友，一起在恒生Olive运动打卡吧”</view></view>
           <view class="topBlock_btnTom"><van-button type="primary" width="400rpx" 
           open-type="getUserInfo" bindgetuserinfo="getUserInfo">立即添加</van-button></view>
        </view>

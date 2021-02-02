@@ -13,6 +13,6 @@
         src="{{baseUrl + '/images/recommend/img_5.png' }}"></image>
     </view>
   </view>
-  <view class="tip">恭喜挑战完成 获得<text class="reward"> {{reward}} </text>积分！</view>
+  <view class="tip">恭喜挑战完成 获得<text class="reward"> {{reward}} </text>Olive积分！</view>
     <button class="btn" catchtap="navigateActivityResult">查看战绩</button>
 </view>

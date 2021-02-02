@@ -3,7 +3,7 @@
         <view class="header">
             <image class="bg-img" src="{{bannerUrl}}"></image>
             <!-- <view class="label">查看详情</view> -->
-            <view class="result-tip" wx:if="{{success}}">挑战成功，获得{{integral}}积分</view>
+            <view class="result-tip" wx:if="{{success}}">挑战成功，获得{{integral}} Olive积分</view>
             <view class="result-tip" wx:if="{{!success}}">噢，本次挑战失败，下次努力</view>
         </view>
         <view class="questions">

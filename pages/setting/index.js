@@ -20,9 +20,11 @@ Page({
   loginOut :function(){
     let that = this;
     wx.showModal({
-      title: '是否确认登出恒生健康',
+      title: '是否确认登出恒生Olive',
       content: '登出后不会删除任何历史记录，下次登录依然可以使用本账号。',
-      confirmText: '确认',
+      confirmText: '登出',
+      showCancel: true,
+      cancelText: '取消',
       success (res) {
         if (res.confirm) {
           that.loginOutIpa();

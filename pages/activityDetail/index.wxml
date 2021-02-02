@@ -62,7 +62,7 @@
 					</view>
 				</view>
 			</view>
-			<button wx:if="{{isJoin && canReceivedReward && detail.status !== 3 && !completeChange}}" class="reward-btn" catchtap="receiveReward">立即领取{{reward}}积分</button>
+			<button wx:if="{{isJoin && canReceivedReward && detail.status !== 3 && !completeChange}}" class="reward-btn" catchtap="receiveReward">立即领取{{reward}} Olive积分</button>
 			<button wx:if="{{isJoin && !canReceivedReward && !completeChange && detail.status !== 3 }}"
 				class="reward-dis-btn">收起手机，走一走</button>
 			<button wx:if="{{completeChange || (detail.status === 3 && detail.isJoinStatus ==='2')}}" class="reward-btn" catchtap="navigateActivityResult">查看战绩</button>
